@@ -1,0 +1,128 @@
+---
+// Navigation component for the site header
+---
+
+<nav class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-lg z-50 border-b border-slate-800">
+  <div class="max-w-6xl mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <a
+        href="/"
+        class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+      >
+        Scott Armbruster
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex gap-8 items-center">
+        <a href="/" class="hover:text-cyan-400 transition">
+          Home
+        </a>
+        <a href="/about" class="hover:text-cyan-400 transition">
+          About
+        </a>
+        <div class="relative group">
+          <button class="hover:text-cyan-400 transition flex items-center gap-1">
+            Services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-56 bg-slate-900 border border-slate-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <a href="/services" class="block px-4 py-3 hover:bg-slate-800 rounded-t-lg border-b border-slate-800">
+              All Services
+            </a>
+            <a href="/education" class="block px-4 py-3 hover:bg-slate-800">
+              Education Programs
+            </a>
+            <a href="/agency" class="block px-4 py-3 hover:bg-slate-800 rounded-b-lg">
+              Agency Services
+            </a>
+          </div>
+        </div>
+        <a href="/resources" class="hover:text-cyan-400 transition">
+          Resources
+        </a>
+        <a href="/demos" class="hover:text-cyan-400 transition">
+          Demos
+        </a>
+        <a href="/blog" class="hover:text-cyan-400 transition">
+          Blog
+        </a>
+        <a href="/contact" class="hover:text-cyan-400 transition">
+          Contact
+        </a>
+        <a
+          href="/contact"
+          class="bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-2 rounded-full hover:shadow-lg hover:shadow-cyan-500/50 transition"
+        >
+          Get Started
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden"
+        aria-label="Toggle menu"
+      >
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2 flex-col gap-4">
+      <a href="/" class="hover:text-cyan-400 transition">
+        Home
+      </a>
+      <a href="/about" class="hover:text-cyan-400 transition">
+        About
+      </a>
+      <a href="/services" class="hover:text-cyan-400 transition pl-4">
+        → All Services
+      </a>
+      <a href="/education" class="hover:text-cyan-400 transition pl-4">
+        → Education Programs
+      </a>
+      <a href="/agency" class="hover:text-cyan-400 transition pl-4">
+        → Agency Services
+      </a>
+      <a href="/resources" class="hover:text-cyan-400 transition">
+        Resources
+      </a>
+      <a href="/demos" class="hover:text-cyan-400 transition">
+        Demos
+      </a>
+      <a href="/blog" class="hover:text-cyan-400 transition">
+        Blog
+      </a>
+      <a href="/contact" class="hover:text-cyan-400 transition">
+        Contact
+      </a>
+      <a
+        href="/contact"
+        class="bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-2 rounded-full text-center"
+      >
+        Get Started
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+    mobileMenu?.classList.toggle('flex');
+    menuIcon?.classList.toggle('hidden');
+    closeIcon?.classList.toggle('hidden');
+  });
+</script>
