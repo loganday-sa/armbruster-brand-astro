@@ -28,7 +28,17 @@ import Layout from '../layouts/Layout.astro';
         <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-8">
           <h2 class="text-2xl font-bold mb-6">Send a Message</h2>
 
-          <form action="https://formspree.io/f/xqedzypz" method="POST" class="space-y-6">
+          <form id="contact-form" class="space-y-6">
+            <div id="form-success" class="hidden p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-green-400 text-center">
+              <svg class="w-6 h-6 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Message sent! I'll get back to you soon.
+            </div>
+            <div id="form-error" class="hidden p-4 bg-red-500/20 border border-red-500/30 rounded-lg text-red-400 text-center">
+              Something went wrong. Please try again or email me directly.
+            </div>
+            <div id="form-fields">
             <div>
               <label for="name" class="block text-sm font-semibold mb-2">Name</label>
               <input
@@ -82,12 +92,52 @@ import Layout from '../layouts/Layout.astro';
 
             <button
               type="submit"
-              class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition"
+              id="submit-btn"
+              class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition disabled:opacity-50"
             >
               Send Message
             </button>
+            </div>
           </form>
         </div>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const formFields = document.getElementById('form-fields');
+  const successMsg = document.getElementById('form-success');
+  const errorMsg = document.getElementById('form-error');
+  const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    errorMsg?.classList.add('hidden');
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xqedzypz', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        formFields?.classList.add('hidden');
+        successMsg?.classList.remove('hidden');
+        form.reset();
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      errorMsg?.classList.remove('hidden');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+    }
+  });
+</script>
 
         <!-- Contact Info -->
         <div class="space-y-8">
