@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import scottPhoto from '../assets/scott-photo-1.jpg';
 ---
 
 <Layout title="Scott Armbruster - AI Implementation & Education" description="AI Implementation Specialist helping professionals build AI-powered income streams and organizations deploy AI systems that deliver real ROI.">
@@ -55,9 +57,15 @@ import Layout from '../layouts/Layout.astro';
           <div class="bg-gradient-to-br from-cyan-500/20 to-blue-600/20 rounded-2xl p-1 max-w-sm">
             <div class="bg-slate-900 rounded-2xl p-8">
               <div class="text-center">
-                <div class="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-5xl font-bold">
-                  SA
-                </div>
+                <Image
+                  src={scottPhoto}
+                  alt="Scott Armbruster"
+                  width={160}
+                  height={160}
+                  class="w-40 h-40 mx-auto mb-6 rounded-full object-cover object-[30%_center]"
+                  format="webp"
+                  quality={80}
+                />
                 <div class="text-2xl font-bold mb-2">Scott Armbruster</div>
                 <div class="text-slate-400 mb-6">
                   AI Implementation Specialist & Educator
