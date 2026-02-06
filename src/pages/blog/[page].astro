@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PostCard from '../../components/PostCard.astro';
+import Pagination from '../../components/Pagination.astro';
+import { getCollection } from 'astro:content';
+import { SITE_TITLE, POSTS_PER_PAGE } from '../../consts';
+
+export async function getStaticPaths() {
+	const allPosts = (await getCollection('blog'))
+		.filter((post) => !post.data.draft)
+		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+	const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
+
+	return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, i) => ({
+		params: { page: String(i + 2) },
+		props: {
+			posts: allPosts.slice((i + 1) * POSTS_PER_PAGE, (i + 2) * POSTS_PER_PAGE),
+			currentPage: i + 2,
+			totalPages,
+			totalPosts: allPosts.length,
+		},
+	}));
+}
+
+const { posts, currentPage, totalPages, totalPosts } = Astro.props;
+---
+
+<Layout
+	title={`Blog - Page ${currentPage} | ${SITE_TITLE}`}
+	description="Practical guides, case studies, and strategies for building AI-powered businesses and implementing AI systems that actually work."
+>
+	<section class="pt-32 pb-12 px-6">
+		<div class="max-w-6xl mx-auto text-center">
+			<p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-6">
+				AI Insights & Strategy
+			</p>
+			<h1 class="text-4xl md:text-6xl font-bold mb-6">
+				The <span class="text-white">AI Implementation</span> Blog
+			</h1>
+			<p class="text-xl text-slate-300 max-w-3xl mx-auto">
+				{totalPosts} articles - Page {currentPage}
+			</p>
+		</div>
+	</section>
+
+	<section class="py-12 px-6">
+		<div class="max-w-6xl mx-auto">
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				{posts.map((post) => (
+					<PostCard post={post} />
+				))}
+			</div>
+
+			<Pagination currentPage={currentPage} totalPages={totalPages} baseUrl="/blog/" />
+		</div>
+	</section>
+</Layout>

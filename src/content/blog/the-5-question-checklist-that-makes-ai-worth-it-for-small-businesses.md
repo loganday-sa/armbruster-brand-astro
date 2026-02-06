@@ -4,6 +4,7 @@ description: "Most small businesses do not fail with AI because the tech is bad.
 pubDate: 2025-12-09
 heroImage: "/images/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 ---
 
 Most small businesses do not fail with AI because the tech is bad. They fail because they pick the wrong problem.

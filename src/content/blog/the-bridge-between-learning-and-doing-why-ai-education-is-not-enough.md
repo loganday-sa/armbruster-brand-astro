@@ -4,6 +4,7 @@ description: "You have watched the tutorials. You have bookmarked the articles. 
 pubDate: 2025-12-10
 heroImage: "/images/blog/the-bridge-between-learning-and-doing-why-ai-education-is-not-enough.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 ---
 
 You have watched the tutorials. You have bookmarked the articles. You might even have a folder somewhere labeled "AI stuff to try later" that has been sitting untouched for three months.

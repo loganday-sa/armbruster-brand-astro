@@ -5,6 +5,7 @@ pubDate: 2025-12-04
 updatedDate: 2025-12-05
 heroImage: "/images/blog/more-productive-and-more-worried-the-double-edged-reality-of-ai-at-work.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 ---
 
 For the past year, I have watched the same pattern repeat itself across organizations of all sizes. Teams become dramatically more productive the moment they begin using AI in a structured way. Yet almost immediately, a new undercurrent shows up. Leaders feel uneasy. Employees feel exposed. The atmosphere becomes a mix of excitement and tension.

@@ -3,7 +3,8 @@ title: "Save 20+ Hours Weekly with n8n's No-Code AI Automation"
 description: "The n8n Revolution: Why Smart Businesses Partner Instead of DIY Sarah's marketing agency was drowning in manual tasks. She knew n8n could automate everything, but after two weeks of tutorials and troubleshooting, she'd built one basic workflow. Th..."
 pubDate: 2025-12-17
 heroImage: "/images/blog/save-20-hours-weekly-with-n8ns-no-code-ai-automation.png"
-category: "AI Strategy"
+category: "Implementation"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

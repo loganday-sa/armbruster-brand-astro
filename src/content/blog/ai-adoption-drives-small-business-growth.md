@@ -4,6 +4,7 @@ description: "How Small Businesses Are Using AI to Improve Productivity and Grow
 pubDate: 2026-01-09
 heroImage: "/images/blog/ai-adoption-drives-small-business-growth.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

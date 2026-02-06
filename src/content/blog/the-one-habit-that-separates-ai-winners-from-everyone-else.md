@@ -4,6 +4,7 @@ description: "The One Habit That Separates AI Winners from Everyone Else I've wo
 pubDate: 2026-01-08
 heroImage: "/images/blog/the-one-habit-that-separates-ai-winners-from-everyone-else.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

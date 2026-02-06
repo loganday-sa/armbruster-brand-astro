@@ -3,7 +3,8 @@ title: "The $4.5 Trillion AI Window: Smart Moves for Small Players"
 description: "While everyone debates AI's dangers, a $4.5 trillion opportunity is quietly democratizing. Smart small businesses and professionals are already claiming their piece."
 pubDate: 2026-01-16
 heroImage: "/images/blog/the-4-5-trillion-ai-window-smart-moves-for-small-players.png"
-category: "AI Strategy"
+category: "Industry"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

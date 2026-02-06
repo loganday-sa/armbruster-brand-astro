@@ -3,7 +3,8 @@ title: "Case Study: 10-Hour Automation That Freed Up 20% of Work Time"
 description: "How a focused, low-risk automation delivered recurring capacity in days, not months Ten hours of focused automation work unlocked a recurring 20 percent reduction in team time spent on routine tasks. This is a short, practical case study of how a ..."
 pubDate: 2025-12-08
 heroImage: "/images/blog/case-study-10-hour-automation-that-freed-up-20-of-work-time.png"
-category: "AI Strategy"
+category: "Implementation"
+author: "Scott Armbruster"
 ---
 
 ## How a focused, low-risk automation delivered recurring capacity in days, not months

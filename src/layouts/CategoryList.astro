@@ -1,0 +1,59 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Layout from './Layout.astro';
+import PostCard from '../components/PostCard.astro';
+import Pagination from '../components/Pagination.astro';
+import { SITE_TITLE, type CategoryConfig } from '../consts';
+
+interface Props {
+	posts: CollectionEntry<'blog'>[];
+	category: CategoryConfig;
+	currentPage: number;
+	totalPages: number;
+	baseUrl: string;
+	totalPosts: number;
+}
+
+const { posts, category, currentPage, totalPages, baseUrl, totalPosts } = Astro.props;
+const pageTitle = currentPage > 1
+	? `${category.name} - Page ${currentPage} | ${SITE_TITLE}`
+	: `${category.name} - ${SITE_TITLE}`;
+---
+
+<Layout title={pageTitle} description={category.description}>
+	<section class="pt-32 pb-12 px-6">
+		<div class="max-w-6xl mx-auto">
+			<div class="flex items-center gap-4 mb-2">
+				<span class="text-3xl">{category.icon}</span>
+				<h1 class="text-4xl md:text-5xl font-bold">{category.name}</h1>
+			</div>
+			<p class="text-xl text-slate-300 mt-4">{category.description}</p>
+			<p class="text-slate-500 text-sm mt-2">
+				{totalPosts} {totalPosts === 1 ? 'article' : 'articles'}
+				{currentPage > 1 && ` - Page ${currentPage}`}
+			</p>
+		</div>
+	</section>
+
+	<section class="py-12 px-6">
+		<div class="max-w-6xl mx-auto">
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				{posts.map((post) => (
+					<PostCard post={post} showCategory={false} />
+				))}
+			</div>
+
+			{posts.length === 0 && (
+				<div class="text-center py-12">
+					<svg class="w-16 h-16 text-slate-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+					</svg>
+					<h3 class="text-xl font-bold text-slate-400 mb-2">No articles yet</h3>
+					<p class="text-slate-500">Check back soon for new content!</p>
+				</div>
+			)}
+
+			<Pagination currentPage={currentPage} totalPages={totalPages} baseUrl={baseUrl} />
+		</div>
+	</section>
+</Layout>

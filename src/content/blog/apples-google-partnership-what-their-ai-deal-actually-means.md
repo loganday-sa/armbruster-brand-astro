@@ -3,7 +3,8 @@ title: "Apple's Google Partnership: What Their AI Deal Actually Means"
 description: "Apple's partnership with Google for Gemini AI reveals a pragmatic shift in strategy that prioritizes user experience over proprietary control."
 pubDate: 2026-01-13
 heroImage: "/images/blog/apples-google-partnership-what-their-ai-deal-actually-means.png"
-category: "AI Strategy"
+category: "Industry"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

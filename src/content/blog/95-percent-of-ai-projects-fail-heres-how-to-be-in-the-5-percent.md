@@ -4,6 +4,7 @@ description: "MIT data shows 95% of enterprise AI projects fail. Here's what the
 pubDate: 2026-02-06
 heroImage: "/images/blog/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 tags: ["ai-strategy", "roi", "implementation", "ai-agents"]
 featured: true
 ---

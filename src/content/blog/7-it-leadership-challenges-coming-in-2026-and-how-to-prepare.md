@@ -4,6 +4,7 @@ description: "The technology challenges facing IT leaders in 2026 aren't primari
 pubDate: 2026-01-12
 heroImage: "/images/blog/7-it-leadership-challenges-coming-in-2026-and-how-to-prepare.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

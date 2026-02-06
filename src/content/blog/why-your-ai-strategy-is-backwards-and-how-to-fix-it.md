@@ -4,6 +4,7 @@ description: "The AI Foundation: Skills That Matter More Than Tools I watch prof
 pubDate: 2025-12-20
 heroImage: "/images/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

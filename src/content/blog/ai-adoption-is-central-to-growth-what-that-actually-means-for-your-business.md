@@ -4,6 +4,7 @@ description: "AI adoption isn't about having the latest tools. It's about connec
 pubDate: 2026-01-11
 heroImage: "/images/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

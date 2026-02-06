@@ -4,6 +4,7 @@ description: "The gap between having a good idea and taking action isn't about t
 pubDate: 2026-01-16
 heroImage: "/images/blog/the-starting-problem-why-perfect-plans-kill-progress.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

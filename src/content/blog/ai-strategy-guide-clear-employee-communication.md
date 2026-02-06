@@ -4,6 +4,7 @@ description: "The Hidden Cost of Unclear AI Strategy Communication A recent stud
 pubDate: 2026-01-08
 heroImage: "/images/blog/ai-strategy-guide-clear-employee-communication.png"
 category: "AI Strategy"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

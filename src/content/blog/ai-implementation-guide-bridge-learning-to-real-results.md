@@ -3,7 +3,8 @@ title: "AI Implementation Guide: Bridge Learning to Real Results"
 description: "You've watched dozens of AI tutorials. You've bookmarked articles about ChatGPT prompts. You follow AI influencers on LinkedIn and feel like you understand the potential. Yet somehow, your career hasn't transformed. Your business isn't more effici..."
 pubDate: 2026-01-08
 heroImage: "/images/blog/ai-implementation-guide-bridge-learning-to-real-results.png"
-category: "AI Strategy"
+category: "Implementation"
+author: "Scott Armbruster"
 tags: ["newsletter"]
 ---
 

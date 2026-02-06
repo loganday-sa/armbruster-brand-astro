@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import CategoryList from '../../layouts/CategoryList.astro';
+import { CATEGORIES, POSTS_PER_PAGE } from '../../consts';
+
+export async function getStaticPaths() {
+	const allPosts = (await getCollection('blog'))
+		.filter((post) => !post.data.draft && post.data.category === 'Implementation')
+		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+	const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
+
+	return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, i) => ({
+		params: { page: String(i + 2) },
+		props: {
+			posts: allPosts.slice((i + 1) * POSTS_PER_PAGE, (i + 2) * POSTS_PER_PAGE),
+			currentPage: i + 2,
+			totalPages,
+			totalPosts: allPosts.length,
+		},
+	}));
+}
+
+const { posts, currentPage, totalPages, totalPosts } = Astro.props;
+const category = CATEGORIES['Implementation'];
+---
+
+<CategoryList
+	posts={posts}
+	category={category}
+	currentPage={currentPage}
+	totalPages={totalPages}
+	baseUrl="/implementation/"
+	totalPosts={totalPosts}
+/>
