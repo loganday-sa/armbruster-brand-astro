@@ -8,8 +8,6 @@ tags: ["ai-strategy", "roi", "implementation", "ai-agents"]
 featured: true
 ---
 
-![95% of AI Projects Fail. Here's How to Be in the 5%.](/images/blog/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent.png)
-
 # 95% of AI Projects Fail. Here's How to Be in the 5%.
 
 A client called me last month in a panic. His company had spent $340,000 on an AI initiative over nine months. Custom chatbot, internal knowledge base, fancy dashboard. The CEO wanted a progress report.
