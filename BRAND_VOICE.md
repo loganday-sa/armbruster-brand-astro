@@ -686,6 +686,55 @@ Curated AI developments relevant to implementation
 
 ---
 
+## 12. DALL-E Image Generation Guidelines
+
+### Base Style Prompt
+
+When generating images for this site via DALL-E, always include the following base style instructions in every prompt:
+
+> Create an image in a refined, cinematic illustration style that uses a limited color palette of deep blues, soft oranges, and warm ambient lighting. The visual mood should feel calm, focused, and professional. The scene should use strong contrast between warm light sources and cool surrounding shadows, similar to digital paintings lit by a single lamp or screen glow. Characters and objects should be rendered with clean lines, subtle gradients, and a slightly stylized, modern editorial illustration quality.
+
+### Brand Attributes (Always Include)
+
+Every DALL-E prompt must enforce these attributes:
+
+- Professional, thoughtful tone
+- Minimalist composition
+- Warm key light on the main subject with cool shadows
+- Smooth textures and subtle shading
+- A sense of deep concentration or intentional action
+- Slightly stylized human figures without exaggerated proportions
+- Consistent brand aesthetic across all images
+- **Absolutely no text, no letters, no numbers, and no visible writing anywhere in the image**
+
+### Color Palette
+
+- **Primary:** Deep blues (backgrounds, shadows)
+- **Accent:** Soft oranges (key light, warm highlights)
+- **Lighting:** Warm ambient lighting with strong contrast
+- **Shadows:** Cool-toned surrounding shadows
+
+### Composition Rules
+
+- Single focal subject with minimal clutter
+- Cinematic framing with intentional negative space
+- Light source typically from a lamp, screen, or warm directional source
+- Clean lines and subtle gradients over busy detail
+- Modern editorial illustration quality
+
+### Mandatory Negative Constraint
+
+Always append to every prompt:
+> Absolutely no text, no letters, no numbers, and no visible writing anywhere in the image
+
+### Example Prompt Structure
+
+```
+[Scene description specific to post topic]. Create an image in a refined, cinematic illustration style that uses a limited color palette of deep blues, soft oranges, and warm ambient lighting. The visual mood should feel calm, focused, and professional. The scene should use strong contrast between warm light sources and cool surrounding shadows, similar to digital paintings lit by a single lamp or screen glow. Characters and objects should be rendered with clean lines, subtle gradients, and a slightly stylized, modern editorial illustration quality. Maintain a professional, thoughtful tone with minimalist composition. Warm key light on the main subject with cool shadows. Smooth textures and subtle shading. A sense of deep concentration or intentional action. Slightly stylized human figures without exaggerated proportions. Absolutely no text, no letters, no numbers, and no visible writing anywhere in the image.
+```
+
+---
+
 ## Final Notes
 
 This guide represents Scott Armbruster's brand voice—a bridge builder between AI knowledge and implementation. Every piece of content should move readers from learning to doing, from curious to capable.
