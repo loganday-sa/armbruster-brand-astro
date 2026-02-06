@@ -107,3 +107,10 @@ The food bank's story isn't about AI being magical. It's about AI being useful w
 Every week, I share practical AI strategies like this one with small business owners and organizational leaders who want real results, not hype. If you want the actual prompt templates we built for this non-profit, plus frameworks for auditing your own communication tasks, join the newsletter.
 
 Reply to your welcome email with your biggest time drain. I read every response and often feature solutions in future editions.
+
+---
+
+**Related reading:**
+- [The One Habit That Separates AI Winners from Everyone Else](/blog/the-one-habit-that-separates-ai-winners-from-everyone-else)
+- [Case Study: 10-Hour Automation That Freed Up 20% of Work Time](/blog/case-study-10-hour-automation-that-freed-up-20-of-work-time)
+- [AI Implementation Guide: Bridge Learning to Real Results](/blog/ai-implementation-guide-bridge-learning-to-real-results)

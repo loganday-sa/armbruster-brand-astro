@@ -220,3 +220,10 @@ You do not need a full "AI strategy" to start. You need one well‑chosen proble
 Where are you currently considering AI in your business, and how does it score on this 5‑question checklist?
 
 Reply with one process you are thinking about, your quick answers to the five questions, and I can help you pressure‑test whether it is a strong AI opportunity or something to park for later.
+
+---
+
+**Related reading:**
+- [AI Adoption Is Central to Growth](/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
+- [The Starting Problem: Why Perfect Plans Kill Progress](/blog/the-starting-problem-why-perfect-plans-kill-progress)
+- [How a 6-Person Non-Profit Reclaimed 20 Hours Every Week](/blog/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to)

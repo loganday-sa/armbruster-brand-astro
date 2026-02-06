@@ -7,7 +7,7 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![AI Adoption Is Central to Growth: What That Actually Means for Your Business](https://awteihidxztbmdeulezb.supabase.co/storage/v1/object/public/newsletter-images/newsletter-6bf04615-48d0-4a18-a253-2bd73f7c7f6d-primary-1768162276527.png)
+![AI Adoption Is Central to Growth: What That Actually Means for Your Business](/images/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business.png)
 
 Most conversations about AI adoption start in the wrong place. They start with the technology: which tools, which platforms, which features. The real question is simpler and harder: what specific growth outcome are you trying to create?
 
@@ -98,6 +98,13 @@ AI adoption is central to growth because AI capabilities can address real busine
 If you're working through these questions and want to think them through with someone who's helped other small business owners and professionals navigate the same decisions, I'd welcome the conversation. You can [schedule a call here](https://armbruster-production.up.railway.app/contact?ref=the-bridge.ghost.io) to discuss what strategic AI adoption might look like for your specific situation.
 
 The opportunity is real. The question is whether you'll connect your adoption to your growth, or let them remain separate activities.
+
+---
+
+**Related reading:**
+- [The Starting Problem: Why Perfect Plans Kill Progress](/blog/the-starting-problem-why-perfect-plans-kill-progress)
+- [The 5-Question Checklist That Makes AI Worth It](/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
+- [AI Adoption Drives Small Business Growth](/blog/ai-adoption-drives-small-business-growth)
 
 ---
 

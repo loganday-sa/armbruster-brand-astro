@@ -85,3 +85,10 @@ Then tell me about it. I am genuinely curious what people are trying, what is wo
 If you want more conversations like this one, frameworks for actually implementing AI in a small business context rather than just learning about it, my newsletter goes out every Tuesday. No hype, no filler, just practical guidance from someone who spends every day helping business owners bridge the gap between knowing and doing.
 
 The tutorials will still be there when you get back. But right now, you have a creek to cross.
+
+---
+
+**Related reading:**
+- [AI Implementation Guide: Bridge Learning to Real Results](/blog/ai-implementation-guide-bridge-learning-to-real-results)
+- [Why your AI strategy is backwards](/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it)
+- [The Starting Problem: Why Perfect Plans Kill Progress](/blog/the-starting-problem-why-perfect-plans-kill-progress)

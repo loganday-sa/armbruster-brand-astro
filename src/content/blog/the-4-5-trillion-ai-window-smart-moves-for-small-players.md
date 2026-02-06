@@ -7,7 +7,7 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![The $4.5 Trillion AI Window: Smart Moves for Small Players](https://awteihidxztbmdeulezb.supabase.co/storage/v1/object/public/newsletter-images/newsletter-d3842f70-cb8e-43cb-b5e5-25cc2db2a4e1-primary-1768514806991.png)
+![The $4.5 Trillion AI Window: Smart Moves for Small Players](/images/blog/the-4-5-trillion-ai-window-smart-moves-for-small-players.png)
 
 # The $4.5 Trillion AI Window: Smart Moves for Small Players
 
@@ -72,6 +72,13 @@ We're currently in the experimentation phase, transitioning toward acceleration.
 The businesses that thrive in the AI economy won't be those with the most sophisticated technology. They'll be those that most clearly understand where AI adds value and where human expertise remains irreplaceable.
 
 That clarity comes from experimentation, not analysis. The $4.5 trillion opportunity belongs to those willing to start now, start small, and iterate quickly.
+
+---
+
+**Related reading:**
+- [How to Position Yourself for AI's Job Market Changes by 2030](/blog/how-to-position-yourself-for-ais-job-market-changes-by-2030)
+- [Side Business Success: LinkedIn's 60% Entrepreneur Surge](/blog/side-business-success-linkedins-60-entrepreneur-surge)
+- [AI Adoption Is Central to Growth](/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
 
 ---
 

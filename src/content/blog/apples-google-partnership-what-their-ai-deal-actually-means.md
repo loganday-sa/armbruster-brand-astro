@@ -7,7 +7,7 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![Apple's Google Partnership: What Their AI Deal Actually Means](https://awteihidxztbmdeulezb.supabase.co/storage/v1/object/public/newsletter-images/newsletter-d7f1a9a8-3ec1-45e9-8597-fa36551f908b-primary-1768259720661.png)
+![Apple's Google Partnership: What Their AI Deal Actually Means](/images/blog/apples-google-partnership-what-their-ai-deal-actually-means.png)
 
 Apple just announced that their next generation of Apple Foundation Models will be built on Google's Gemini technology. This is not a handoff arrangement like the current ChatGPT integration. Apple's core AI is about to run on Google's foundation.
 
@@ -84,6 +84,13 @@ Review your assumptions about where sensitive business information goes. Apple e
 Apple's decision to build their AI foundation on Google's technology represents a pragmatic acknowledgment that the AI race requires capabilities they could not build fast enough on their own. For users, the result should be substantially better AI features arriving sooner than Apple could deliver independently.
 
 What Siri limitations have frustrated you most? I'm curious whether the improvements coming this year will address the gaps that matter in your daily work.
+
+---
+
+**Related reading:**
+- [7 IT Leadership Challenges Coming in 2026](/blog/7-it-leadership-challenges-coming-in-2026-and-how-to-prepare)
+- [AI Strategy Guide: Clear Employee Communication](/blog/ai-strategy-guide-clear-employee-communication)
+- [How to Position Yourself for AI's Job Market Changes by 2030](/blog/how-to-position-yourself-for-ais-job-market-changes-by-2030)
 
 ---
 

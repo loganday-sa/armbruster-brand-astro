@@ -7,7 +7,7 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![The One Habit That Separates AI Winners from Everyone Else](https://awteihidxztbmdeulezb.supabase.co/storage/v1/object/public/newsletter-images/newsletter-b760ddfb-01f8-48b3-8dc8-ccc9200e4dc4-primary-1766333408545.png)
+![The One Habit That Separates AI Winners from Everyone Else](/images/blog/the-one-habit-that-separates-ai-winners-from-everyone-else.png)
 
 # The One Habit That Separates AI Winners from Everyone Else
 
@@ -136,5 +136,29 @@ One experiment per week. If you test five things simultaneously, you won't learn
 ****Mistake 3: Perfectionism Paralysis****  
 You're testing, not deploying company-wide systems. Quick and dirty experiments provide the most learning.
 
-****Mistake 4: Skipping the Debrief****  
-The learning happens in the Friday discussion, not
+**Mistake 4: Skipping the Debrief**
+The learning happens in the Friday discussion, not during the experiment itself. Without structured reflection, teams repeat mistakes and miss patterns that could accelerate adoption.
+
+**Mistake 5: Giving Up After One Bad Week**
+Not every experiment will succeed. That's the point. Failed experiments teach you what doesn't work in your specific context, which is just as valuable as finding what does.
+
+## Start This Week
+
+You don't need executive buy-in to begin. You don't need a budget or a strategy document. You need one AI tool, one specific task, and 30 minutes.
+
+Pick a task you do every week. Try using an AI tool to help. Document what happens. Share with one colleague.
+
+That's your first experiment. Do it again next week. And the week after.
+
+Within a month, you'll have more practical AI knowledge than most professionals gain in a year of reading articles and attending conferences.
+
+The teams that win with AI aren't smarter or better funded. They simply experiment more consistently. Start your weekly habit today.
+
+---
+
+**Related reading:**
+- [The Starting Problem: Why Perfect Plans Kill Progress](/blog/the-starting-problem-why-perfect-plans-kill-progress)
+- [AI Implementation Guide: Bridge Learning to Real Results](/blog/ai-implementation-guide-bridge-learning-to-real-results)
+- [How a 6-Person Non-Profit Reclaimed 20 Hours Every Week](/blog/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to)
+
+Ready to build a structured AI experimentation program for your team? [Schedule a call to discuss your approach](https://armbruster-production.up.railway.app/contact).

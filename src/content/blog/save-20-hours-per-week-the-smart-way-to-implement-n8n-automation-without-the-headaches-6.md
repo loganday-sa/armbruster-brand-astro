@@ -90,4 +90,11 @@ If any process involves customer-facing operations, handles sensitive data, or c
 
 Automation done right transforms businesses. Automation done wrong creates expensive technical debt and operational risk.
 
-What process in your business would benefit most from automation? [Reply and tell me about your biggest workflow bottleneck](mailto:reply@example.com). I'll share specific recommendations for your situation and help you choose the approach that fits your timeline and risk tolerance.
+What process in your business would benefit most from automation? [Tell me about your biggest workflow bottleneck](https://armbruster-production.up.railway.app/contact). I'll share specific recommendations for your situation and help you choose the approach that fits your timeline and risk tolerance.
+
+---
+
+**Related reading:**
+- [Save 20+ Hours Weekly with n8n's No-Code AI Automation](/blog/save-20-hours-weekly-with-n8ns-no-code-ai-automation)
+- [Case Study: 10-Hour Automation That Freed Up 20% of Work Time](/blog/case-study-10-hour-automation-that-freed-up-20-of-work-time)
+- [How a 6-Person Non-Profit Reclaimed 20 Hours Every Week](/blog/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to)

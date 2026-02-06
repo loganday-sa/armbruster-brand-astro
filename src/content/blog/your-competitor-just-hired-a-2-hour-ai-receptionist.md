@@ -120,8 +120,15 @@ Qualify buyers, schedule showings, and provide property information. Voice autom
 
 Join small businesses already capturing more revenue and improving customer service with virtual receptionists. Our proven 4-week implementation gets you operational fast.
 
-[Schedule Your Call Automation Consultation](#)
+[Schedule Your Call Automation Consultation](https://armbruster-production.up.railway.app/contact)
 
 Telos Dynamics - Making AI practical and profitable
+
+---
+
+**Related reading:**
+- [Stop losing $10K monthly to missed calls](/blog/stop-losing-10k-monthly-to-missed-calls-urgent-fix)
+- [Save 20+ Hours Weekly with n8n's No-Code AI Automation](/blog/save-20-hours-weekly-with-n8ns-no-code-ai-automation)
+- [AI Adoption Drives Small Business Growth](/blog/ai-adoption-drives-small-business-growth)
 
 Ready to bridge the gap from learning to implementation?

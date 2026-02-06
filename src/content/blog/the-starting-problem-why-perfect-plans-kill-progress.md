@@ -7,7 +7,7 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![The Starting Problem: Why Perfect Plans Kill Progress](https://awteihidxztbmdeulezb.supabase.co/storage/v1/object/public/newsletter-images/newsletter-aeaf3ae4-9c01-4b65-92c5-c7301e0cd999-primary-1768516961179.png)
+![The Starting Problem: Why Perfect Plans Kill Progress](/images/blog/the-starting-problem-why-perfect-plans-kill-progress.png)
 
 # The Starting Problem: Why Perfect Plans Kill Progress
 
@@ -88,6 +88,13 @@ The market rewards speed of learning over perfection of planning. Your future se
 The uncomfortable truth is that starting conditions are never ideal. Successful people start anyway and figure it out as they go. The best time to plant a tree was 20 years ago. The second best time is now.
 
 What will you start today?
+
+---
+
+**Related reading:**
+- [AI Adoption Is Central to Growth](/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
+- [The One Habit That Separates AI Winners from Everyone Else](/blog/the-one-habit-that-separates-ai-winners-from-everyone-else)
+- [Side Business Success: LinkedIn's 60% Entrepreneur Surge](/blog/side-business-success-linkedins-60-entrepreneur-surge)
 
 [Schedule a call to discuss this opportunity here](https://armbruster-production.up.railway.app/contact?ref=the-bridge.ghost.io) and we can explore how to turn your "someday" project into this week's priority.
 

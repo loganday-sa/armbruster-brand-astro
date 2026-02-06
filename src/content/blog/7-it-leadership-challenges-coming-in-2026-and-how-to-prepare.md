@@ -7,7 +7,7 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![7 IT Leadership Challenges Coming in 2026 (And How to Prepare)](https://awteihidxztbmdeulezb.supabase.co/storage/v1/object/public/newsletter-images/newsletter-83bbc675-f467-4d8c-86c1-51cbaa94ddfb-primary-1768245023311.png)
+![7 IT Leadership Challenges Coming in 2026 (And How to Prepare)](/images/blog/7-it-leadership-challenges-coming-in-2026-and-how-to-prepare.png)
 
 Most IT leaders I talk to are planning for 2026 with 2023 assumptions. They're budgeting for incremental improvements while their organizations expect transformational change. They're hiring for roles that won't exist in 18 months while struggling to fill positions that will matter more than ever.
 
@@ -94,6 +94,13 @@ The good news? You have time to prepare. Not a lot of time. But enough to start 
 The organizations that start addressing these challenges in 2025 will have significant advantages over those who wait until they're forced to react. That preparation starts with honest assessment: where are your gaps, and what can you realistically address in the next 6 to 12 months?
 
 If you'd like to discuss how these challenges apply to your specific situation, I'm happy to talk through what you're seeing and what preparation might make sense for your organization.
+
+---
+
+**Related reading:**
+- [AI Strategy Guide: Clear Employee Communication](/blog/ai-strategy-guide-clear-employee-communication)
+- [Apple's Google Partnership: What Their AI Deal Actually Means](/blog/apples-google-partnership-what-their-ai-deal-actually-means)
+- [Why your AI strategy is backwards](/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it)
 
 [Schedule a Call to Discuss Your 2026 Strategy](https://armbruster-production.up.railway.app/contact?ref=the-bridge.ghost.io)
 

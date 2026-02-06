@@ -57,4 +57,11 @@ After deployment the firm reported these measurable outcomes within the first mo
 
 ****Final note.**** This case study is anonymized, but the pattern is common. A short, focused investment in automation often creates persistent capacity gains, especially for small teams. The key is selecting the right process and designing safe, auditable automations.
 
+---
+
+**Related reading:**
+- [Save 20+ Hours Per Week: The Smart Way to Implement n8n Automation](/blog/save-20-hours-per-week-the-smart-way-to-implement-n8n-automation-without-the-headaches-6)
+- [How a 6-Person Non-Profit Reclaimed 20 Hours Every Week](/blog/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to)
+- [The 5-Question Checklist That Makes AI Worth It](/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
+
 Want the one-page process map template we used to scope this project? Book a short consult and I will send the template and a 30-minute checklist review.
