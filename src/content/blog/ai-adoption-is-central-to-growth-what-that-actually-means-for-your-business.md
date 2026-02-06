@@ -7,8 +7,6 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![AI Adoption Is Central to Growth: What That Actually Means for Your Business](/images/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business.png)
-
 Most conversations about AI adoption start in the wrong place. They start with the technology: which tools, which platforms, which features. The real question is simpler and harder: what specific growth outcome are you trying to create?
 
 I see this constantly with small business owners and mid-career professionals. There's genuine interest in AI, genuine awareness that something important is happening, and genuine confusion about where to begin. The confusion isn't about capability. It's about connection. How does this tool connect to that outcome?

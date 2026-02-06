@@ -7,8 +7,6 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![7 IT Leadership Challenges Coming in 2026 (And How to Prepare)](/images/blog/7-it-leadership-challenges-coming-in-2026-and-how-to-prepare.png)
-
 Most IT leaders I talk to are planning for 2026 with 2023 assumptions. They're budgeting for incremental improvements while their organizations expect transformational change. They're hiring for roles that won't exist in 18 months while struggling to fill positions that will matter more than ever.
 
 The gap between what's coming and what most IT departments are prepared for isn't small. It's structural.

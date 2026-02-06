@@ -7,8 +7,6 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![The One Habit That Separates AI Winners from Everyone Else](/images/blog/the-one-habit-that-separates-ai-winners-from-everyone-else.png)
-
 # The One Habit That Separates AI Winners from Everyone Else
 
 I've worked with Fortune 500 companies and small teams across every industry. I've seen AI initiatives that transformed entire departments and others that died quiet deaths in endless planning meetings.

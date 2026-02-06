@@ -7,8 +7,6 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![The $4.5 Trillion AI Window: Smart Moves for Small Players](/images/blog/the-4-5-trillion-ai-window-smart-moves-for-small-players.png)
-
 # The $4.5 Trillion AI Window: Smart Moves for Small Players
 
 Cognizant's latest research puts AI's economic potential at $4.5 trillion annually. While tech giants battle over infrastructure and models, a different story is unfolding: the real winners might be the nimble players who understand that AI's biggest opportunity isn't building it, but applying it intelligently.

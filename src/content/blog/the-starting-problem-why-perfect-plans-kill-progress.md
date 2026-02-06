@@ -7,8 +7,6 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![The Starting Problem: Why Perfect Plans Kill Progress](/images/blog/the-starting-problem-why-perfect-plans-kill-progress.png)
-
 # The Starting Problem: Why Perfect Plans Kill Progress
 
 I watched a brilliant executive spend 18 months perfecting a business plan for a consulting practice. Market research, competitive analysis, financial projections down to the penny. When she finally launched, the market had shifted, two competitors had emerged, and her assumptions were wrong.

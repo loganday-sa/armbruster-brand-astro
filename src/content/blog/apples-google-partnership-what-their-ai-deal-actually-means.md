@@ -7,8 +7,6 @@ category: "AI Strategy"
 tags: ["newsletter"]
 ---
 
-![Apple's Google Partnership: What Their AI Deal Actually Means](/images/blog/apples-google-partnership-what-their-ai-deal-actually-means.png)
-
 Apple just announced that their next generation of Apple Foundation Models will be built on Google's Gemini technology. This is not a handoff arrangement like the current ChatGPT integration. Apple's core AI is about to run on Google's foundation.
 
 The multi-year collaboration means Gemini will power future Apple Intelligence features, including a more personalized Siri coming later this year. Apple evaluated the options and concluded that Google's AI provides the most capable foundation for what they want to build.
