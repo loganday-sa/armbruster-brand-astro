@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import WaveBackground from '../components/WaveBackground.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import scottPhoto from '../assets/scott-photo-1.jpg';
@@ -11,19 +12,22 @@ const latestPosts = (await getCollection('blog'))
 ---
 
 <Layout title="Scott Armbruster - AI Implementation & Education" description="AI Implementation Specialist helping professionals build AI-powered income streams and organizations deploy AI systems that deliver real ROI.">
-  <!-- Hero Section -->
-  <section class="pt-32 pb-20 px-6">
-    <div class="max-w-6xl mx-auto">
+  <!-- Hero Section with Wave Background -->
+  <section class="relative pt-32 pb-20 px-6 overflow-hidden min-h-[90vh] flex items-center">
+    <WaveBackground />
+    <!-- Subtle radial glow behind hero -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_50%,rgba(120,60,220,0.12),transparent)] pointer-events-none"></div>
+    <div class="relative z-10 max-w-6xl mx-auto w-full">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <!-- Left: Text Content -->
         <div>
-          <div class="inline-block mb-6 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-cyan-400 text-sm">
+          <div class="inline-block mb-6 px-4 py-2 bg-violet-500/10 border border-violet-500/30 rounded-full text-violet-300 text-sm font-medium backdrop-blur-sm">
             AI Implementation Specialist
           </div>
 
           <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Hi, I'm{' '}
-            <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span class="bg-gradient-to-r from-violet-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
               Scott Armbruster
             </span>
           </h1>
@@ -42,7 +46,7 @@ const latestPosts = (await getCollection('blog'))
           <div class="flex flex-col sm:flex-row gap-4">
             <a
               href="/services"
-              class="bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition inline-flex items-center justify-center gap-2"
+              class="bg-gradient-to-r from-violet-600 to-cyan-500 px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-500/40 transition inline-flex items-center justify-center gap-2"
             >
               Explore Services
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,7 +55,7 @@ const latestPosts = (await getCollection('blog'))
             </a>
             <a
               href="/about"
-              class="bg-slate-800 hover:bg-slate-700 px-8 py-4 rounded-full font-semibold transition inline-flex items-center justify-center gap-2"
+              class="bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 px-8 py-4 rounded-full font-semibold transition inline-flex items-center justify-center gap-2 backdrop-blur-sm"
             >
               Learn More About Me
             </a>
@@ -60,15 +64,15 @@ const latestPosts = (await getCollection('blog'))
 
         <!-- Right: Profile Card -->
         <div class="flex justify-center">
-          <div class="bg-gradient-to-br from-cyan-500/20 to-blue-600/20 rounded-2xl p-1 max-w-sm">
-            <div class="bg-slate-900 rounded-2xl p-8">
+          <div class="bg-gradient-to-br from-violet-500/20 to-cyan-500/20 rounded-2xl p-1 max-w-sm backdrop-blur-sm">
+            <div class="bg-slate-950/80 backdrop-blur-md rounded-2xl p-8">
               <div class="text-center">
                 <Image
                   src={scottPhoto}
                   alt="Scott Armbruster"
                   width={160}
                   height={160}
-                  class="w-40 h-40 mx-auto mb-6 rounded-full object-cover object-[30%_center]"
+                  class="w-40 h-40 mx-auto mb-6 rounded-full object-cover object-[30%_center] ring-2 ring-violet-500/30"
                   format="webp"
                   quality={80}
                 />
@@ -83,7 +87,7 @@ const latestPosts = (await getCollection('blog'))
                     href="https://youtube.com/@loganday"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="w-10 h-10 bg-slate-800 hover:bg-cyan-500/20 rounded-full flex items-center justify-center transition"
+                    class="w-10 h-10 bg-white/5 hover:bg-violet-500/20 rounded-full flex items-center justify-center transition"
                     aria-label="YouTube"
                   >
                     <svg class="w-5 h-5 text-slate-300" fill="currentColor" viewBox="0 0 24 24">
@@ -94,7 +98,7 @@ const latestPosts = (await getCollection('blog'))
                     href="https://linkedin.com/in/loganday"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="w-10 h-10 bg-slate-800 hover:bg-cyan-500/20 rounded-full flex items-center justify-center transition"
+                    class="w-10 h-10 bg-white/5 hover:bg-violet-500/20 rounded-full flex items-center justify-center transition"
                     aria-label="LinkedIn"
                   >
                     <svg class="w-5 h-5 text-slate-300" fill="currentColor" viewBox="0 0 24 24">
@@ -103,7 +107,7 @@ const latestPosts = (await getCollection('blog'))
                   </a>
                   <a
                     href="/contact"
-                    class="w-10 h-10 bg-slate-800 hover:bg-cyan-500/20 rounded-full flex items-center justify-center transition"
+                    class="w-10 h-10 bg-white/5 hover:bg-violet-500/20 rounded-full flex items-center justify-center transition"
                     aria-label="Contact"
                   >
                     <svg class="w-5 h-5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -113,13 +117,13 @@ const latestPosts = (await getCollection('blog'))
                 </div>
 
                 <!-- Stats -->
-                <div class="flex justify-center gap-6 text-sm border-t border-slate-800 pt-6">
+                <div class="flex justify-center gap-6 text-sm border-t border-white/10 pt-6">
                   <div class="text-center">
-                    <div class="text-2xl font-bold text-cyan-400">23+</div>
+                    <div class="text-2xl font-bold text-violet-400">23+</div>
                     <div class="text-slate-500">Years Tech</div>
                   </div>
                   <div class="text-center">
-                    <div class="text-2xl font-bold text-cyan-400">10+</div>
+                    <div class="text-2xl font-bold text-violet-400">10+</div>
                     <div class="text-slate-500">Years Consulting</div>
                   </div>
                 </div>
@@ -132,12 +136,14 @@ const latestPosts = (await getCollection('blog'))
   </section>
 
   <!-- What I Do Section -->
-  <section class="py-20 px-6 bg-gradient-to-br from-cyan-900/10 to-blue-900/10 border-y border-cyan-500/10">
-    <div class="max-w-6xl mx-auto">
+  <section class="relative py-20 px-6 border-y border-white/5">
+    <!-- Subtle gradient backdrop -->
+    <div class="absolute inset-0 bg-gradient-to-b from-violet-950/20 via-transparent to-transparent pointer-events-none"></div>
+    <div class="relative z-10 max-w-6xl mx-auto">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold mb-4">What I Do</h2>
         <p class="text-xl text-slate-300 max-w-2xl mx-auto">
-          I bridge the gap between AI knowledge and AI implementation-helping you move from
+          I bridge the gap between AI knowledge and AI implementation -- helping you move from
           curious to confident to capable.
         </p>
       </div>
@@ -146,18 +152,18 @@ const latestPosts = (await getCollection('blog'))
         <!-- For Professionals -->
         <a
           href="/education"
-          class="group bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-500/30 rounded-2xl p-8 hover:border-cyan-500/60 hover:shadow-xl hover:shadow-cyan-500/10 transition"
+          class="group bg-white/[0.03] border border-white/10 rounded-2xl p-8 hover:border-violet-500/40 hover:shadow-xl hover:shadow-violet-500/10 transition backdrop-blur-sm"
         >
           <div class="flex items-center gap-4 mb-6">
-            <div class="bg-cyan-500/20 p-4 rounded-xl">
-              <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="bg-violet-500/15 p-4 rounded-xl">
+              <svg class="w-8 h-8 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path d="M12 14l9-5-9-5-9 5 9 5z"/>
                 <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
               </svg>
             </div>
             <div>
-              <div class="text-sm text-cyan-400 font-semibold">FOR PROFESSIONALS</div>
+              <div class="text-sm text-violet-400 font-semibold">FOR PROFESSIONALS</div>
               <h3 class="text-2xl font-bold">AI Education</h3>
             </div>
           </div>
@@ -165,7 +171,7 @@ const latestPosts = (await getCollection('blog'))
             Build AI-powered income streams and future-proof your career. From group coaching to
             1:1 strategy sessions, I help you master the tools and launch your AI side business.
           </p>
-          <div class="text-cyan-400 group-hover:text-cyan-300 inline-flex items-center gap-2 font-semibold">
+          <div class="text-violet-400 group-hover:text-violet-300 inline-flex items-center gap-2 font-semibold">
             Learn More
             <svg class="w-5 h-5 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -176,16 +182,16 @@ const latestPosts = (await getCollection('blog'))
         <!-- For Organizations -->
         <a
           href="/agency"
-          class="group bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-500/30 rounded-2xl p-8 hover:border-blue-500/60 hover:shadow-xl hover:shadow-blue-500/10 transition"
+          class="group bg-white/[0.03] border border-white/10 rounded-2xl p-8 hover:border-cyan-500/40 hover:shadow-xl hover:shadow-cyan-500/10 transition backdrop-blur-sm"
         >
           <div class="flex items-center gap-4 mb-6">
-            <div class="bg-blue-500/20 p-4 rounded-xl">
-              <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="bg-cyan-500/15 p-4 rounded-xl">
+              <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
               </svg>
             </div>
             <div>
-              <div class="text-sm text-blue-400 font-semibold">FOR ORGANIZATIONS</div>
+              <div class="text-sm text-cyan-400 font-semibold">FOR ORGANIZATIONS</div>
               <h3 class="text-2xl font-bold">AI Agency Services</h3>
             </div>
           </div>
@@ -194,7 +200,7 @@ const latestPosts = (await getCollection('blog'))
             chatbots, workflow automation, and strategic advisory for mission-driven
             organizations.
           </p>
-          <div class="text-blue-400 group-hover:text-blue-300 inline-flex items-center gap-2 font-semibold">
+          <div class="text-cyan-400 group-hover:text-cyan-300 inline-flex items-center gap-2 font-semibold">
             Learn More
             <svg class="w-5 h-5 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -206,7 +212,7 @@ const latestPosts = (await getCollection('blog'))
       <div class="mt-8 text-center">
         <a
           href="/services"
-          class="inline-flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition"
+          class="inline-flex items-center gap-2 text-slate-400 hover:text-violet-400 transition"
         >
           View all services
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -223,40 +229,40 @@ const latestPosts = (await getCollection('blog'))
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold mb-4">Why Work With Me</h2>
         <p class="text-xl text-slate-300">
-          I've been on both sides-and that makes all the difference.
+          I've been on both sides -- and that makes all the difference.
         </p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-8 hover:border-cyan-500/30 transition">
-          <svg class="w-10 h-10 text-cyan-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white/[0.03] border border-white/10 rounded-xl p-8 hover:border-violet-500/30 transition">
+          <svg class="w-10 h-10 text-violet-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
           </svg>
           <h3 class="text-xl font-bold mb-3">Real-World Experience</h3>
           <p class="text-slate-400">
             23+ years building enterprise systems and 10+ years consulting Fortune 500
-            companies. I know what works in the real world-not just in tutorials.
+            companies. I know what works in the real world -- not just in tutorials.
           </p>
         </div>
 
-        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-8 hover:border-cyan-500/30 transition">
-          <svg class="w-10 h-10 text-cyan-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white/[0.03] border border-white/10 rounded-xl p-8 hover:border-violet-500/30 transition">
+          <svg class="w-10 h-10 text-violet-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
           </svg>
           <h3 class="text-xl font-bold mb-3">Practical Implementation</h3>
           <p class="text-slate-400">
-            I don't just teach theory-I help you implement. Whether you're building
+            I don't just teach theory -- I help you implement. Whether you're building
             your first automation or deploying enterprise AI, we get it done together.
           </p>
         </div>
 
-        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-8 hover:border-cyan-500/30 transition">
-          <svg class="w-10 h-10 text-cyan-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white/[0.03] border border-white/10 rounded-xl p-8 hover:border-violet-500/30 transition">
+          <svg class="w-10 h-10 text-violet-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
           </svg>
           <h3 class="text-xl font-bold mb-3">Results-Focused</h3>
           <p class="text-slate-400">
-            No fluff, no hype. I measure success by your outcomes-did you launch? Did you save
+            No fluff, no hype. I measure success by your outcomes -- did you launch? Did you save
             time? Did you generate revenue? That's what matters.
           </p>
         </div>
@@ -265,8 +271,13 @@ const latestPosts = (await getCollection('blog'))
   </section>
 
   <!-- Featured Content / Blog Preview -->
-  <section class="py-20 px-6 bg-slate-900/50">
-    <div class="max-w-6xl mx-auto">
+  <section class="relative py-20 px-6 overflow-hidden">
+    <!-- Faded wave in blog section -->
+    <div class="absolute inset-0 opacity-30">
+      <WaveBackground />
+    </div>
+    <div class="absolute inset-0 bg-slate-950/60 pointer-events-none"></div>
+    <div class="relative z-10 max-w-6xl mx-auto">
       <div class="flex flex-col md:flex-row justify-between items-center mb-12">
         <div>
           <h2 class="text-4xl font-bold mb-2">Latest Insights</h2>
@@ -274,7 +285,7 @@ const latestPosts = (await getCollection('blog'))
         </div>
         <a
           href="/blog"
-          class="mt-4 md:mt-0 text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-2"
+          class="mt-4 md:mt-0 text-violet-400 hover:text-violet-300 inline-flex items-center gap-2"
         >
           View all posts
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -285,7 +296,7 @@ const latestPosts = (await getCollection('blog'))
 
       <div class="grid md:grid-cols-3 gap-8">
         {latestPosts.map((post) => (
-          <a href={`/blog/${post.slug}`} class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-cyan-500/30 transition group">
+          <a href={`/blog/${post.slug}`} class="bg-slate-950/70 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden hover:border-violet-500/40 transition group">
             {post.data.heroImage ? (
               <div class="h-40 overflow-hidden">
                 <img
@@ -296,11 +307,11 @@ const latestPosts = (await getCollection('blog'))
                 />
               </div>
             ) : (
-              <div class="h-40 bg-gradient-to-br from-cyan-900/50 to-blue-900/50"></div>
+              <div class="h-40 bg-gradient-to-br from-violet-900/30 to-cyan-900/30"></div>
             )}
             <div class="p-6">
-              <div class="text-sm text-cyan-400 mb-2">{post.data.category}</div>
-              <h3 class="text-lg font-bold mb-2 group-hover:text-cyan-400 transition line-clamp-2">
+              <div class="text-sm text-violet-400 mb-2">{post.data.category}</div>
+              <h3 class="text-lg font-bold mb-2 group-hover:text-violet-300 transition line-clamp-2">
                 {post.data.title}
               </h3>
               <p class="text-slate-400 text-sm line-clamp-2">
@@ -314,17 +325,17 @@ const latestPosts = (await getCollection('blog'))
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 px-6 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border-t border-cyan-500/20">
+  <section class="py-20 px-6 bg-gradient-to-br from-violet-950/30 to-cyan-950/20 border-t border-white/5">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Get Started?</h2>
       <p class="text-xl text-slate-300 mb-8">
-        Whether you're looking to learn AI skills or implement AI systems-I'm here to
+        Whether you're looking to learn AI skills or implement AI systems -- I'm here to
         help you cross the bridge.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
           href="/services"
-          class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition"
+          class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-violet-600 to-cyan-500 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg hover:shadow-violet-500/40 transition"
         >
           Explore Services
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -333,7 +344,7 @@ const latestPosts = (await getCollection('blog'))
         </a>
         <a
           href="/contact"
-          class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 px-8 py-4 rounded-full text-lg font-semibold transition"
+          class="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 px-8 py-4 rounded-full text-lg font-semibold transition"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>

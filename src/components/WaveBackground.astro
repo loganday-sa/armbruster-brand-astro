@@ -1,0 +1,166 @@
+---
+// Animated flowing wave background - purple/violet glowing lines with floating dots
+// Renders behind page content as an absolutely positioned canvas element
+interface Props {
+  /** Use fixed positioning (full page) vs absolute (within parent) */
+  fullPage?: boolean;
+}
+
+const { fullPage = false } = Astro.props;
+---
+
+<canvas
+  data-wave-canvas
+  class:list={[
+    "pointer-events-none z-0",
+    fullPage ? "fixed inset-0 w-full h-full" : "absolute inset-0 w-full h-full"
+  ]}
+  aria-hidden="true"
+></canvas>
+
+<script>
+  document.querySelectorAll<HTMLCanvasElement>('[data-wave-canvas]').forEach((canvas) => {
+    // Skip if already initialized
+    if (canvas.dataset.waveInit) return;
+    canvas.dataset.waveInit = '1';
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let animationId = 0;
+    let time = Math.random() * 100; // Random start so multiple instances look different
+
+    const WAVE_COUNT = 14;
+    const DOT_COUNT = 18;
+    const SPEED = 0.004;
+
+    interface Wave {
+      amplitude: number;
+      frequency: number;
+      phase: number;
+      speed: number;
+      opacity: number;
+      width: number;
+      yOffset: number;
+    }
+
+    interface Dot {
+      waveIndex: number;
+      t: number;
+      speed: number;
+      radius: number;
+      opacity: number;
+    }
+
+    const waves: Wave[] = Array.from({ length: WAVE_COUNT }, () => ({
+      amplitude: 40 + Math.random() * 80,
+      frequency: 0.8 + Math.random() * 1.2,
+      phase: Math.random() * Math.PI * 2,
+      speed: (0.3 + Math.random() * 0.7) * (Math.random() > 0.5 ? 1 : -1),
+      opacity: 0.15 + Math.random() * 0.35,
+      width: 0.8 + Math.random() * 1.5,
+      yOffset: -0.15 + Math.random() * 0.3,
+    }));
+
+    const dots: Dot[] = Array.from({ length: DOT_COUNT }, () => ({
+      waveIndex: Math.floor(Math.random() * WAVE_COUNT),
+      t: Math.random(),
+      speed: 0.0002 + Math.random() * 0.0006,
+      radius: 1.5 + Math.random() * 2.5,
+      opacity: 0.4 + Math.random() * 0.6,
+    }));
+
+    function resize() {
+      const dpr = window.devicePixelRatio || 1;
+      const parent = canvas.parentElement || document.body;
+      const rect = parent.getBoundingClientRect();
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      canvas.style.width = rect.width + 'px';
+      canvas.style.height = rect.height + 'px';
+      ctx!.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function getWaveY(wave: Wave, x: number, w: number, h: number, t: number): number {
+      const centerY = h * (0.5 + wave.yOffset);
+      const nx = (x / w) * Math.PI * 2 * wave.frequency;
+      return centerY +
+        wave.amplitude * Math.sin(nx + wave.phase + t * wave.speed) +
+        wave.amplitude * 0.3 * Math.sin(nx * 2.3 + t * wave.speed * 0.7 + 1.2);
+    }
+
+    function draw() {
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      if (!w || !h) { animationId = requestAnimationFrame(draw); return; }
+      ctx!.clearRect(0, 0, w, h);
+
+      for (const wave of waves) {
+        ctx!.beginPath();
+        ctx!.strokeStyle = `rgba(147, 85, 255, ${wave.opacity})`;
+        ctx!.lineWidth = wave.width;
+        ctx!.shadowColor = 'rgba(147, 85, 255, 0.3)';
+        ctx!.shadowBlur = 6;
+
+        const step = 3;
+        for (let x = -10; x <= w + 10; x += step) {
+          const y = getWaveY(wave, x, w, h, time);
+          if (x === -10) ctx!.moveTo(x, y);
+          else ctx!.lineTo(x, y);
+        }
+        ctx!.stroke();
+        ctx!.shadowBlur = 0;
+      }
+
+      for (const dot of dots) {
+        dot.t += dot.speed;
+        if (dot.t > 1) dot.t -= 1;
+        if (dot.t < 0) dot.t += 1;
+
+        const wave = waves[dot.waveIndex];
+        const x = dot.t * w;
+        const y = getWaveY(wave, x, w, h, time);
+
+        const grad = ctx!.createRadialGradient(x, y, 0, x, y, dot.radius * 4);
+        grad.addColorStop(0, `rgba(190, 140, 255, ${dot.opacity * 0.8})`);
+        grad.addColorStop(0.5, `rgba(147, 85, 255, ${dot.opacity * 0.3})`);
+        grad.addColorStop(1, 'rgba(147, 85, 255, 0)');
+        ctx!.fillStyle = grad;
+        ctx!.beginPath();
+        ctx!.arc(x, y, dot.radius * 4, 0, Math.PI * 2);
+        ctx!.fill();
+
+        ctx!.fillStyle = `rgba(220, 200, 255, ${dot.opacity})`;
+        ctx!.beginPath();
+        ctx!.arc(x, y, dot.radius, 0, Math.PI * 2);
+        ctx!.fill();
+      }
+
+      time += SPEED;
+      animationId = requestAnimationFrame(draw);
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            if (!animationId) animationId = requestAnimationFrame(draw);
+          } else {
+            if (animationId) { cancelAnimationFrame(animationId); animationId = 0; }
+          }
+        }
+      },
+      { threshold: 0 }
+    );
+
+    resize();
+    observer.observe(canvas);
+    window.addEventListener('resize', resize);
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      draw();
+      cancelAnimationFrame(animationId);
+      animationId = 0;
+    }
+  });
+</script>
