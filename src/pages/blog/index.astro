@@ -29,12 +29,12 @@ function getReadingTime(body: string) {
   <!-- Hero Section -->
   <section class="pt-32 pb-12 px-6">
     <div class="max-w-6xl mx-auto text-center">
-      <div class="inline-block px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-cyan-400 text-sm mb-6">
+      <p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-6">
         AI Insights & Strategy
-      </div>
+      </p>
       <h1 class="text-4xl md:text-6xl font-bold mb-6">
         The{' '}
-        <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+        <span class="text-white">
           AI Implementation
         </span>{' '}
         Blog
@@ -66,12 +66,12 @@ function getReadingTime(body: string) {
   {featuredPost && (
     <section class="py-12 px-6" data-category={featuredPost.data.category}>
       <div class="max-w-6xl mx-auto">
-        <a href={`/blog/${featuredPost.slug}`} class="block bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-500/30 rounded-2xl p-8 md:p-12 hover:shadow-xl hover:shadow-cyan-500/20 transition">
+        <a href={`/blog/${featuredPost.slug}`} class="block bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-12 hover:border-slate-700 transition">
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <div class="inline-block px-3 py-1 bg-cyan-500/20 border border-cyan-500/40 rounded-full text-cyan-400 text-xs font-semibold mb-4">
+              <p class="text-blue-400 text-xs font-semibold tracking-wide uppercase mb-4">
                 FEATURED
-              </div>
+              </p>
               <h2 class="text-3xl font-bold mb-4 leading-tight">{featuredPost.data.title}</h2>
               <p class="text-slate-300 mb-6 text-lg">{featuredPost.data.description}</p>
               <div class="flex items-center gap-6 text-sm text-slate-400 mb-6">
@@ -88,7 +88,7 @@ function getReadingTime(body: string) {
                   <span>{getReadingTime(featuredPost.body || '')}</span>
                 </div>
               </div>
-              <span class="inline-flex items-center gap-2 text-cyan-400 font-semibold">
+              <span class="inline-flex items-center gap-2 text-blue-400 font-semibold">
                 Read Article
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -96,7 +96,7 @@ function getReadingTime(body: string) {
               </span>
             </div>
             {featuredPost.data.heroImage && (
-              <div class="rounded-xl overflow-hidden border border-cyan-500/20">
+              <div class="rounded-xl overflow-hidden border border-slate-800">
                 <img
                   src={featuredPost.data.heroImage}
                   alt={featuredPost.data.title}
@@ -123,7 +123,7 @@ function getReadingTime(body: string) {
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="posts-grid">
         {posts.map((post) => (
-          <article class="post-card bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-cyan-500/50 transition group" data-category={post.data.category}>
+          <article class="post-card bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition group" data-category={post.data.category}>
             {post.data.heroImage ? (
               <div class="aspect-video overflow-hidden">
                 <img
@@ -134,8 +134,8 @@ function getReadingTime(body: string) {
                 />
               </div>
             ) : (
-              <div class="aspect-video bg-gradient-to-br from-cyan-500/10 to-blue-600/10 flex items-center justify-center">
-                <svg class="w-12 h-12 text-cyan-400 group-hover:scale-110 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="aspect-video bg-slate-900 flex items-center justify-center">
+                <svg class="w-12 h-12 text-blue-400 group-hover:scale-110 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
                 </svg>
               </div>
@@ -143,12 +143,12 @@ function getReadingTime(body: string) {
 
             <div class="p-6">
               <div class="flex items-center gap-2 mb-3">
-                <span class="inline-block px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-cyan-400 text-xs font-semibold">
+                <span class="inline-block px-3 py-1 bg-blue-600/10 border border-slate-800 rounded-lg text-blue-400 text-xs font-semibold">
                   {post.data.category}
                 </span>
               </div>
 
-              <h3 class="text-xl font-bold mb-3 group-hover:text-cyan-400 transition line-clamp-2">
+              <h3 class="text-xl font-bold mb-3 group-hover:text-blue-400 transition line-clamp-2">
                 {post.data.title}
               </h3>
 
@@ -178,7 +178,7 @@ function getReadingTime(body: string) {
 
               <a
                 href={`/blog/${post.slug}`}
-                class="text-cyan-400 hover:text-cyan-300 font-semibold text-sm inline-flex items-center gap-2 group-hover:gap-3 transition-all"
+                class="text-blue-400 hover:text-white font-semibold text-sm inline-flex items-center gap-2 group-hover:gap-3 transition-all"
               >
                 Read More
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -203,7 +203,7 @@ function getReadingTime(body: string) {
   </section>
 
   <!-- Newsletter Signup -->
-  <section class="py-20 px-6 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border-y border-cyan-500/20">
+  <section class="py-20 px-6 border-t border-slate-800/60">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Never Miss an Article</h2>
       <p class="text-xl text-slate-300 mb-8">
@@ -214,9 +214,9 @@ function getReadingTime(body: string) {
         <input
           type="email"
           placeholder="Enter your email address"
-          class="flex-1 px-6 py-4 rounded-full bg-slate-900 border border-slate-700 focus:border-cyan-500 focus:outline-none"
+          class="flex-1 px-6 py-4 rounded-lg bg-slate-900 border border-slate-700 focus:border-blue-500 focus:outline-none"
         />
-        <button class="bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition whitespace-nowrap">
+        <button class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition whitespace-nowrap">
           Subscribe
         </button>
       </div>
@@ -238,10 +238,10 @@ function getReadingTime(body: string) {
     buttons.forEach(btn => {
       const cat = btn.getAttribute('data-category');
       if (cat === category) {
-        btn.classList.add('bg-cyan-500/20', 'border-cyan-500/50', 'text-cyan-400');
+        btn.classList.add('bg-blue-600', 'border-blue-600', 'text-white');
         btn.classList.remove('bg-slate-900', 'border-slate-800', 'text-slate-400');
       } else {
-        btn.classList.remove('bg-cyan-500/20', 'border-cyan-500/50', 'text-cyan-400');
+        btn.classList.remove('bg-blue-600', 'border-blue-600', 'text-white');
         btn.classList.add('bg-slate-900', 'border-slate-800', 'text-slate-400');
       }
     });

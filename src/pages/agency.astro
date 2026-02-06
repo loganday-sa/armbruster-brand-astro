@@ -7,14 +7,14 @@ import Layout from '../layouts/Layout.astro';
   <section class="pt-32 pb-20 px-6">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <div class="inline-block mb-6 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 text-sm">
+        <p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-6">
           For Organizations
-        </div>
+        </p>
 
         <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           AI Systems That
           <br />
-          <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <span class="text-white">
             Deliver Real ROI
           </span>
         </h1>
@@ -31,7 +31,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#services"
-            class="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition inline-flex items-center justify-center gap-2"
+            class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2"
           >
             Explore Services
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,7 +40,7 @@ import Layout from '../layouts/Layout.astro';
           </a>
           <a
             href="/contact"
-            class="bg-slate-800 hover:bg-slate-700 px-8 py-4 rounded-full font-semibold transition inline-flex items-center justify-center gap-2"
+            class="bg-slate-800 hover:bg-slate-700 px-8 py-4 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2"
           >
             Book Discovery Call
           </a>
@@ -49,7 +49,7 @@ import Layout from '../layouts/Layout.astro';
 
       <!-- Value Propositions -->
       <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <div class="bg-gradient-to-br from-blue-900/30 to-blue-800/20 border border-blue-500/30 rounded-xl p-8 text-center">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">
           <svg class="w-12 h-12 text-blue-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
           </svg>
@@ -59,8 +59,8 @@ import Layout from '../layouts/Layout.astro';
           </p>
         </div>
 
-        <div class="bg-gradient-to-br from-purple-900/30 to-purple-800/20 border border-purple-500/30 rounded-xl p-8 text-center">
-          <svg class="w-12 h-12 text-purple-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">
+          <svg class="w-12 h-12 text-blue-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
           </svg>
           <h3 class="text-xl font-bold mb-3">Mission-Aligned</h3>
@@ -69,8 +69,8 @@ import Layout from '../layouts/Layout.astro';
           </p>
         </div>
 
-        <div class="bg-gradient-to-br from-pink-900/30 to-pink-800/20 border border-pink-500/30 rounded-xl p-8 text-center">
-          <svg class="w-12 h-12 text-pink-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">
+          <svg class="w-12 h-12 text-blue-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
           </svg>
@@ -95,15 +95,15 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="space-y-8">
         <!-- AI Readiness Workshops -->
-        <div class="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border-2 border-blue-500/50 rounded-2xl p-8">
+        <div class="bg-slate-900 border-2 border-slate-800 rounded-2xl p-8">
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <div class="text-sm text-blue-400 font-semibold mb-2">STRATEGY</div>
+              <div class="text-xs text-slate-500 font-semibold tracking-wide uppercase mb-2">STRATEGY</div>
               <h3 class="text-2xl font-bold mb-4">AI Readiness Workshops</h3>
               <p class="text-slate-300 mb-6">
                 Strategic audit and implementation roadmap to identify your highest-impact AI opportunities
               </p>
-              <div class="text-2xl font-bold text-blue-400 mb-2">Starting at $2,500</div>
+              <div class="text-2xl font-bold text-white mb-2">Starting at $2,500</div>
               <div class="text-sm text-slate-400 mb-6">2-4 weeks from kickoff to roadmap delivery</div>
             </div>
             <div>
@@ -133,7 +133,7 @@ import Layout from '../layouts/Layout.astro';
                   <span>Team workshops to build AI fluency</span>
                 </div>
               </div>
-              <a href="/contact" class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition">
+              <a href="/contact" class="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition">
                 Learn More
               </a>
             </div>
@@ -141,45 +141,45 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Custom AI Agents -->
-        <div class="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border-2 border-purple-500/50 rounded-2xl p-8">
+        <div class="bg-slate-900 border-2 border-slate-800 rounded-2xl p-8">
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <div class="text-sm text-purple-400 font-semibold mb-2">BUILD</div>
+              <div class="text-xs text-slate-500 font-semibold tracking-wide uppercase mb-2">BUILD</div>
               <h3 class="text-2xl font-bold mb-4">Custom AI Agents (voice + chat)</h3>
               <p class="text-slate-300 mb-6">
                 Intelligent systems for customer support, sales, internal operations, and more
               </p>
-              <div class="text-2xl font-bold text-purple-400 mb-2">Starting at $1,500</div>
+              <div class="text-2xl font-bold text-white mb-2">Starting at $1,500</div>
               <div class="text-sm text-slate-400 mb-6">6-12 weeks from requirements to deployment</div>
             </div>
             <div>
               <div class="space-y-3 mb-6">
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-purple-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Custom agents trained on your data and brand voice</span>
                 </div>
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-purple-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Integration with existing tools (CRM, help desk, etc.)</span>
                 </div>
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-purple-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Multi-channel deployment</span>
                 </div>
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-purple-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>30-day optimization period</span>
                 </div>
               </div>
-              <a href="/contact" class="inline-block bg-gradient-to-r from-purple-500 to-pink-600 px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition">
+              <a href="/contact" class="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition">
                 Learn More
               </a>
             </div>
@@ -187,45 +187,45 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Workflow Automation -->
-        <div class="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border-2 border-cyan-500/50 rounded-2xl p-8">
+        <div class="bg-slate-900 border-2 border-slate-800 rounded-2xl p-8">
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <div class="text-sm text-cyan-400 font-semibold mb-2">OPTIMIZE</div>
+              <div class="text-xs text-slate-500 font-semibold tracking-wide uppercase mb-2">OPTIMIZE</div>
               <h3 class="text-2xl font-bold mb-4">Workflow Automation</h3>
               <p class="text-slate-300 mb-6">
                 End-to-end process optimization and integration to eliminate manual tasks
               </p>
-              <div class="text-2xl font-bold text-cyan-400 mb-2">Starting at $1,500</div>
+              <div class="text-2xl font-bold text-white mb-2">Starting at $1,500</div>
               <div class="text-sm text-slate-400 mb-6">Typical ROI: 10-50+ hours saved per week</div>
             </div>
             <div>
               <div class="space-y-3 mb-6">
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Process mapping and opportunity identification</span>
                 </div>
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Custom workflows (Zapier, Make, n8n, or custom)</span>
                 </div>
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Data synchronization across platforms</span>
                 </div>
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Documentation and training for your team</span>
                 </div>
               </div>
-              <a href="/contact" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition">
+              <a href="/contact" class="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition">
                 Learn More
               </a>
             </div>
@@ -233,45 +233,45 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Advisory Retainers -->
-        <div class="bg-gradient-to-br from-pink-900/20 to-purple-900/20 border-2 border-pink-500/50 rounded-2xl p-8">
+        <div class="bg-slate-900 border-2 border-slate-800 rounded-2xl p-8">
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <div class="text-sm text-pink-400 font-semibold mb-2">STRATEGIC</div>
+              <div class="text-xs text-slate-500 font-semibold tracking-wide uppercase mb-2">STRATEGIC</div>
               <h3 class="text-2xl font-bold mb-4">AI Strategy & Advisory</h3>
               <p class="text-slate-300 mb-6">
                 Ongoing strategic guidance to help you stay ahead of AI trends and make informed decisions
               </p>
-              <div class="text-2xl font-bold text-pink-400 mb-2">Starting at $1,500/month</div>
+              <div class="text-2xl font-bold text-white mb-2">Starting at $1,500/month</div>
               <div class="text-sm text-slate-400 mb-6">3-month minimum, month-to-month thereafter</div>
             </div>
             <div>
               <div class="space-y-3 mb-6">
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Monthly strategy sessions</span>
                 </div>
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Expert guidance on optimizing AI systems</span>
                 </div>
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Priority advisory channel</span>
                 </div>
                 <div class="flex items-center gap-3 text-sm">
-                  <svg class="w-5 h-5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                   </svg>
                   <span>Proactive insights on AI trends</span>
                 </div>
               </div>
-              <a href="/contact" class="inline-block bg-gradient-to-r from-pink-500 to-purple-600 px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-pink-500/50 transition">
+              <a href="/contact" class="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition">
                 Learn More
               </a>
             </div>
@@ -282,7 +282,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 px-6 bg-gradient-to-br from-blue-900/20 to-purple-900/20 border-t border-blue-500/20">
+  <section class="py-20 px-6 border-t border-slate-800/60">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Operations?</h2>
       <p class="text-xl text-slate-300 mb-8">
@@ -291,7 +291,7 @@ import Layout from '../layouts/Layout.astro';
       </p>
       <a
         href="/contact"
-        class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition"
+        class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg text-lg font-semibold transition"
       >
         Book Discovery Call
       </a>
