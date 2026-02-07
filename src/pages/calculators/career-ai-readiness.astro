@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Career AI-Readiness Assessment | Scott Armbruster" description="Assess how well your skills align with AI-augmented roles. Get a personalized readiness score and upskilling recommendations.">
+  <section class="pt-24 pb-4 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-4">
+        Interactive Assessment
+      </p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Career AI-Readiness Assessment
+      </h1>
+      <p class="text-lg text-slate-300 max-w-2xl mx-auto mb-2">
+        Rate your skills across 8 dimensions and get a personalized readiness score with specific recommendations for where to focus your upskilling efforts.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="rounded-xl overflow-hidden border border-slate-800">
+        <iframe
+          src="https://calculators-production-1a41.up.railway.app/calculators/career-ai-readiness?embed=true"
+          title="Career AI-Readiness Assessment"
+          class="w-full border-0"
+          style="height: 2800px; background: #0f172a;"
+          loading="lazy"
+          allow="clipboard-write"
+        ></iframe>
+      </div>
+      <p class="text-center text-sm text-slate-500 mt-4">
+        All calculations run in your browser. No data is sent to any server.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Close Your AI Skills Gap?</h2>
+      <p class="text-lg text-slate-300 mb-8">
+        Whether you scored high or low, there's a next step. The 6-Week AI Launchpad takes you from assessment to implementation with hands-on projects and 1:1 coaching.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/education"
+          class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg text-lg font-semibold transition"
+        >
+          View Education Programs
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 px-8 py-4 rounded-lg text-lg font-semibold transition"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Book a Strategy Session
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
