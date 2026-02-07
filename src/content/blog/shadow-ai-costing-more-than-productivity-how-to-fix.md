@@ -97,7 +97,7 @@ Most organizations need just 4-5 approved tools to cover 80% of use cases:
 | Image Generation | Midjourney or DALL-E (via ChatGPT) | $10-30/user | Commercial usage rights clear |
 | Meeting Transcription | Otter.ai Business or Fireflies | $15-20/user | GDPR compliant, no shadow recordings |
 
-**The key:** Negotiate enterprise agreements. I helped a 150-person company consolidate from 17 tools to 5 and cut their monthly AI spend from $8,400 to $3,200 while giving more employees access.
+**The key:** Negotiate enterprise agreements. Most vendors will cut rates by 40-60% when you consolidate licenses and commit to annual terms. The leverage is simple—you're solving their customer acquisition cost problem by bringing volume.
 
 ### Week 3: Implement Smart Guardrails
 
