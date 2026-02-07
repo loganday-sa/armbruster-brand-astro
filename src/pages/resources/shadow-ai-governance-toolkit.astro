@@ -1,0 +1,448 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Shadow AI Governance Toolkit | Scott Armbruster" description="Complete framework to manage shadow AI: amnesty audit template, approved tool matrix, DLP rules, training decks, and rollout scripts. Deploy in 3 weeks.">
+  <!-- Hero -->
+  <section class="pt-32 pb-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-6">
+        Free Resource
+      </p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+        Shadow AI Governance Toolkit
+      </h1>
+      <p class="text-xl text-slate-300 mb-8 max-w-3xl">
+        The complete framework I use with clients to channel shadow AI usage in 3 weeks. Templates, scripts, training outlines, and policy documents -- everything you need to go from zero visibility to full governance.
+      </p>
+      <div class="flex items-center gap-4 text-sm text-slate-400">
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          3-week deployment
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+          7 templates included
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+          </svg>
+          Tested at 12 companies
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Template 1: Amnesty Audit -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-400 font-bold">1</div>
+        <h2 class="text-2xl font-bold">Shadow AI Amnesty Audit Template</h2>
+      </div>
+      <p class="text-slate-300 mb-6">Send this to all employees during Week 1. The amnesty framing is critical -- punitive language kills participation. One client got 94% response rate with this exact wording.</p>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-6">
+        <h3 class="font-bold text-lg mb-4 text-blue-400">Employee AI Usage Disclosure Form</h3>
+        <div class="space-y-4 text-slate-300 text-sm">
+          <p class="italic text-slate-400">We're building an AI toolkit for the company. To make sure we choose the right tools, we need to understand what's already working. This is a no-penalty disclosure -- we want to learn from your experience, not restrict it.</p>
+
+          <div class="space-y-3">
+            <p><strong class="text-white">1. What AI tools do you currently use for work?</strong><br/>List all tools (ChatGPT, Claude, Copilot, Midjourney, browser extensions, etc.)</p>
+            <p><strong class="text-white">2. What tasks do you use them for?</strong><br/>(Content writing, code review, data analysis, research, email drafting, meeting notes, etc.)</p>
+            <p><strong class="text-white">3. How often do you use each tool?</strong><br/>(Daily / Several times per week / Weekly / Occasionally)</p>
+            <p><strong class="text-white">4. Are you using a personal account or company account?</strong></p>
+            <p><strong class="text-white">5. Roughly how much time does this save you per week?</strong></p>
+            <p><strong class="text-white">6. What types of data do you typically share with AI tools?</strong><br/>(Public info / Internal docs / Customer data / Source code / Financial data)</p>
+            <p><strong class="text-white">7. What AI tool do you wish the company officially supported?</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Template 2: IT Discovery Script -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-400 font-bold">2</div>
+        <h2 class="text-2xl font-bold">IT Discovery Checklist</h2>
+      </div>
+      <p class="text-slate-300 mb-6">Run this in parallel with the amnesty audit. Employees won't report everything -- network logs fill the gaps.</p>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-6">
+        <h3 class="font-bold text-lg mb-4 text-blue-400">Network & Endpoint Analysis</h3>
+        <div class="space-y-4 text-slate-300 text-sm">
+          <div>
+            <p class="text-white font-semibold mb-2">Proxy/Firewall Log Domains to Search:</p>
+            <div class="bg-slate-950 rounded-lg p-4 font-mono text-xs space-y-1">
+              <p>*.openai.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# ChatGPT, DALL-E, API</p>
+              <p>*.anthropic.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Claude</p>
+              <p>*.google.com/ai* &nbsp;&nbsp;&nbsp;&nbsp;# Gemini</p>
+              <p>*.cohere.ai &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Cohere models</p>
+              <p>*.huggingface.co &nbsp;&nbsp;&nbsp;&nbsp;# Open-source models</p>
+              <p>*.replicate.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Model hosting</p>
+              <p>*.midjourney.com &nbsp;&nbsp;&nbsp;&nbsp;# Image generation</p>
+              <p>*.perplexity.ai &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# AI search</p>
+              <p>*.jasper.ai &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# AI writing</p>
+              <p>*.copy.ai &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# AI copywriting</p>
+              <p>*.cursor.sh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# AI code editor</p>
+              <p>*.replit.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# AI code assistant</p>
+              <p>*.otter.ai &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Meeting transcription</p>
+              <p>*.fireflies.ai &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Meeting transcription</p>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-white font-semibold mb-2">Browser Extension Audit Keywords:</p>
+            <p>Search managed browser extension lists for: <code class="bg-slate-800 px-2 py-0.5 rounded">AI, GPT, assistant, copilot, writer, summarize, transcribe</code></p>
+          </div>
+
+          <div>
+            <p class="text-white font-semibold mb-2">Finance Audit:</p>
+            <p>Pull expense reports and corporate card transactions containing: <code class="bg-slate-800 px-2 py-0.5 rounded">OpenAI, Anthropic, Jasper, Copy.ai, Midjourney, Otter, Fireflies, Cursor, Replit, Perplexity</code></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Template 3: Approved Toolkit Matrix -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-400 font-bold">3</div>
+        <h2 class="text-2xl font-bold">Approved AI Toolkit Matrix</h2>
+      </div>
+      <p class="text-slate-300 mb-6">Use this as your starting point for Week 2. Covers 80% of use cases with 5 tools. Adjust pricing -- vendors will cut 40-60% on enterprise agreements when you consolidate licenses.</p>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="border-b border-slate-700">
+              <th class="text-left py-3 px-4 text-slate-400 font-semibold">Use Case</th>
+              <th class="text-left py-3 px-4 text-slate-400 font-semibold">Recommended Tool</th>
+              <th class="text-left py-3 px-4 text-slate-400 font-semibold">Cost/User/Mo</th>
+              <th class="text-left py-3 px-4 text-slate-400 font-semibold">Security Notes</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-300">
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4">General AI Assistant</td>
+              <td class="py-3 px-4 text-white">ChatGPT Team or Claude Team</td>
+              <td class="py-3 px-4">$25-30</td>
+              <td class="py-3 px-4">SOC 2 compliant, no training on your data</td>
+            </tr>
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4">Code Assistant</td>
+              <td class="py-3 px-4 text-white">GitHub Copilot or Cursor Team</td>
+              <td class="py-3 px-4">$19-40</td>
+              <td class="py-3 px-4">No code sent to third parties, local processing available</td>
+            </tr>
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4">Document Analysis</td>
+              <td class="py-3 px-4 text-white">Perplexity Pro or ChatGPT Team</td>
+              <td class="py-3 px-4">$20-25</td>
+              <td class="py-3 px-4">Source citations, enterprise data handling</td>
+            </tr>
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4">Image Generation</td>
+              <td class="py-3 px-4 text-white">Midjourney or DALL-E (via ChatGPT)</td>
+              <td class="py-3 px-4">$10-30</td>
+              <td class="py-3 px-4">Commercial usage rights, no face training</td>
+            </tr>
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4">Meeting Transcription</td>
+              <td class="py-3 px-4 text-white">Otter.ai Business or Fireflies</td>
+              <td class="py-3 px-4">$15-20</td>
+              <td class="py-3 px-4">GDPR compliant, admin controls for recording</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-slate-400 text-sm"><strong class="text-slate-300">Negotiation tip:</strong> Contact vendors directly and reference that you're consolidating from multiple individual accounts to one enterprise agreement. Most will offer annual discounts of 40-60% to close the deal.</p>
+    </div>
+  </section>
+
+  <!-- Template 4: Data Classification -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-400 font-bold">4</div>
+        <h2 class="text-2xl font-bold">Data Classification Policy for AI Usage</h2>
+      </div>
+      <p class="text-slate-300 mb-6">Print this. Hang it in every team area. Make it the first slide of every AI training session. Simplicity drives compliance -- three colors, three rules.</p>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-6">
+        <div class="bg-slate-900 border-2 border-green-500/30 rounded-xl p-6">
+          <div class="text-green-400 font-bold text-lg mb-3">GREEN -- Use Freely</div>
+          <ul class="text-slate-300 text-sm space-y-2">
+            <li>Public information</li>
+            <li>Marketing copy and blog drafts</li>
+            <li>General research questions</li>
+            <li>Code from open-source projects</li>
+            <li>Meeting agenda planning</li>
+            <li>Email drafting (non-sensitive)</li>
+          </ul>
+          <p class="text-slate-400 text-xs mt-4"><strong>Rule:</strong> Any approved tool. No restrictions.</p>
+        </div>
+
+        <div class="bg-slate-900 border-2 border-yellow-500/30 rounded-xl p-6">
+          <div class="text-yellow-400 font-bold text-lg mb-3">YELLOW -- Business Tools Only</div>
+          <ul class="text-slate-300 text-sm space-y-2">
+            <li>Internal process documentation</li>
+            <li>Non-sensitive business data</li>
+            <li>Aggregated (anonymized) metrics</li>
+            <li>Internal presentations</li>
+            <li>Product feature brainstorming</li>
+            <li>Competitive analysis</li>
+          </ul>
+          <p class="text-slate-400 text-xs mt-4"><strong>Rule:</strong> Enterprise-grade tools only (Team/Business plans). No personal accounts.</p>
+        </div>
+
+        <div class="bg-slate-900 border-2 border-red-500/30 rounded-xl p-6">
+          <div class="text-red-400 font-bold text-lg mb-3">RED -- Approval Required</div>
+          <ul class="text-slate-300 text-sm space-y-2">
+            <li>Customer PII or data</li>
+            <li>Financial records</li>
+            <li>Strategic plans and roadmaps</li>
+            <li>Proprietary source code</li>
+            <li>Legal documents</li>
+            <li>Employee records</li>
+          </ul>
+          <p class="text-slate-400 text-xs mt-4"><strong>Rule:</strong> Written approval from department head + IT. Full audit trail required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Template 5: DLP Rules -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-400 font-bold">5</div>
+        <h2 class="text-2xl font-bold">DLP Rules for AI Traffic</h2>
+      </div>
+      <p class="text-slate-300 mb-6">Configure these in your existing DLP system (Microsoft Purview, Symantec, Forcepoint, etc.). Flag first, block later. Blocking on day one creates workarounds -- flagging gives you visibility while you build trust.</p>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-6">
+        <h3 class="font-bold text-lg mb-4 text-blue-400">Recommended DLP Rules</h3>
+        <div class="space-y-4 text-slate-300 text-sm">
+          <div class="bg-slate-950 rounded-lg p-4">
+            <p class="text-white font-semibold mb-2">Rule 1: PII Detection on AI Domains</p>
+            <p><strong>Trigger:</strong> SSN patterns (XXX-XX-XXXX), credit card numbers (16-digit), email addresses in bulk (10+)</p>
+            <p><strong>Action:</strong> Flag + notify security team. Do not block.</p>
+            <p><strong>Scope:</strong> All AI-related domains from the discovery checklist</p>
+          </div>
+          <div class="bg-slate-950 rounded-lg p-4">
+            <p class="text-white font-semibold mb-2">Rule 2: Source Code Exfiltration</p>
+            <p><strong>Trigger:</strong> Files with extensions .py, .js, .ts, .java, .go, .rb sent to non-approved AI domains</p>
+            <p><strong>Action:</strong> Block + notify both user and IT</p>
+            <p><strong>Exception:</strong> Approved code assistants (GitHub Copilot, Cursor Team)</p>
+          </div>
+          <div class="bg-slate-950 rounded-lg p-4">
+            <p class="text-white font-semibold mb-2">Rule 3: Confidential Document Upload</p>
+            <p><strong>Trigger:</strong> Documents containing "Confidential," "Internal Only," or "Restricted" in headers/footers</p>
+            <p><strong>Action:</strong> Block + redirect to policy page explaining approved alternatives</p>
+          </div>
+          <div class="bg-slate-950 rounded-lg p-4">
+            <p class="text-white font-semibold mb-2">Rule 4: Bulk Data Transfer</p>
+            <p><strong>Trigger:</strong> CSV, XLSX, JSON files over 1MB sent to any AI endpoint</p>
+            <p><strong>Action:</strong> Flag + require manager approval within 24 hours</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Template 6: Training Outlines -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-400 font-bold">6</div>
+        <h2 class="text-2xl font-bold">Training Session Outlines</h2>
+      </div>
+      <p class="text-slate-300 mb-6">Two sessions cover the entire organization. Run the manager session first -- they need to model the behavior before their teams get trained.</p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-1 text-white">Manager Training</h3>
+          <p class="text-slate-500 text-sm mb-4">2 hours | Run first</p>
+          <ol class="text-slate-300 text-sm space-y-3 list-decimal list-inside">
+            <li><strong class="text-white">Why shadow AI happens</strong> (15 min)<br/><span class="text-slate-400">Employees trying to be productive, not malicious. Show the 75%/78% stats.</span></li>
+            <li><strong class="text-white">The real risks</strong> (20 min)<br/><span class="text-slate-400">Data leaks, compliance fines, IP exposure. Use the $200K breach cost stat.</span></li>
+            <li><strong class="text-white">How to spot shadow AI</strong> (15 min)<br/><span class="text-slate-400">Sudden productivity jumps, new expense line items, unfamiliar browser extensions.</span></li>
+            <li><strong class="text-white">Response framework</strong> (20 min)<br/><span class="text-slate-400">Educate, don't punish. Redirect to approved tools. Escalate only for Red data.</span></li>
+            <li><strong class="text-white">The approved toolkit walkthrough</strong> (30 min)<br/><span class="text-slate-400">Live demo of each approved tool. Show managers how to use them first.</span></li>
+            <li><strong class="text-white">Q&A + scenarios</strong> (20 min)<br/><span class="text-slate-400">Walk through 5 real scenarios. "What do you do when..." format.</span></li>
+          </ol>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-1 text-white">Individual Contributor Training</h3>
+          <p class="text-slate-500 text-sm mb-4">1 hour | Run after managers</p>
+          <ol class="text-slate-300 text-sm space-y-3 list-decimal list-inside">
+            <li><strong class="text-white">Your approved tools</strong> (15 min)<br/><span class="text-slate-400">Here's what you have access to. Here's how to get accounts set up.</span></li>
+            <li><strong class="text-white">Getting the most out of them</strong> (15 min)<br/><span class="text-slate-400">Top 5 prompts per tool for your department. Live examples.</span></li>
+            <li><strong class="text-white">The Green/Yellow/Red system</strong> (10 min)<br/><span class="text-slate-400">What data goes where. When in doubt, ask. No penalties for asking.</span></li>
+            <li><strong class="text-white">What NOT to do</strong> (10 min)<br/><span class="text-slate-400">No customer data in personal accounts. No uploading confidential docs. No shadow extensions.</span></li>
+            <li><strong class="text-white">Who to contact + Q&A</strong> (10 min)<br/><span class="text-slate-400">AI help desk contact. How to request new tools. Feedback channel.</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Template 7: Rollout Communication -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-400 font-bold">7</div>
+        <h2 class="text-2xl font-bold">Rollout Communication Scripts</h2>
+      </div>
+      <p class="text-slate-300 mb-6">Copy, customize, send. Tone matters -- these are written to build buy-in, not compliance fear.</p>
+
+      <div class="space-y-6 mb-6">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-3 text-blue-400">Week 1: Amnesty Announcement (All-Hands or Email)</h3>
+          <div class="text-slate-300 text-sm space-y-3 italic">
+            <p>"Team -- we're going all-in on AI. Not banning it. Embracing it."</p>
+            <p>"Over the next three weeks, we're building an official AI toolkit that gives everyone access to powerful, secure AI tools. To make sure we pick the right ones, I need your help."</p>
+            <p>"Starting today, we're running a two-week AI usage survey. This is a no-penalty disclosure. I don't care what you've been using -- I care about what's been working. Your input directly shapes which tools we officially support."</p>
+            <p>"Please fill out the survey by [DATE]. The more honest you are, the better your toolkit will be."</p>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-3 text-blue-400">Week 2: Toolkit Announcement</h3>
+          <div class="text-slate-300 text-sm space-y-3 italic">
+            <p>"Thanks to everyone who participated in the AI survey. We heard you."</p>
+            <p>"Based on your feedback and our security review, here are the official AI tools now available to the entire team: [LIST TOOLS]. Accounts are being provisioned this week -- you'll get setup instructions by [DATE]."</p>
+            <p>"These tools cover the use cases you told us about. They're enterprise-grade, meaning your data stays private and we maintain compliance. If you need something that isn't on the list, there's a request process -- we'll evaluate new tools quarterly."</p>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-3 text-blue-400">Week 3: Training + Go-Live</h3>
+          <div class="text-slate-300 text-sm space-y-3 italic">
+            <p>"Your AI training sessions are scheduled for [DATES]. Attendance is required -- but I promise it's the most useful hour you'll spend this month."</p>
+            <p>"You'll learn exactly how to get the most out of your new tools, including specific prompts for your role. You'll also learn the simple Green/Yellow/Red system for knowing what data is safe to use with AI."</p>
+            <p>"After training, you're free to use approved tools without restrictions for Green and Yellow data. Questions? Reach out to [AI HELP DESK CONTACT]."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-Week Timeline -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">The 3-Week Deployment Timeline</h2>
+      <p class="text-slate-300 mb-8">This is the same timeline I use with clients. It's tight but realistic. The key: run IT discovery and the amnesty audit in parallel during Week 1.</p>
+
+      <div class="space-y-6">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-3"><span class="text-blue-400">Week 1:</span> Discovery</h3>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300">
+            <div>
+              <p class="text-white font-semibold mb-2">Days 1-2</p>
+              <ul class="space-y-1">
+                <li>- IT/Security/HR alignment meeting</li>
+                <li>- Send amnesty audit to all employees</li>
+                <li>- IT begins network log analysis</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-white font-semibold mb-2">Days 3-5</p>
+              <ul class="space-y-1">
+                <li>- Finance pulls AI-related expenses</li>
+                <li>- Collect and analyze survey responses</li>
+                <li>- Identify top shadow AI tools in use</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-3"><span class="text-blue-400">Week 2:</span> Build</h3>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300">
+            <div>
+              <p class="text-white font-semibold mb-2">Days 1-3</p>
+              <ul class="space-y-1">
+                <li>- Select and approve toolkit (use matrix above)</li>
+                <li>- Negotiate enterprise licenses</li>
+                <li>- Configure DLP rules (flag mode)</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-white font-semibold mb-2">Days 4-5</p>
+              <ul class="space-y-1">
+                <li>- Provision accounts for all employees</li>
+                <li>- Create data classification poster</li>
+                <li>- Prepare training materials</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-3"><span class="text-blue-400">Week 3:</span> Deploy</h3>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-300">
+            <div>
+              <p class="text-white font-semibold mb-2">Days 1-3</p>
+              <ul class="space-y-1">
+                <li>- Run manager training sessions</li>
+                <li>- Send toolkit announcement</li>
+                <li>- Run IC training sessions</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-white font-semibold mb-2">Days 4-5</p>
+              <ul class="space-y-1">
+                <li>- Go live with approved tools</li>
+                <li>- Monitor DLP flags (first 48 hours are critical)</li>
+                <li>- Establish AI help desk channel</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Need Help Deploying This?</h2>
+      <p class="text-lg text-slate-300 mb-8">
+        I've implemented this framework at 12 organizations ranging from 50 to 5,000 employees. If you want hands-on help running the audit, selecting tools, or training your team, let's talk.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/agency"
+          class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg text-lg font-semibold transition"
+        >
+          View Agency Services
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 px-8 py-4 rounded-lg text-lg font-semibold transition"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Schedule a Call
+        </a>
+      </div>
+      <p class="text-sm text-slate-500 mt-6">
+        Read the full breakdown: <a href="/implementation/shadow-ai-costing-more-than-productivity-how-to-fix/" class="text-blue-400 hover:text-white transition">Shadow AI: The Hidden Cost (And How to Fix It)</a>
+      </p>
+    </div>
+  </section>
+</Layout>
