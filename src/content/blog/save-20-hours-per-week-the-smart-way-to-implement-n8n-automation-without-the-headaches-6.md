@@ -1,6 +1,6 @@
 ---
-title: "Save 20+ Hours Per Week: The Smart Way to Implement n8n Automation Without the Headaches"
-description: "The n8n Automation Trap: Why DIY Workflows Cost More Than Professional Implementation Your competitor just automated their entire lead qualification process in three days. Meanwhile, you've spent two weeks trying to connect your CRM to your email ..."
+title: "Smart n8n Implementation: Save 20+ Hours Per Week"
+description: "DIY n8n workflows often cost more than professional implementation. Learn the smart approach to n8n automation that saves 20+ hours weekly."
 pubDate: 2025-12-16
 heroImage: "/images/blog/save-20-hours-per-week-the-smart-way-to-implement-n8n-automation-without-the-headaches-6.png"
 category: "Implementation"

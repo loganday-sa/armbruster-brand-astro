@@ -1,6 +1,6 @@
 ---
 title: "Why your AI strategy is backwards (and how to fix it)"
-description: "The AI Foundation: Skills That Matter More Than Tools I watch professionals make the same mistake repeatedly: they jump straight into learning ChatGPT, Claude, or the latest AI tool without building the foundational skills that make those tools ac..."
+description: "Stop jumping into AI tools without foundational skills. Master the 3 core capabilities that make every AI tool more effective."
 pubDate: 2025-12-20
 heroImage: "/images/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it.png"
 category: "AI Strategy"

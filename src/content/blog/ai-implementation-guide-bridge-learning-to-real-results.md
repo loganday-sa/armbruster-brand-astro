@@ -1,6 +1,6 @@
 ---
 title: "AI Implementation Guide: Bridge Learning to Real Results"
-description: "You've watched dozens of AI tutorials. You've bookmarked articles about ChatGPT prompts. You follow AI influencers on LinkedIn and feel like you understand the potential. Yet somehow, your career hasn't transformed. Your business isn't more effici..."
+description: "Stop watching tutorials and start implementing. A practical guide to bridging the gap between AI knowledge and real business results."
 pubDate: 2026-01-08
 heroImage: "/images/blog/ai-implementation-guide-bridge-learning-to-real-results.png"
 category: "Implementation"

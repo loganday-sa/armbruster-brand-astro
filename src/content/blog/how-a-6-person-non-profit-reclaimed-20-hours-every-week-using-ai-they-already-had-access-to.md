@@ -1,5 +1,5 @@
 ---
-title: "How a 6-Person Non-Profit Reclaimed 20 Hours Every Week Using AI They Already Had Access To"
+title: "6-Person Non-Profit Saves 20 Hours Weekly with AI"
 description: "The executive director of a regional food bank told me something that stuck: \"We're so busy doing paperwork about feeding people that we barely have time to actually feed people.\" She wasn't exaggerating. Her team of six spent nearly half their we..."
 pubDate: 2025-12-10
 heroImage: "/images/blog/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to.png"

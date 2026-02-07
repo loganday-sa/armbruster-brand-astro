@@ -1,6 +1,6 @@
 ---
 title: "Stop losing $10K monthly to missed calls (urgent fix)"
-description: "The Hidden Cost of Missed Calls: Why Small Businesses Are Losing $10K+ Monthly When you're serving customers, managing projects, or handling the hundred daily tasks that keep your business running, that ringing phone isn't just an interruption. It..."
+description: "Missed calls cost small businesses $10K+ monthly in lost revenue. Here's how AI voice automation solves the problem for under $200/month."
 pubDate: 2025-12-16
 heroImage: "/images/blog/stop-losing-10k-monthly-to-missed-calls-urgent-fix.png"
 category: "Implementation"

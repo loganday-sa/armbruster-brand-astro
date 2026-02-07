@@ -1,6 +1,6 @@
 ---
-title: "AI Adoption Is Central to Growth: What That Actually Means for Your Business"
-description: "AI adoption isn't about having the latest tools. It's about connecting specific capabilities to specific growth outcomes. Here's a framework for making that connection concrete."
+title: "AI Adoption Is Central to Growth: What It Means"
+description: "AI adoption is about connecting capabilities to growth outcomes, not chasing tools. A practical framework for making that connection."
 pubDate: 2026-01-11
 heroImage: "/images/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business.png"
 category: "AI Strategy"

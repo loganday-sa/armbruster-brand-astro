@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import PostCard from '../../components/PostCard.astro';
 import Pagination from '../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, POSTS_PER_PAGE } from '../../consts';
+import { SITE_TITLE, SITE_URL, POSTS_PER_PAGE } from '../../consts';
 
 export async function getStaticPaths() {
 	const allPosts = (await getCollection('blog'))
@@ -24,12 +24,21 @@ export async function getStaticPaths() {
 }
 
 const { posts, currentPage, totalPages, totalPosts } = Astro.props;
+
+function getBlogPageUrl(page: number): string {
+	if (page === 1) return '/blog/';
+	return `/blog/${page}/`;
+}
 ---
 
 <Layout
 	title={`Blog - Page ${currentPage} | ${SITE_TITLE}`}
 	description="Practical guides, case studies, and strategies for building AI-powered businesses and implementing AI systems that actually work."
 >
+	<Fragment slot="head">
+		{currentPage > 1 && <link rel="prev" href={new URL(getBlogPageUrl(currentPage - 1), SITE_URL).toString()} />}
+		{currentPage < totalPages && <link rel="next" href={new URL(getBlogPageUrl(currentPage + 1), SITE_URL).toString()} />}
+	</Fragment>
 	<section class="pt-32 pb-12 px-6">
 		<div class="max-w-6xl mx-auto text-center">
 			<p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-6">

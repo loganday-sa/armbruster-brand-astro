@@ -1,6 +1,6 @@
 ---
 title: "AI Strategy Guide: Clear Employee Communication"
-description: "The Hidden Cost of Unclear AI Strategy Communication A recent study reveals that 73% of employees feel confused about their company's AI strategy. This isn't just a communication problem—it's a business execution crisis waiting to happen. When you..."
+description: "73% of employees feel confused about their company's AI strategy. Clear communication fixes this. Here's a practical framework."
 pubDate: 2026-01-08
 heroImage: "/images/blog/ai-strategy-guide-clear-employee-communication.png"
 category: "AI Strategy"

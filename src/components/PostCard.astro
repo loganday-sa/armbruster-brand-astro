@@ -21,8 +21,11 @@ const readingTime = getReadingTime(post.body);
 				<img
 					src={post.data.heroImage}
 					alt={post.data.title}
-					class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+					class="w-full h-full object-cover group-hover:scale-105 transition duration-300 will-change-transform"
+					width="400"
+					height="225"
 					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 		) : (

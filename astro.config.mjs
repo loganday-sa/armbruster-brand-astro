@@ -8,7 +8,15 @@ export default defineConfig({
   site: 'https://armbruster-brand-astro.pages.dev',
   output: 'static',
   integrations: [sitemap()],
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'viewport',
+  },
   vite: {
-    plugins: [tailwindcss()]
-  }
+    plugins: [tailwindcss()],
+    build: {
+      cssMinify: true,
+      minify: true,
+    },
+  },
 });

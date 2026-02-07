@@ -116,7 +116,7 @@ const jsonLd = {
 
       {post.data.heroImage && (
         <div class="mb-12 rounded-xl overflow-hidden border border-slate-800">
-          <img src={post.data.heroImage} alt={post.data.title} class="w-full h-auto" loading="eager" />
+          <img src={post.data.heroImage} alt={post.data.title} class="w-full h-auto" width="1200" height="630" loading="eager" decoding="async" fetchpriority="high" />
         </div>
       )}
 
@@ -174,7 +174,7 @@ const jsonLd = {
               <a href={`${getCategoryPath(related.data.category)}${related.slug}`} class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition">
                 {related.data.heroImage && (
                   <div class="aspect-video overflow-hidden">
-                    <img src={related.data.heroImage} alt={related.data.title} class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" />
+                    <img src={related.data.heroImage} alt={related.data.title} class="w-full h-full object-cover group-hover:scale-105 transition duration-300 will-change-transform" width="400" height="225" loading="lazy" decoding="async" />
                   </div>
                 )}
                 <div class="p-5">

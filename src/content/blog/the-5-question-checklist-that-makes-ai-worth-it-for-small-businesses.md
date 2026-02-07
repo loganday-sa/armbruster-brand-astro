@@ -1,6 +1,6 @@
 ---
-title: "The 5‑Question Checklist That Makes AI Worth It For Small Businesses"
-description: "Most small businesses do not fail with AI because the tech is bad. They fail because they pick the wrong problem. They spend money on chatbots no one uses, dashboards no one trusts, or \"automation\" that quietly dies six weeks after launch. The pat..."
+title: "5-Question Checklist: Is AI Worth It for Your Business?"
+description: "Most small businesses fail with AI because they pick the wrong problem. Use this 5-question checklist before investing in any AI tool."
 pubDate: 2025-12-09
 heroImage: "/images/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses.png"
 category: "AI Strategy"

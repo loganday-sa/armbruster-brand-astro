@@ -11,6 +11,21 @@ const latestPosts = (await getCollection('blog'))
 ---
 
 <Layout title="Scott Armbruster - AI Implementation & Education" description="AI Implementation Specialist helping professionals build AI-powered income streams and organizations deploy AI systems that deliver real ROI.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Scott Armbruster",
+      "url": "https://armbruster-brand-astro.pages.dev",
+      "jobTitle": "AI Implementation Specialist",
+      "description": "AI Implementation Specialist helping professionals build AI-powered income streams and organizations deploy AI systems that deliver real ROI.",
+      "knowsAbout": ["Artificial Intelligence", "AI Implementation", "Business Automation", "n8n", "AI Strategy"],
+      "sameAs": [
+        "https://www.linkedin.com/in/scottrarmbruster/",
+        "https://youtube.com/@loganday"
+      ]
+    })} />
+  </Fragment>
   <!-- Hero Section -->
   <section class="pt-32 pb-24 px-6">
     <div class="max-w-6xl mx-auto">
@@ -284,8 +299,11 @@ const latestPosts = (await getCollection('blog'))
                 <img
                   src={post.data.heroImage}
                   alt={post.data.title}
-                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-300 will-change-transform"
+                  width="400"
+                  height="225"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             ) : (

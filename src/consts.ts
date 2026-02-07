@@ -13,7 +13,7 @@ export const SITE_LOGO = '/favicon.svg';
 export const SITE_OG_IMAGE = '/images/og-default.png';
 
 // Social links (leave empty string if not used)
-export const SOCIAL_TWITTER = '';
+export const SOCIAL_TWITTER = '@ScottArmbruster';
 export const SOCIAL_LINKEDIN = 'https://www.linkedin.com/in/scottrarmbruster/';
 export const SOCIAL_GITHUB = '';
 

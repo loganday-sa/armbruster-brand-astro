@@ -99,7 +99,11 @@ const paginatedPosts = posts.slice(0, POSTS_PER_PAGE);
                   src={featuredPost.data.heroImage}
                   alt={featuredPost.data.title}
                   class="w-full h-auto"
+                  width="1200"
+                  height="630"
                   loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
                 />
               </div>
             )}

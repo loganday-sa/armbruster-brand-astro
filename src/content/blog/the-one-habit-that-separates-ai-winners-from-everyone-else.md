@@ -1,6 +1,6 @@
 ---
 title: "The One Habit That Separates AI Winners from Everyone Else"
-description: "The One Habit That Separates AI Winners from Everyone Else I've worked with Fortune 500 companies and small teams across every industry. I've seen AI initiatives that transformed entire departments and others that died quiet deaths in endless plan..."
+description: "After working with Fortune 500s and small teams, one habit consistently separates successful AI initiatives from those that quietly die."
 pubDate: 2026-01-08
 heroImage: "/images/blog/the-one-habit-that-separates-ai-winners-from-everyone-else.png"
 category: "AI Strategy"
