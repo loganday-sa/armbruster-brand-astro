@@ -2,7 +2,7 @@
 title: "Your competitor just hired a $2/hour AI receptionist"
 description: "AI virtual receptionists handle calls, book appointments, and qualify leads 24/7 for under $200/month. Here's how small businesses are using them."
 pubDate: 2026-01-07
-heroImage: "/images/blog/your-competitor-just-hired-a-2-hour-ai-receptionist.png"
+heroImage: "/images/blog/your-competitor-just-hired-a-2-hour-ai-receptionist.webp"
 category: "Implementation"
 author: "Scott Armbruster"
 tags: ["newsletter"]

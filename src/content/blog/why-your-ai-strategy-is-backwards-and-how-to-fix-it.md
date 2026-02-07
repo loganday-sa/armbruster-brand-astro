@@ -2,7 +2,7 @@
 title: "Why your AI strategy is backwards (and how to fix it)"
 description: "Stop jumping into AI tools without foundational skills. Master the 3 core capabilities that make every AI tool more effective."
 pubDate: 2025-12-20
-heroImage: "/images/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it.png"
+heroImage: "/images/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it.webp"
 category: "AI Strategy"
 author: "Scott Armbruster"
 tags: ["newsletter"]

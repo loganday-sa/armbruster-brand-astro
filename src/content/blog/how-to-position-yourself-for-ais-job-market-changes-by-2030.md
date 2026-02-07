@@ -2,7 +2,7 @@
 title: "How to Position Yourself for AI's Job Market Changes by 2030"
 description: "While everyone debates whether AI will eliminate jobs, smart professionals are positioning themselves for the roles AI will create and enhance."
 pubDate: 2026-01-14
-heroImage: "/images/blog/how-to-position-yourself-for-ais-job-market-changes-by-2030.png"
+heroImage: "/images/blog/how-to-position-yourself-for-ais-job-market-changes-by-2030.webp"
 category: "Career"
 author: "Scott Armbruster"
 tags: ["newsletter"]

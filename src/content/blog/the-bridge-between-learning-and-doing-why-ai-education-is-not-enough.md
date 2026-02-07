@@ -2,7 +2,7 @@
 title: "Why AI Education Alone Is Not Enough"
 description: "You have watched the tutorials. You have bookmarked the articles. You might even have a folder somewhere labeled \"AI stuff to try later\" that has been sitting untouched for three months. You are not alone. And the problem is not your discipline or..."
 pubDate: 2025-12-10
-heroImage: "/images/blog/the-bridge-between-learning-and-doing-why-ai-education-is-not-enough.png"
+heroImage: "/images/blog/the-bridge-between-learning-and-doing-why-ai-education-is-not-enough.webp"
 category: "AI Strategy"
 author: "Scott Armbruster"
 ---

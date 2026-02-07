@@ -3,7 +3,7 @@ title: "More Productive and More Worried: AI's Reality at Work"
 description: "Teams get more productive with AI -- then anxiety sets in. How to manage the double-edged reality of AI adoption in your organization."
 pubDate: 2025-12-04
 updatedDate: 2025-12-05
-heroImage: "/images/blog/more-productive-and-more-worried-the-double-edged-reality-of-ai-at-work.png"
+heroImage: "/images/blog/more-productive-and-more-worried-the-double-edged-reality-of-ai-at-work.webp"
 category: "AI Strategy"
 author: "Scott Armbruster"
 ---

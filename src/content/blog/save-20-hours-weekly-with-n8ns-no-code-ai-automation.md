@@ -2,7 +2,7 @@
 title: "Save 20+ Hours Weekly with n8n's No-Code AI Automation"
 description: "Smart businesses partner with experts for n8n automation instead of DIY. See how to save 20+ hours weekly with no-code AI workflows."
 pubDate: 2025-12-17
-heroImage: "/images/blog/save-20-hours-weekly-with-n8ns-no-code-ai-automation.png"
+heroImage: "/images/blog/save-20-hours-weekly-with-n8ns-no-code-ai-automation.webp"
 category: "Implementation"
 author: "Scott Armbruster"
 tags: ["newsletter"]

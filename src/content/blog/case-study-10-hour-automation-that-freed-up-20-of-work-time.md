@@ -2,7 +2,7 @@
 title: "Case Study: 10-Hour Automation That Freed Up 20% of Work Time"
 description: "10 hours of focused automation unlocked a 20% reduction in routine work. A practical case study of low-risk automation that delivers recurring capacity."
 pubDate: 2025-12-08
-heroImage: "/images/blog/case-study-10-hour-automation-that-freed-up-20-of-work-time.png"
+heroImage: "/images/blog/case-study-10-hour-automation-that-freed-up-20-of-work-time.webp"
 category: "Implementation"
 author: "Scott Armbruster"
 ---

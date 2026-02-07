@@ -2,7 +2,7 @@
 title: "5-Question Checklist: Is AI Worth It for Your Business?"
 description: "Most small businesses fail with AI because they pick the wrong problem. Use this 5-question checklist before investing in any AI tool."
 pubDate: 2025-12-09
-heroImage: "/images/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses.png"
+heroImage: "/images/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses.webp"
 category: "AI Strategy"
 author: "Scott Armbruster"
 ---

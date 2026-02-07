@@ -2,7 +2,7 @@
 title: "Stop losing $10K monthly to missed calls (urgent fix)"
 description: "Missed calls cost small businesses $10K+ monthly in lost revenue. Here's how AI voice automation solves the problem for under $200/month."
 pubDate: 2025-12-16
-heroImage: "/images/blog/stop-losing-10k-monthly-to-missed-calls-urgent-fix.png"
+heroImage: "/images/blog/stop-losing-10k-monthly-to-missed-calls-urgent-fix.webp"
 category: "Implementation"
 author: "Scott Armbruster"
 tags: ["newsletter"]

@@ -2,7 +2,7 @@
 title: "7 IT Leadership Challenges Coming in 2026 (And How to Prepare)"
 description: "The biggest IT leadership challenges in 2026 center on people, budgets, and organizational change -- not technology. Here's how to prepare."
 pubDate: 2026-01-12
-heroImage: "/images/blog/7-it-leadership-challenges-coming-in-2026-and-how-to-prepare.png"
+heroImage: "/images/blog/7-it-leadership-challenges-coming-in-2026-and-how-to-prepare.webp"
 category: "AI Strategy"
 author: "Scott Armbruster"
 tags: ["newsletter"]

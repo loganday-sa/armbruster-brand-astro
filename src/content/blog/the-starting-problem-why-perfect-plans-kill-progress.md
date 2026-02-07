@@ -2,7 +2,7 @@
 title: "The Starting Problem: Why Perfect Plans Kill Progress"
 description: "The gap between having a good idea and taking action isn't about timing or resources. It's about accepting that starting messy beats waiting for perfect."
 pubDate: 2026-01-16
-heroImage: "/images/blog/the-starting-problem-why-perfect-plans-kill-progress.png"
+heroImage: "/images/blog/the-starting-problem-why-perfect-plans-kill-progress.webp"
 category: "AI Strategy"
 author: "Scott Armbruster"
 tags: ["newsletter"]

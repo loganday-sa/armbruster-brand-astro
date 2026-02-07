@@ -2,7 +2,7 @@
 title: "The One Habit That Separates AI Winners from Everyone Else"
 description: "After working with Fortune 500s and small teams, one habit consistently separates successful AI initiatives from those that quietly die."
 pubDate: 2026-01-08
-heroImage: "/images/blog/the-one-habit-that-separates-ai-winners-from-everyone-else.png"
+heroImage: "/images/blog/the-one-habit-that-separates-ai-winners-from-everyone-else.webp"
 category: "AI Strategy"
 author: "Scott Armbruster"
 tags: ["newsletter"]

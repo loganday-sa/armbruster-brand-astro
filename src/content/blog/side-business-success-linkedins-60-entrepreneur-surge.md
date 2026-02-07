@@ -2,7 +2,7 @@
 title: "Side Business Success: LinkedIn's 60% Entrepreneur Surge"
 description: "Here's the shocking truth: 69% of professionals make the same mistake with their side business dreams. They add \"Founder\" to their LinkedIn profiles but skip the proven systems. The ones that actually turn ambition into income. Meanwhile, LinkedIn..."
 pubDate: 2026-01-10
-heroImage: "/images/blog/side-business-success-linkedins-60-entrepreneur-surge.png"
+heroImage: "/images/blog/side-business-success-linkedins-60-entrepreneur-surge.webp"
 category: "Career"
 author: "Scott Armbruster"
 tags: ["newsletter"]

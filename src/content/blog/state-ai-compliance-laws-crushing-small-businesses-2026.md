@@ -4,7 +4,7 @@ description: "States passed 145 AI laws in 2025. PerceptIn budgeted $10K, spent 
 author: "Scott Armbruster"
 category: "AI Strategy"
 pubDate: "Feb 06 2026"
-heroImage: "/images/blog/state-ai-compliance-laws-small-business-2026.png"
+heroImage: "/images/blog/state-ai-compliance-laws-small-business-2026.webp"
 tags: ["AI compliance", "small business", "regulation", "AI strategy"]
 ---
 

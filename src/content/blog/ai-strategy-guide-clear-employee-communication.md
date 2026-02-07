@@ -2,7 +2,7 @@
 title: "AI Strategy Guide: Clear Employee Communication"
 description: "73% of employees feel confused about their company's AI strategy. Clear communication fixes this. Here's a practical framework."
 pubDate: 2026-01-08
-heroImage: "/images/blog/ai-strategy-guide-clear-employee-communication.png"
+heroImage: "/images/blog/ai-strategy-guide-clear-employee-communication.webp"
 category: "AI Strategy"
 author: "Scott Armbruster"
 tags: ["newsletter"]

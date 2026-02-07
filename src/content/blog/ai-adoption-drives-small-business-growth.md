@@ -2,7 +2,7 @@
 title: "AI Adoption Drives Small Business Growth"
 description: "LinkedIn's Work Change Report shows small businesses using AI to streamline operations and drive growth. Key findings and what they mean for you."
 pubDate: 2026-01-09
-heroImage: "/images/blog/ai-adoption-drives-small-business-growth.png"
+heroImage: "/images/blog/ai-adoption-drives-small-business-growth.webp"
 category: "AI Strategy"
 author: "Scott Armbruster"
 tags: ["newsletter"]

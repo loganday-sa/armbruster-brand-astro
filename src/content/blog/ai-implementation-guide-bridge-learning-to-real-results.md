@@ -2,7 +2,7 @@
 title: "AI Implementation Guide: Bridge Learning to Real Results"
 description: "Stop watching tutorials and start implementing. A practical guide to bridging the gap between AI knowledge and real business results."
 pubDate: 2026-01-08
-heroImage: "/images/blog/ai-implementation-guide-bridge-learning-to-real-results.png"
+heroImage: "/images/blog/ai-implementation-guide-bridge-learning-to-real-results.webp"
 category: "Implementation"
 author: "Scott Armbruster"
 tags: ["newsletter"]
