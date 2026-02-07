@@ -2,7 +2,7 @@
 title: "Shadow AI: The Hidden Cost (And How to Fix It)"
 description: "Shadow AI surged 250%, adding $200K to breach costs. Here's the framework that channels employee AI use without killing innovation."
 pubDate: 2026-02-07
-heroImage: "/images/blog/shadow-ai-security-guide-2026.jpg"
+heroImage: "/images/blog/shadow-ai-costing-more-than-productivity-how-to-fix.webp"
 category: "Implementation"
 author: "Scott Armbruster"
 tags: ["ai-governance", "security", "implementation", "productivity"]
