@@ -12,13 +12,13 @@ tags: ["ai-implementation", "production", "roi", "compliance"]
 
 Your AI pilot impressed everyone six months ago. The demo went flawlessly. Leadership was excited. The vendor promised rapid deployment.
 
-Today? That pilot still sits in sandbox mode while competitors announce production deployments that actually generate revenue. Welcome to AI pilot purgatory—where 67% of organizations remain stuck between testing and scaling, according to recent [MIT Sloan research on AI deployment](https://sloanreview.mit.edu/article/ai-deployment-challenges-2026/).
+Today? That pilot still sits in sandbox mode while competitors announce production deployments that actually generate revenue. Welcome to AI pilot purgatory—where 67% of organizations remain stuck between testing and scaling, according to recent [MIT Sloan research on AI deployment](https://sloanreview.mit.edu/article/the-problem-with-ai-pilots/).
 
 ## The $75 Billion Problem in AI Pilot Purgatory
 
 **What is AI pilot purgatory?** AI pilot purgatory is the state where organizations remain stuck between successful proof-of-concept and production deployment. It affects 67% of companies, characterized by impressive demos that never scale, 14-18 month deployment delays, and only 8.6% of pilots reaching production. This gap costs enterprises millions in frozen budgets and lost competitive advantage while rivals deploy working solutions.
 
-[Gartner research shows](https://www.gartner.com/en/newsroom/press-releases/2026-01-ai-spending-projections) 25% of planned AI spending will be deferred by 2027 because companies can't prove ROI. That's $75 billion in frozen budgets. Organizations mastered the pilot but failed at production.
+[Gartner research shows](https://www.gartner.com/en/newsroom/press-releases/2026-1-15-gartner-says-worldwide-ai-spending-will-total-2-point-5-trillion-dollars-in-2026) 25% of planned AI spending will be deferred by 2027 because companies can't prove ROI. That's $75 billion in frozen budgets. Organizations mastered the pilot but failed at production.
 
 **Quick Reality Check:**
 
@@ -30,7 +30,7 @@ Today? That pilot still sits in sandbox mode while competitors announce producti
 | Employee adoption rate | 22% | 81% |
 | Compliance-ready from start | 11% | 94% |
 
-The difference isn't technology. [BCG's research confirms it](https://www.bcg.com/publications/2025/ai-transformation-success-factors): AI success is **10% algorithms, 20% data/technology, and 70% people and processes**. Yet most roadmaps obsess over the 30% while ignoring the 70% that determines success.
+The difference isn't technology. [BCG's research confirms it](https://www.bcg.com/publications/2025/closing-the-ai-impact-gap): AI success is **10% algorithms, 20% data/technology, and 70% people and processes**. Yet most roadmaps obsess over the 30% while ignoring the 70% that determines success.
 
 ## Why Your Pilot Is Still a Pilot
 
@@ -38,7 +38,7 @@ Three conversations happened at your company this week:
 
 **IT Director:** "The infrastructure works perfectly in test, but production requires security reviews we haven't started."
 
-**Compliance Officer:** "Texas TRAIGA went live January 1st. Our AI needs risk assessments we never built into the pilot." (See our full analysis of [state AI compliance laws crushing small businesses](/industry/state-ai-compliance-laws-crushing-small-businesses-2026/))
+**Compliance Officer:** "Texas TRAIGA went live January 1st. Our AI needs risk assessments we never built into the pilot." (See our full analysis of [state AI compliance laws crushing small businesses](/ai-strategy/state-ai-compliance-laws-crushing-small-businesses-2026/))
 
 **Department Head:** "My team loves the concept but nobody knows how it fits their actual workflow."
 
@@ -199,7 +199,7 @@ Stop treating your pilot like a science experiment. Start treating it like a bus
 
 The window for AI advantage is closing. Not because the technology is mature—it's not. But because operational AI is becoming table stakes, not competitive advantage.
 
-Companies deploying production AI today will compound their advantages. Those stuck in pilot purgatory will find themselves competing against organizations that have 18 months of production learning. As we showed in [95% of AI projects fail—here's how to be in the 5%](/implementation/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent/), the difference between winners and losers is execution, not technology.
+Companies deploying production AI today will compound their advantages. Those stuck in pilot purgatory will find themselves competing against organizations that have 18 months of production learning. As we showed in [95% of AI projects fail—here's how to be in the 5%](/ai-strategy/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent/), the difference between winners and losers is execution, not technology.
 
 A manufacturing client spent 14 months perfecting their quality control AI pilot. Their competitor deployed a "good enough" version in 8 weeks. Today, the competitor has processed 2.3 million units through their system, improving accuracy from 71% to 93% through production learning. The perfect pilot? Still in testing.
 
@@ -220,6 +220,6 @@ The pilot phase is over. Production starts now.
 ---
 
 **Related Reading:**
-- [95% of AI Projects Fail—Here's How to Be in the 5%](/implementation/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent/)
+- [95% of AI Projects Fail—Here's How to Be in the 5%](/ai-strategy/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent/)
 - [Why Your AI Strategy Is Backwards (And How to Fix It)](/ai-strategy/why-your-ai-strategy-is-backwards-and-how-to-fix-it/)
-- [State AI Compliance Laws Crushing Small Businesses in 2026](/industry/state-ai-compliance-laws-crushing-small-businesses-2026/)
+- [State AI Compliance Laws Crushing Small Businesses in 2026](/ai-strategy/state-ai-compliance-laws-crushing-small-businesses-2026/)
