@@ -131,51 +131,115 @@ import Layout from '../../layouts/Layout.astro';
         <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-400 font-bold">3</div>
         <h2 class="text-2xl font-bold">Approved AI Toolkit Matrix</h2>
       </div>
-      <p class="text-slate-300 mb-6">Use this as your starting point for Week 2. Covers 80% of use cases with 5 tools. Adjust pricing -- vendors will cut 40-60% on enterprise agreements when you consolidate licenses.</p>
+      <p class="text-slate-300 mb-6">Use this as your starting point for Week 2. The goal is to cover 80% of use cases with 5 or fewer tools. Consolidating tools reduces cost, simplifies security, and makes training easier. Vendors will cut 40-60% on enterprise agreements when you consolidate licenses.</p>
 
-      <div class="overflow-x-auto mb-6">
-        <table class="w-full text-sm border-collapse">
-          <thead>
-            <tr class="border-b border-slate-700">
-              <th class="text-left py-3 px-4 text-slate-400 font-semibold">Use Case</th>
-              <th class="text-left py-3 px-4 text-slate-400 font-semibold">Recommended Tool</th>
-              <th class="text-left py-3 px-4 text-slate-400 font-semibold">Cost/User/Mo</th>
-              <th class="text-left py-3 px-4 text-slate-400 font-semibold">Security Notes</th>
-            </tr>
-          </thead>
-          <tbody class="text-slate-300">
-            <tr class="border-b border-slate-800">
-              <td class="py-3 px-4">General AI Assistant</td>
-              <td class="py-3 px-4 text-white">ChatGPT Team or Claude Team</td>
-              <td class="py-3 px-4">$25-30</td>
-              <td class="py-3 px-4">SOC 2 compliant, no training on your data</td>
-            </tr>
-            <tr class="border-b border-slate-800">
-              <td class="py-3 px-4">Code Assistant</td>
-              <td class="py-3 px-4 text-white">GitHub Copilot or Cursor Team</td>
-              <td class="py-3 px-4">$19-40</td>
-              <td class="py-3 px-4">No code sent to third parties, local processing available</td>
-            </tr>
-            <tr class="border-b border-slate-800">
-              <td class="py-3 px-4">Document Analysis</td>
-              <td class="py-3 px-4 text-white">Perplexity Pro or ChatGPT Team</td>
-              <td class="py-3 px-4">$20-25</td>
-              <td class="py-3 px-4">Source citations, enterprise data handling</td>
-            </tr>
-            <tr class="border-b border-slate-800">
-              <td class="py-3 px-4">Image Generation</td>
-              <td class="py-3 px-4 text-white">Midjourney or DALL-E (via ChatGPT)</td>
-              <td class="py-3 px-4">$10-30</td>
-              <td class="py-3 px-4">Commercial usage rights, no face training</td>
-            </tr>
-            <tr class="border-b border-slate-800">
-              <td class="py-3 px-4">Meeting Transcription</td>
-              <td class="py-3 px-4 text-white">Otter.ai Business or Fireflies</td>
-              <td class="py-3 px-4">$15-20</td>
-              <td class="py-3 px-4">GDPR compliant, admin controls for recording</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="space-y-6 mb-8">
+        <!-- General AI Assistant -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start justify-between mb-3">
+            <h3 class="text-white font-bold text-lg">General AI Assistant</h3>
+            <span class="text-xs text-slate-500 font-semibold bg-slate-800 px-2 py-1 rounded">FOUNDATION TOOL</span>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-slate-400 mb-2">Recommended (in order):</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-sm bg-blue-600/15 text-blue-400 px-3 py-1 rounded-full font-medium">1. Claude Team</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">2. Gemini Business</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">3. ChatGPT Team</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">4. M365 Copilot</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">5. Local open-source</span>
+            </div>
+          </div>
+          <p class="text-slate-300 text-sm mb-3">SOC 2 compliant on Team/Business plans. No training on your data. This is your most important choice -- it will also serve as your document analysis and potentially image generation tool.</p>
+          <div class="bg-slate-950/50 border border-slate-800/60 rounded-lg p-4 text-sm">
+            <p class="text-slate-400"><strong class="text-slate-300">Every business is different.</strong> Your industry, existing tech stack, compliance requirements, and team size all affect which tool is the best fit. <a href="/resources/use-case-checklists/general-ai-assistant" class="text-blue-400 hover:text-white transition">Use the General AI Assistant Checklist</a> to evaluate which option works for your situation.</p>
+          </div>
+        </div>
+
+        <!-- Code Assistant -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start justify-between mb-3">
+            <h3 class="text-white font-bold text-lg">Code Assistant</h3>
+            <span class="text-xs text-slate-500 font-semibold bg-slate-800 px-2 py-1 rounded">DEV TEAMS ONLY</span>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-slate-400 mb-2">Recommended (in order):</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-sm bg-blue-600/15 text-blue-400 px-3 py-1 rounded-full font-medium">1. Claude Code</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">2. Codex</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">3. GitHub Copilot</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">4. Cursor Team</span>
+            </div>
+          </div>
+          <p class="text-slate-300 text-sm mb-3">Price is the biggest variable here. Costs range from usage-based to $40+/user/month depending on the tool and plan. No code sent to third parties on enterprise plans, local processing available on some.</p>
+          <div class="bg-slate-950/50 border border-slate-800/60 rounded-lg p-4 text-sm">
+            <p class="text-slate-400"><strong class="text-slate-300">Every business is different.</strong> Your language stack, repo size, security posture, and budget all matter. Pricing models vary significantly between tools. <a href="/resources/use-case-checklists/code-assistant" class="text-blue-400 hover:text-white transition">Use the Code Assistant Checklist</a> to figure out which fits your team and budget.</p>
+          </div>
+        </div>
+
+        <!-- Document Analysis -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start justify-between mb-3">
+            <h3 class="text-white font-bold text-lg">Document Analysis</h3>
+            <span class="text-xs text-green-500 font-semibold bg-green-600/10 px-2 py-1 rounded">REUSE OPPORTUNITY</span>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-slate-400 mb-2">Recommended (in order):</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-sm bg-blue-600/15 text-blue-400 px-3 py-1 rounded-full font-medium">1. Your General AI Assistant</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">2. Perplexity Pro</span>
+            </div>
+          </div>
+          <p class="text-slate-300 text-sm mb-3">Keep your tool count low. Whichever General AI Assistant you chose above likely handles document analysis well. Perplexity adds source citations if research-heavy workflows are a priority. There are many other good options, but every new tool is another license, another security review, and another training session.</p>
+          <div class="bg-slate-950/50 border border-slate-800/60 rounded-lg p-4 text-sm">
+            <p class="text-slate-400"><strong class="text-slate-300">Every business is different.</strong> Your document types, compliance needs, and volume should drive this decision. <a href="/resources/use-case-checklists/document-analysis" class="text-blue-400 hover:text-white transition">Use the Document Analysis Checklist</a> to evaluate whether you need a dedicated tool or can reuse what you have.</p>
+          </div>
+        </div>
+
+        <!-- Image Generation -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start justify-between mb-3">
+            <h3 class="text-white font-bold text-lg">Image Generation</h3>
+            <span class="text-xs text-green-500 font-semibold bg-green-600/10 px-2 py-1 rounded">REUSE OPPORTUNITY</span>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-slate-400 mb-2">Recommended (in order):</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-sm bg-blue-600/15 text-blue-400 px-3 py-1 rounded-full font-medium">1. Your General AI Assistant</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">2. MidJourney</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">3. Gemini</span>
+            </div>
+          </div>
+          <p class="text-slate-300 text-sm mb-3">Reuse first. ChatGPT and Gemini both have image generation built in. If your team needs higher-fidelity creative output, MidJourney is the next step. Commercial usage rights on all recommended options.</p>
+          <div class="bg-slate-950/50 border border-slate-800/60 rounded-lg p-4 text-sm">
+            <p class="text-slate-400"><strong class="text-slate-300">Every business is different.</strong> Your creative volume, brand guidelines, and quality bar all affect this choice. <a href="/resources/use-case-checklists/image-generation" class="text-blue-400 hover:text-white transition">Use the Image Generation Checklist</a> to decide if the built-in option is enough or if you need a specialist tool.</p>
+          </div>
+        </div>
+
+        <!-- Meeting Transcription -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start justify-between mb-3">
+            <h3 class="text-white font-bold text-lg">Meeting Transcription</h3>
+            <span class="text-xs text-yellow-500 font-semibold bg-yellow-600/10 px-2 py-1 rounded">CHECK EXISTING TOOLS</span>
+          </div>
+          <div class="mb-3">
+            <p class="text-sm text-slate-400 mb-2">Recommended (in order):</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-sm bg-blue-600/15 text-blue-400 px-3 py-1 rounded-full font-medium">1. Your existing meeting platform</span>
+              <span class="text-sm bg-blue-600/15 text-blue-400 px-3 py-1 rounded-full font-medium">2. Your General AI Assistant</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">3. Otter.ai Business</span>
+              <span class="text-sm bg-slate-800 text-slate-300 px-3 py-1 rounded-full">4. Fireflies.ai</span>
+            </div>
+          </div>
+          <p class="text-slate-300 text-sm mb-3">There are many good transcription tools, but check what you already have first. Zoom, Teams, and Google Meet all have built-in AI transcription and summaries now. If your General AI Assistant supports it, use that. Only add a dedicated tool if your existing stack falls short. <strong class="text-white">Critical:</strong> validate the Enterprise Data Protection policy of any transcription tool -- meetings often contain sensitive data.</p>
+          <div class="bg-slate-950/50 border border-slate-800/60 rounded-lg p-4 text-sm">
+            <p class="text-slate-400"><strong class="text-slate-300">Every business is different.</strong> Your meeting platform, recording policies, and data sensitivity requirements should guide this choice. <a href="/resources/use-case-checklists/meeting-transcription" class="text-blue-400 hover:text-white transition">Use the Meeting Transcription Checklist</a> to audit what you already have before adding another tool.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-xl p-6 mb-6">
+        <p class="text-slate-300 text-sm"><strong class="text-white">The 80% rule:</strong> These 5 use cases cover the vast majority of what your team needs. There are hundreds of AI tools on the market, but every tool you add is another license to manage, another security review, and another training burden. Start here, measure adoption, and expand deliberately. If you want to go deeper on any of these categories, review the <a href="/resources/use-case-checklists" class="text-blue-400 hover:text-white transition">Use Case Checklists</a> for a structured evaluation framework.</p>
       </div>
 
       <p class="text-slate-400 text-sm"><strong class="text-slate-300">Negotiation tip:</strong> Contact vendors directly and reference that you're consolidating from multiple individual accounts to one enterprise agreement. Most will offer annual discounts of 40-60% to close the deal.</p>
