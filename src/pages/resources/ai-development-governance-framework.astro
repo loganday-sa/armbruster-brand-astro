@@ -1,0 +1,877 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="AI Development & Deployment Governance Framework | Scott Armbruster" description="Complete governance framework for building and deploying AI systems. EU AI Act compliance, bias audits, impact assessments, model documentation, and regulatory mapping.">
+  <!-- Hero -->
+  <section class="pt-32 pb-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-6">
+        Free Resource
+      </p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+        AI Development & Deployment Governance Framework
+      </h1>
+      <p class="text-xl text-slate-300 mb-8 max-w-3xl">
+        The compliance and governance framework for organizations building AI-powered products and systems. Navigate EU AI Act requirements, state regulations, bias testing, impact assessments, and audit trails—before they become legal liabilities.
+      </p>
+      <div class="flex flex-wrap items-center gap-4 text-sm text-slate-400 mb-8">
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+          Regulatory compliance
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+          </svg>
+          Risk classification system
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+          Documentation templates
+        </span>
+      </div>
+
+      <div class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6 mb-8">
+        <p class="text-slate-300"><strong class="text-white">Important distinction:</strong> This framework is for organizations <strong class="text-orange-400">building AI systems</strong> (AI-powered features, ML models, automated decision tools). If you're managing employees using AI tools like ChatGPT, you want the <a href="/resources/ai-tool-governance-pipeline" class="text-blue-400 hover:text-white transition">AI Tool Governance Pipeline</a> instead.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regulatory Landscape Overview -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8">The Regulatory Landscape (2025-2027)</h2>
+      <p class="text-slate-300 mb-8">
+        AI governance isn't optional anymore. Between the EU AI Act, state laws, and sector-specific regulations, ignorance is expensive. Here's what's actually enforceable and what you need to track.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <!-- EU AI Act -->
+        <div class="bg-slate-900 border-2 border-blue-500/30 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg">EU AI Act</h3>
+          </div>
+          <p class="text-slate-400 text-sm mb-3"><strong class="text-white">Status:</strong> Adopted April 2024. Full enforcement by 2027 (high-risk provisions by August 2026).</p>
+          <p class="text-slate-300 text-sm mb-3"><strong class="text-white">Who it affects:</strong> Any company offering AI systems in the EU market, regardless of where you're headquartered.</p>
+          <div class="text-sm space-y-2">
+            <p class="text-slate-300"><strong class="text-white">Key requirements:</strong></p>
+            <ul class="text-slate-400 space-y-1 ml-4">
+              <li>• Risk classification (Unacceptable/High/Limited/Minimal)</li>
+              <li>• Conformity assessments for high-risk AI</li>
+              <li>• Technical documentation and audit trails</li>
+              <li>• Human oversight mechanisms</li>
+              <li>• Transparency and disclosure requirements</li>
+            </ul>
+          </div>
+          <p class="text-blue-400 text-sm mt-4 font-semibold">→ Fines up to €35M or 7% of global revenue</p>
+        </div>
+
+        <!-- US State Laws -->
+        <div class="bg-slate-900 border-2 border-purple-500/30 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-purple-600/20 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg">US State Regulations</h3>
+          </div>
+          <p class="text-slate-400 text-sm mb-3"><strong class="text-white">Status:</strong> Colorado SB 24-205 effective 2026. California, New York, others active or pending.</p>
+          <p class="text-slate-300 text-sm mb-3"><strong class="text-white">Who it affects:</strong> Companies deploying "high-risk AI" in specific states.</p>
+          <div class="text-sm space-y-2">
+            <p class="text-slate-300"><strong class="text-white">Notable laws:</strong></p>
+            <ul class="text-slate-400 space-y-1 ml-4">
+              <li>• <strong class="text-white">Colorado SB 24-205:</strong> Impact assessments for high-risk AI</li>
+              <li>• <strong class="text-white">NYC Local Law 144:</strong> Bias audits for hiring AI (effective 2023)</li>
+              <li>• <strong class="text-white">California AB 2930:</strong> Automated decision tool transparency</li>
+              <li>• Multiple states drafting similar frameworks</li>
+            </ul>
+          </div>
+          <p class="text-purple-400 text-sm mt-4 font-semibold">→ Penalties vary by state; Colorado: up to $20K per violation</p>
+        </div>
+
+        <!-- GDPR/Privacy Laws -->
+        <div class="bg-slate-900 border-2 border-green-500/30 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-green-600/20 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg">GDPR & Privacy Laws</h3>
+          </div>
+          <p class="text-slate-400 text-sm mb-3"><strong class="text-white">Status:</strong> GDPR enforced since 2018. Article 22 applies to automated decisions.</p>
+          <p class="text-slate-300 text-sm mb-3"><strong class="text-white">Who it affects:</strong> Any AI system processing EU residents' personal data.</p>
+          <div class="text-sm space-y-2">
+            <p class="text-slate-300"><strong class="text-white">AI-specific requirements:</strong></p>
+            <ul class="text-slate-400 space-y-1 ml-4">
+              <li>• Right to explanation for automated decisions</li>
+              <li>• Right to human review and contest</li>
+              <li>• Data Protection Impact Assessments (DPIA) for AI</li>
+              <li>• Lawful basis for processing personal data with AI</li>
+            </ul>
+          </div>
+          <p class="text-green-400 text-sm mt-4 font-semibold">→ Fines up to €20M or 4% of global revenue</p>
+        </div>
+
+        <!-- Sector-Specific -->
+        <div class="bg-slate-900 border-2 border-orange-500/30 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-orange-600/20 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg">Sector-Specific Rules</h3>
+          </div>
+          <p class="text-slate-400 text-sm mb-3"><strong class="text-white">Status:</strong> Various federal and state regulations apply based on industry.</p>
+          <p class="text-slate-300 text-sm mb-3"><strong class="text-white">Who it affects:</strong> Healthcare, finance, employment, housing, insurance sectors.</p>
+          <div class="text-sm space-y-2">
+            <p class="text-slate-300"><strong class="text-white">Key regulations:</strong></p>
+            <ul class="text-slate-400 space-y-1 ml-4">
+              <li>• <strong class="text-white">Healthcare:</strong> HIPAA + FDA AI/ML medical device framework</li>
+              <li>• <strong class="text-white">Finance:</strong> ECOA (fair lending), FCRA (credit decisions)</li>
+              <li>• <strong class="text-white">Employment:</strong> EEOC guidance on AI hiring tools</li>
+              <li>• <strong class="text-white">Housing:</strong> Fair Housing Act applies to AI screening</li>
+            </ul>
+          </div>
+          <p class="text-orange-400 text-sm mt-4 font-semibold">→ Industry-specific penalties + reputational damage</p>
+        </div>
+      </div>
+
+      <div class="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+        <p class="text-slate-300 text-sm"><strong class="text-white">The reality:</strong> If you're deploying AI that makes or influences decisions about people (hiring, lending, healthcare, pricing), you're almost certainly subject to multiple overlapping regulations. Compliance isn't about checking boxes—it's about documenting intent, testing for harm, and maintaining audit trails from day one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI System Classification Framework -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8">AI System Classification Framework</h2>
+      <p class="text-slate-300 mb-8">
+        First step: classify your AI system. The EU AI Act uses a 4-tier model. US state laws use similar logic. This determines what documentation, testing, and oversight you need.
+      </p>
+
+      <div class="space-y-6 mb-8">
+        <!-- Unacceptable Risk -->
+        <div class="bg-gradient-to-br from-red-900/30 to-red-950/20 border-2 border-red-500/50 rounded-xl p-6">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-red-400 mb-2">Unacceptable Risk</h3>
+              <p class="text-slate-400 text-sm">Prohibited uses under EU AI Act</p>
+            </div>
+            <span class="text-xs font-bold bg-red-500/20 text-red-400 px-3 py-1 rounded-full">BANNED</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Examples:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• Social scoring by governments</li>
+                <li>• Real-time biometric surveillance in public (with exceptions)</li>
+                <li>• Subliminal manipulation causing harm</li>
+                <li>• Exploiting vulnerabilities (age, disability)</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Governance requirement:</strong></p>
+              <p class="text-red-400 text-sm font-semibold">Do not deploy. Period.</p>
+              <p class="text-slate-400 text-sm mt-2">If your system does this, stop development immediately and consult legal.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- High Risk -->
+        <div class="bg-gradient-to-br from-orange-900/30 to-orange-950/20 border-2 border-orange-500/50 rounded-xl p-6">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-orange-400 mb-2">High Risk</h3>
+              <p class="text-slate-400 text-sm">Significant potential for harm requiring strict governance</p>
+            </div>
+            <span class="text-xs font-bold bg-orange-500/20 text-orange-400 px-3 py-1 rounded-full">HEAVY COMPLIANCE</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Examples:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• AI recruiting/hiring tools (NYC Law 144)</li>
+                <li>• Credit scoring and loan approval</li>
+                <li>• Medical diagnosis or treatment recommendations</li>
+                <li>• Law enforcement risk assessments</li>
+                <li>• Educational scoring (grades, admissions)</li>
+                <li>• Employment management (monitoring, promotion)</li>
+                <li>• Access to essential services (housing, insurance)</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Governance requirements:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• Pre-deployment impact assessment</li>
+                <li>• Bias audit (annual or per use case)</li>
+                <li>• Technical documentation package</li>
+                <li>• Human oversight mechanism</li>
+                <li>• Ongoing monitoring and logging</li>
+                <li>• Conformity assessment (EU)</li>
+                <li>• Transparency disclosures</li>
+              </ul>
+              <p class="text-orange-400 text-sm mt-3 font-semibold">→ See detailed checklist below</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Limited Risk -->
+        <div class="bg-gradient-to-br from-yellow-900/30 to-yellow-950/20 border-2 border-yellow-500/50 rounded-xl p-6">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-yellow-400 mb-2">Limited Risk</h3>
+              <p class="text-slate-400 text-sm">Transparency obligations but lighter compliance burden</p>
+            </div>
+            <span class="text-xs font-bold bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full">DISCLOSURE REQUIRED</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Examples:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• AI chatbots and virtual assistants</li>
+                <li>• AI-generated content (text, images, video)</li>
+                <li>• Emotion recognition systems</li>
+                <li>• Deepfakes and synthetic media</li>
+                <li>• Recommendation engines (content, products)</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Governance requirements:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• Disclose AI interaction to users</li>
+                <li>• Label AI-generated content</li>
+                <li>• Watermark synthetic media (where feasible)</li>
+                <li>• Basic documentation of system purpose</li>
+              </ul>
+              <p class="text-yellow-400 text-sm mt-3 font-semibold">→ Focus on transparency, not heavy testing</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Minimal Risk -->
+        <div class="bg-gradient-to-br from-green-900/30 to-green-950/20 border-2 border-green-500/50 rounded-xl p-6">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-green-400 mb-2">Minimal Risk</h3>
+              <p class="text-slate-400 text-sm">No specific AI regulations apply</p>
+            </div>
+            <span class="text-xs font-bold bg-green-500/20 text-green-400 px-3 py-1 rounded-full">VOLUNTARY</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Examples:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• Spam filters</li>
+                <li>• AI-powered video games</li>
+                <li>• Inventory management algorithms</li>
+                <li>• Weather prediction models</li>
+                <li>• Non-personalized recommendation engines</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Governance requirements:</strong></p>
+              <p class="text-green-400 text-sm">None mandated. Follow general software best practices.</p>
+              <p class="text-slate-400 text-sm mt-2">You can voluntarily adopt codes of conduct or documentation standards, but it's not legally required.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <h3 class="font-bold text-lg mb-4 text-blue-400">Quick Classification Decision Tree</h3>
+        <div class="space-y-4 text-sm">
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center text-blue-400 font-bold flex-shrink-0">1</div>
+            <div class="flex-1">
+              <p class="text-white font-semibold mb-1">Does your AI manipulate, exploit, or surveil people in prohibited ways?</p>
+              <p class="text-red-400">→ YES: Unacceptable Risk. Do not proceed.</p>
+              <p class="text-slate-400">→ NO: Continue to step 2</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center text-blue-400 font-bold flex-shrink-0">2</div>
+            <div class="flex-1">
+              <p class="text-white font-semibold mb-1">Does your AI make or significantly influence decisions about people in sensitive areas?</p>
+              <p class="text-slate-400 text-xs mb-1">(Hiring, lending, healthcare, law enforcement, education, essential services)</p>
+              <p class="text-orange-400">→ YES: High Risk. Full compliance required.</p>
+              <p class="text-slate-400">→ NO: Continue to step 3</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center text-blue-400 font-bold flex-shrink-0">3</div>
+            <div class="flex-1">
+              <p class="text-white font-semibold mb-1">Does your AI interact with users, generate content, or create synthetic media?</p>
+              <p class="text-yellow-400">→ YES: Limited Risk. Transparency required.</p>
+              <p class="text-green-400">→ NO: Minimal Risk. No specific AI governance needed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Risk AI Compliance Checklist -->
+  <section class="py-16 px-6 border-t border-slate-800/60 bg-slate-900/30">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8">High-Risk AI: Pre-Deployment Compliance Checklist</h2>
+      <p class="text-slate-300 mb-8">
+        If your system is High Risk, here's what you need before launch. This checklist combines EU AI Act, Colorado law, NYC Local Law 144, and GDPR requirements. One "No" means you're not ready.
+      </p>
+
+      <div class="space-y-6">
+        <!-- Impact Assessment -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <input type="checkbox" class="mt-1" disabled />
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2 text-orange-400">1. Pre-Deployment Impact Assessment Completed</h3>
+              <p class="text-slate-300 text-sm mb-3">Document intended use, potential harms, mitigation strategies, and affected populations.</p>
+              <div class="bg-slate-950/50 rounded-lg p-4 text-sm">
+                <p class="text-slate-300 mb-2"><strong class="text-white">Minimum required content:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• Detailed system description (what it does, how it works)</li>
+                  <li>• Use case and decision-making role (advisory vs. fully automated)</li>
+                  <li>• Data sources and training data description</li>
+                  <li>• Reasonably foreseeable risks of harm (bias, errors, misuse)</li>
+                  <li>• Risk mitigation measures implemented</li>
+                  <li>• Affected demographic groups and disparate impact analysis</li>
+                  <li>• Human oversight mechanisms</li>
+                </ul>
+                <p class="text-blue-400 mt-3 text-xs">Template: Colorado requires this for high-risk AI by 2026. EU AI Act Article 27 requires similar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bias Audit -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <input type="checkbox" class="mt-1" disabled />
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2 text-orange-400">2. Independent Bias Audit Conducted</h3>
+              <p class="text-slate-300 text-sm mb-3">Third-party or internal audit testing for discriminatory outcomes across protected classes.</p>
+              <div class="bg-slate-950/50 rounded-lg p-4 text-sm">
+                <p class="text-slate-300 mb-2"><strong class="text-white">Required testing:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• Disparate impact analysis by race, gender, age (if data available)</li>
+                  <li>• Selection rate ratios or impact ratios (NYC: must publish)</li>
+                  <li>• Confusion matrix metrics (false positive/negative rates by group)</li>
+                  <li>• Statistical significance testing</li>
+                  <li>• Audit date, methodology, sample size documented</li>
+                </ul>
+                <p class="text-slate-300 mt-3 mb-2"><strong class="text-white">Frequency:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• NYC Local Law 144: Annual audit for hiring tools</li>
+                  <li>• EU AI Act: Audit before deployment + when substantial modifications made</li>
+                  <li>• Best practice: Annually or when performance degrades</li>
+                </ul>
+                <p class="text-blue-400 mt-3 text-xs">NYC requires publishing summary statistics. EU requires audit trail documentation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Documentation -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <input type="checkbox" class="mt-1" disabled />
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2 text-orange-400">3. Technical Documentation Package Created</h3>
+              <p class="text-slate-300 text-sm mb-3">Comprehensive documentation of system design, training, testing, and performance.</p>
+              <div class="bg-slate-950/50 rounded-lg p-4 text-sm">
+                <p class="text-slate-300 mb-2"><strong class="text-white">EU AI Act Annex IV requirements:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• System architecture and design specs</li>
+                  <li>• Training data description (sources, labeling, preprocessing)</li>
+                  <li>• Training methodology and hyperparameters</li>
+                  <li>• Model performance metrics (accuracy, precision, recall)</li>
+                  <li>• Validation and testing results</li>
+                  <li>• Known limitations and failure modes</li>
+                  <li>• Cybersecurity measures</li>
+                  <li>• Change log and version control</li>
+                </ul>
+                <p class="text-slate-300 mt-3 mb-2"><strong class="text-white">Retention:</strong></p>
+                <p class="text-slate-400">EU: 10 years after system placed on market. US: Varies by sector (often 3-7 years).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Model Card -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <input type="checkbox" class="mt-1" disabled />
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2 text-orange-400">4. Model Card Published (Internal or External)</h3>
+              <p class="text-slate-300 text-sm mb-3">Standardized documentation format for ML model details, intended use, and limitations.</p>
+              <div class="bg-slate-950/50 rounded-lg p-4 text-sm">
+                <p class="text-slate-300 mb-2"><strong class="text-white">Model card sections (based on Mitchell et al. framework):</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• Model details (version, type, authors, license)</li>
+                  <li>• Intended use (primary use cases, out-of-scope uses)</li>
+                  <li>• Factors (relevant groups, environmental conditions)</li>
+                  <li>• Metrics (performance measures used)</li>
+                  <li>• Training data (size, composition, preprocessing)</li>
+                  <li>• Evaluation data (test set description, demographics if relevant)</li>
+                  <li>• Quantitative analyses (performance by subgroup)</li>
+                  <li>• Ethical considerations (fairness, privacy, security)</li>
+                  <li>• Caveats and recommendations (known limitations)</li>
+                </ul>
+                <p class="text-blue-400 mt-3 text-xs">Template available at modelcards.withgoogle.com. Not legally required but considered best practice.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Human Oversight -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <input type="checkbox" class="mt-1" disabled />
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2 text-orange-400">5. Human Oversight Mechanism Implemented</h3>
+              <p class="text-slate-300 text-sm mb-3">GDPR Article 22 and EU AI Act require human review capability for high-stakes decisions.</p>
+              <div class="bg-slate-950/50 rounded-lg p-4 text-sm">
+                <p class="text-slate-300 mb-2"><strong class="text-white">Acceptable oversight models:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• Human-in-the-loop: Human approves each decision before execution</li>
+                  <li>• Human-on-the-loop: Human monitors system and can intervene</li>
+                  <li>• Human-in-command: Human can override or shut down system</li>
+                </ul>
+                <p class="text-slate-300 mt-3 mb-2"><strong class="text-white">Documentation required:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• Which oversight model is used and why</li>
+                  <li>• Who has oversight authority (roles, training requirements)</li>
+                  <li>• Intervention triggers and escalation procedures</li>
+                  <li>• Interface design for human reviewers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logging and Audit Trails -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <input type="checkbox" class="mt-1" disabled />
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2 text-orange-400">6. Automated Logging and Audit Trails Active</h3>
+              <p class="text-slate-300 text-sm mb-3">EU AI Act Article 12: High-risk systems must enable traceability through logging.</p>
+              <div class="bg-slate-950/50 rounded-lg p-4 text-sm">
+                <p class="text-slate-300 mb-2"><strong class="text-white">What to log:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• Input data for each decision (or representative sample)</li>
+                  <li>• Model output and confidence scores</li>
+                  <li>• Timestamp and system version used</li>
+                  <li>• User or system that invoked the model</li>
+                  <li>• Human override events (if applicable)</li>
+                  <li>• Errors, exceptions, and edge cases</li>
+                </ul>
+                <p class="text-slate-300 mt-3 mb-2"><strong class="text-white">Retention and access:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• Logs retained per regulation (typically 3-10 years)</li>
+                  <li>• Accessible to auditors and regulators on request</li>
+                  <li>• Protected from tampering (append-only, cryptographic signing)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transparency Disclosures -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <input type="checkbox" class="mt-1" disabled />
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2 text-orange-400">7. User-Facing Transparency Disclosures</h3>
+              <p class="text-slate-300 text-sm mb-3">Inform affected individuals that AI is used and provide meaningful information about it.</p>
+              <div class="bg-slate-950/50 rounded-lg p-4 text-sm">
+                <p class="text-slate-300 mb-2"><strong class="text-white">Required disclosures:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• Clear notice that AI is making or assisting with decisions</li>
+                  <li>• Purpose and general logic of the AI system</li>
+                  <li>• Right to contest or request human review (where applicable)</li>
+                  <li>• Contact for questions or complaints</li>
+                </ul>
+                <p class="text-slate-300 mt-3 mb-2"><strong class="text-white">Example (NYC hiring tool):</strong></p>
+                <p class="text-slate-400 italic">"This employer uses an automated employment decision tool (AEDT) to assist in hiring decisions. The tool analyzes resume keywords and scores candidates based on relevance to the job description. An independent bias audit was conducted on [date]. You have the right to request an alternative selection process or accommodation. For questions, contact [email]."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ongoing Monitoring Plan -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <div class="flex items-start gap-4">
+            <input type="checkbox" class="mt-1" disabled />
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2 text-orange-400">8. Post-Deployment Monitoring Plan Established</h3>
+              <p class="text-slate-300 text-sm mb-3">EU AI Act Article 61: Continuous monitoring required for high-risk AI in operation.</p>
+              <div class="bg-slate-950/50 rounded-lg p-4 text-sm">
+                <p class="text-slate-300 mb-2"><strong class="text-white">Monitoring plan must include:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• Performance metrics tracked (accuracy, error rates)</li>
+                  <li>• Drift detection (data drift, concept drift monitoring)</li>
+                  <li>• Bias metrics tracked over time (same as initial audit)</li>
+                  <li>• Incident reporting procedures (what triggers investigation)</li>
+                  <li>• Review cadence (monthly, quarterly, or trigger-based)</li>
+                  <li>• Responsible team and escalation path</li>
+                </ul>
+                <p class="text-slate-300 mt-3 mb-2"><strong class="text-white">Trigger for re-audit:</strong></p>
+                <ul class="text-slate-400 space-y-1 ml-4">
+                  <li>• Statistically significant performance degradation</li>
+                  <li>• User complaints exceed threshold</li>
+                  <li>• Substantial modification to model or data</li>
+                  <li>• Annual review (per NYC Law 144 or internal policy)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-orange-900/20 border border-orange-500/30 rounded-xl p-6 mt-8">
+        <p class="text-slate-300"><strong class="text-white">Deployment readiness:</strong> All 8 checkboxes must be complete before launching a high-risk AI system in regulated markets. If you're missing any, you're not compliant. The cost of getting this wrong isn't just fines—it's reputational damage, lawsuits, and rebuilding trust.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI System Inventory Template -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8">AI System Inventory & Registry Template</h2>
+      <p class="text-slate-300 mb-8">
+        You can't govern what you can't see. Maintain a living inventory of all AI systems in development or production. Colorado law and EU AI Act both implicitly require this.
+      </p>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-6">
+        <h3 class="font-bold text-lg mb-4 text-blue-400">Inventory Fields (Track for Each AI System)</h3>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-slate-700">
+                <th class="text-left py-3 px-3 text-white font-semibold">Field</th>
+                <th class="text-left py-3 px-3 text-white font-semibold">Description</th>
+                <th class="text-left py-3 px-3 text-white font-semibold">Why It Matters</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-300">
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">System Name</td>
+                <td class="py-3 px-3 text-slate-400">Internal identifier</td>
+                <td class="py-3 px-3 text-slate-400">Unique reference for documentation</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Owner/Product Team</td>
+                <td class="py-3 px-3 text-slate-400">Team responsible for system</td>
+                <td class="py-3 px-3 text-slate-400">Accountability and contact point</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Risk Classification</td>
+                <td class="py-3 px-3 text-slate-400">Unacceptable / High / Limited / Minimal</td>
+                <td class="py-3 px-3 text-slate-400">Determines compliance requirements</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Use Case</td>
+                <td class="py-3 px-3 text-slate-400">What the system does</td>
+                <td class="py-3 px-3 text-slate-400">Justifies risk classification</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Deployment Status</td>
+                <td class="py-3 px-3 text-slate-400">Research / Dev / Staging / Production</td>
+                <td class="py-3 px-3 text-slate-400">Compliance kicks in at production</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Deployment Date</td>
+                <td class="py-3 px-3 text-slate-400">When system went live</td>
+                <td class="py-3 px-3 text-slate-400">Audit schedule and retention dates</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Affected Geographies</td>
+                <td class="py-3 px-3 text-slate-400">EU / US (which states) / Other</td>
+                <td class="py-3 px-3 text-slate-400">Which regulations apply</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Impact Assessment</td>
+                <td class="py-3 px-3 text-slate-400">Link to document or "N/A"</td>
+                <td class="py-3 px-3 text-slate-400">Required for High Risk systems</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Last Bias Audit</td>
+                <td class="py-3 px-3 text-slate-400">Date of most recent audit</td>
+                <td class="py-3 px-3 text-slate-400">Track compliance with annual requirements</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Technical Docs</td>
+                <td class="py-3 px-3 text-slate-400">Link to documentation package</td>
+                <td class="py-3 px-3 text-slate-400">EU AI Act Annex IV requirement</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Human Oversight Model</td>
+                <td class="py-3 px-3 text-slate-400">In-loop / On-loop / In-command / None</td>
+                <td class="py-3 px-3 text-slate-400">GDPR Article 22 compliance</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Logging Enabled</td>
+                <td class="py-3 px-3 text-slate-400">Yes / No</td>
+                <td class="py-3 px-3 text-slate-400">EU AI Act Article 12 requirement</td>
+              </tr>
+              <tr class="border-b border-slate-800">
+                <td class="py-3 px-3 font-semibold">Next Review Date</td>
+                <td class="py-3 px-3 text-slate-400">Scheduled re-audit or monitoring review</td>
+                <td class="py-3 px-3 text-slate-400">Ongoing compliance tracking</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-xl p-6">
+        <p class="text-slate-300 text-sm"><strong class="text-white">Governance tip:</strong> Store this inventory in a shared system (Airtable, Notion, internal wiki) accessible to Legal, Compliance, Product, and Engineering. Review quarterly. Add new systems as they move from dev to staging. This becomes your compliance dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Incident Response Procedures -->
+  <section class="py-16 px-6 border-t border-slate-800/60 bg-slate-900/30">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8">AI Incident Response Procedures</h2>
+      <p class="text-slate-300 mb-8">
+        When your AI system fails, discriminates, or causes harm, response speed matters. EU AI Act Article 62 requires reporting serious incidents to regulators. Here's your playbook.
+      </p>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8">
+        <h3 class="font-bold text-lg mb-4 text-red-400">What Qualifies as an AI Incident?</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Technical Failures:</strong></p>
+            <ul class="text-slate-400 text-sm space-y-1 ml-4">
+              <li>• Model performance drops below acceptable threshold</li>
+              <li>• Data drift causing erroneous predictions</li>
+              <li>• System produces unexplained outputs</li>
+              <li>• Security breach exposing model or data</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Harm-Based Incidents:</strong></p>
+            <ul class="text-slate-400 text-sm space-y-1 ml-4">
+              <li>• Discriminatory outcomes detected post-deployment</li>
+              <li>• User harm (financial, reputational, physical)</li>
+              <li>• Regulatory violation discovered</li>
+              <li>• Media or public attention to system failures</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-6">
+        <h3 class="font-bold text-lg mb-4 text-red-400">5-Step Incident Response Protocol</h3>
+
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="text-red-400 font-bold text-xl min-w-12">1</div>
+            <div>
+              <h4 class="font-bold text-white mb-2">Detect & Triage (Hour 0-2)</h4>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Actions:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• Incident logged in tracking system with timestamp</li>
+                <li>• Severity assessed (Critical / High / Medium / Low)</li>
+                <li>• AI system owner notified immediately</li>
+                <li>• Preliminary impact assessment (how many users affected?)</li>
+              </ul>
+              <p class="text-red-400 text-sm mt-2"><strong>Critical severity trigger:</strong> Immediate halt/rollback if ongoing user harm.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-red-400 font-bold text-xl min-w-12">2</div>
+            <div>
+              <h4 class="font-bold text-white mb-2">Contain & Mitigate (Hour 2-24)</h4>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Actions:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• Decision on system status (continue / modify / suspend / shut down)</li>
+                <li>• If suspended: notify affected users and stakeholders</li>
+                <li>• Preserve logs and evidence (do not delete or modify)</li>
+                <li>• Activate human oversight or fallback procedures</li>
+                <li>• Legal and Compliance teams briefed</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-red-400 font-bold text-xl min-w-12">3</div>
+            <div>
+              <h4 class="font-bold text-white mb-2">Investigate Root Cause (Day 1-7)</h4>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Actions:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• Review logs and system behavior leading to incident</li>
+                <li>• Reproduce issue in test environment if possible</li>
+                <li>• Identify root cause (model, data, code, human process)</li>
+                <li>• Document findings in incident report</li>
+                <li>• Assess whether similar issues exist in other AI systems</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-red-400 font-bold text-xl min-w-12">4</div>
+            <div>
+              <h4 class="font-bold text-white mb-2">Remediate & Test (Day 7-30)</h4>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Actions:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• Implement fix (retrain model, update data, change logic)</li>
+                <li>• Re-run bias audit and impact assessment if High Risk system</li>
+                <li>• Test fix in staging environment</li>
+                <li>• Validate that fix doesn't introduce new issues</li>
+                <li>• Update technical documentation with changes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-red-400 font-bold text-xl min-w-12">5</div>
+            <div>
+              <h4 class="font-bold text-white mb-2">Redeploy & Monitor (Day 30+)</h4>
+              <p class="text-slate-300 text-sm mb-2"><strong class="text-white">Actions:</strong></p>
+              <ul class="text-slate-400 text-sm space-y-1 ml-4">
+                <li>• Gradual rollout with enhanced monitoring</li>
+                <li>• Communicate fix to affected users (if applicable)</li>
+                <li>• Report to regulators if required (EU: serious incidents within 15 days)</li>
+                <li>• Post-incident review with cross-functional team</li>
+                <li>• Update incident response procedures based on lessons learned</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+        <p class="text-slate-300 text-sm"><strong class="text-white">EU AI Act reporting requirement:</strong> Article 62 mandates that providers of high-risk AI systems report serious incidents to national authorities within 15 days. "Serious" means incidents leading to death, serious health issues, or serious fundamental rights violations. Establish your reporting chain now—don't wait for an incident to figure out who calls the regulator.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regulatory Compliance Quick Reference -->
+  <section class="py-16 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8">Regulatory Compliance Quick Reference</h2>
+      <p class="text-slate-300 mb-8">
+        Different regulations, different requirements. Use this table to map your AI system to applicable laws.
+      </p>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm bg-slate-900 border border-slate-800 rounded-xl">
+          <thead>
+            <tr class="border-b border-slate-700">
+              <th class="text-left py-3 px-4 text-white font-semibold">Regulation</th>
+              <th class="text-left py-3 px-4 text-white font-semibold">Applies To</th>
+              <th class="text-left py-3 px-4 text-white font-semibold">Key Requirement</th>
+              <th class="text-left py-3 px-4 text-white font-semibold">Deadline</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-300">
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4 font-semibold">EU AI Act</td>
+              <td class="py-3 px-4 text-slate-400">High-risk AI in EU market</td>
+              <td class="py-3 px-4 text-slate-400">Conformity assessment, technical docs, logging</td>
+              <td class="py-3 px-4 text-slate-400">Aug 2026 (high-risk)<br/>May 2027 (all)</td>
+            </tr>
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4 font-semibold">Colorado SB 24-205</td>
+              <td class="py-3 px-4 text-slate-400">High-risk AI deployed in Colorado</td>
+              <td class="py-3 px-4 text-slate-400">Impact assessment, disclosure, risk management</td>
+              <td class="py-3 px-4 text-slate-400">Feb 2026</td>
+            </tr>
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4 font-semibold">NYC Local Law 144</td>
+              <td class="py-3 px-4 text-slate-400">Automated employment decision tools (NYC)</td>
+              <td class="py-3 px-4 text-slate-400">Annual bias audit, publish summary stats</td>
+              <td class="py-3 px-4 text-slate-400">Effective July 2023</td>
+            </tr>
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4 font-semibold">GDPR Article 22</td>
+              <td class="py-3 px-4 text-slate-400">Automated decisions affecting EU residents</td>
+              <td class="py-3 px-4 text-slate-400">Right to human review, right to explanation</td>
+              <td class="py-3 px-4 text-slate-400">Active since 2018</td>
+            </tr>
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4 font-semibold">ECOA (Fair Lending)</td>
+              <td class="py-3 px-4 text-slate-400">AI used in credit decisions (US)</td>
+              <td class="py-3 px-4 text-slate-400">Adverse action notices, non-discrimination</td>
+              <td class="py-3 px-4 text-slate-400">Active</td>
+            </tr>
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4 font-semibold">FCRA</td>
+              <td class="py-3 px-4 text-slate-400">AI credit reporting or screening (US)</td>
+              <td class="py-3 px-4 text-slate-400">Accuracy, dispute process, disclosure</td>
+              <td class="py-3 px-4 text-slate-400">Active</td>
+            </tr>
+            <tr class="border-b border-slate-800">
+              <td class="py-3 px-4 font-semibold">FDA AI/ML Guidance</td>
+              <td class="py-3 px-4 text-slate-400">AI medical devices (US)</td>
+              <td class="py-3 px-4 text-slate-400">Premarket review, algorithm change protocol</td>
+              <td class="py-3 px-4 text-slate-400">Active (evolving)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-xl p-6 mt-8">
+        <p class="text-slate-300 text-sm"><strong class="text-white">Not sure which applies to you?</strong> Start with geography (where are your users?) and use case (what decisions does your AI make?). If you're making decisions about people in sensitive areas—hiring, lending, healthcare—assume multiple regulations apply and consult legal counsel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-6 border-t border-slate-800/60">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Building AI Systems? Don't Navigate Compliance Alone.</h2>
+      <p class="text-lg text-slate-300 mb-8">
+        The regulatory landscape is complex and penalties are severe. Whether you need help classifying your AI systems, running bias audits, building impact assessments, or preparing for EU AI Act compliance, I can help you get it right before launch.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/agency"
+          class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg text-lg font-semibold transition"
+        >
+          View AI Compliance Services
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 px-8 py-4 rounded-lg text-lg font-semibold transition"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Schedule a Consultation
+        </a>
+      </div>
+      <div class="mt-8 pt-8 border-t border-slate-800/60">
+        <p class="text-sm text-slate-500 mb-4">
+          Related Resources:
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+          <a href="/resources/ai-tool-governance-pipeline" class="text-blue-400 hover:text-white transition text-sm">AI Tool Governance Pipeline →</a>
+          <span class="text-slate-700">|</span>
+          <a href="/resources/shadow-ai-governance-toolkit" class="text-blue-400 hover:text-white transition text-sm">Shadow AI Toolkit →</a>
+          <span class="text-slate-700">|</span>
+          <a href="/ai-strategy" class="text-blue-400 hover:text-white transition text-sm">AI Strategy Blog Posts →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
