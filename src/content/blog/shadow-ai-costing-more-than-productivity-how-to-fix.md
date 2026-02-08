@@ -56,6 +56,8 @@ But the real damage? Their product roadmapâ€”the entire Q1/Q2 strategy documentâ
 
 I've implemented this system at 12 companies in the last six months. It channels AI usage instead of blocking it. Average time to deployment: 3 weeks. Average reduction in shadow AI: 84%. This approach builds on proven [AI implementation principles](/implementation/ai-implementation-guide-bridge-learning-to-real-results/) that bridge the gap between tools and results.
 
+![From Shadow to Light: The 3-Week AI Governance Roadmap -- Week 1: Discovery and Amnesty, Week 2: Build and Configure, Week 3: Train and Go-Live, with Green/Yellow/Red data classification system](/images/shadow-ai-governance-roadmap.png)
+
 ### Week 1: Map the Underground
 
 You can't manage what you can't see. Start with amnesty.

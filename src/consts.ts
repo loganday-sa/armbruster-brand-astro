@@ -4,7 +4,7 @@
 
 // Basic site info
 export const SITE_TITLE = 'Scott Armbruster';
-export const SITE_DESCRIPTION = 'AI Implementation at Every Level. Practical guides, case studies, and strategies for building AI-powered businesses.';
+export const SITE_DESCRIPTION = 'AI Strategy & Systems at Every Level. Practical guides, case studies, and strategies for building AI-powered businesses.';
 export const SITE_URL = 'https://armbruster-brand-astro.pages.dev';
 export const SITE_AUTHOR = 'Scott Armbruster';
 

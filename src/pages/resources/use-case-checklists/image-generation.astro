@@ -1,0 +1,205 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Image Generation Checklist | Scott Armbruster" description="Decide if built-in AI image generation is enough or if you need MidJourney or a specialist tool. Evaluate based on creative volume, brand guidelines, and quality bar.">
+  <!-- Hero -->
+  <section class="pt-32 pb-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-6">
+        <a href="/resources" class="hover:text-white transition">Resources</a>
+        <span class="mx-2 text-slate-600">/</span>
+        <a href="/resources/shadow-ai-governance-toolkit" class="hover:text-white transition">Governance Toolkit</a>
+        <span class="mx-2 text-slate-600">/</span>
+        <a href="/resources/use-case-checklists" class="hover:text-white transition">Checklists</a>
+      </p>
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-xs text-green-500 font-semibold bg-green-600/10 px-2 py-1 rounded">REUSE OPPORTUNITY</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+        Image Generation Checklist
+      </h1>
+      <p class="text-xl text-slate-300 mb-8 max-w-3xl">
+        Image generation is where shadow AI gets messy fast. Employees sign up for personal MidJourney accounts, use free DALL-E credits, or generate images through random web tools with questionable terms of service. Channel this demand by deciding whether your General AI Assistant's built-in generation is enough or if you need a dedicated tool.
+      </p>
+    </div>
+  </section>
+
+  <!-- Checklist -->
+  <section class="pb-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-8">Evaluation Checklist</h2>
+
+      <!-- Section 1: Current Usage -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">1. Current Usage & Demand</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">What showed up in your amnesty audit?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p>Check the survey responses and IT discovery results for image generation tools. Common shadow AI tools to look for: MidJourney, DALL-E (via ChatGPT), Adobe Firefly, Stable Diffusion, Leonardo AI, Ideogram, free online generators.</p>
+              <p><strong class="text-blue-400">Few users, occasional use:</strong> Built-in image generation from your General AI Assistant likely covers this. Don't add a tool for a handful of use cases.</p>
+              <p><strong class="text-blue-400">Multiple users, regular use:</strong> There's real demand. Continue through this checklist to determine the right solution.</p>
+              <p><strong class="text-blue-400">Marketing/design team is a primary user:</strong> They likely have specific quality and style requirements. Involve them in the evaluation -- their needs are different from someone generating a quick presentation graphic.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">What are images being used for?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Internal presentations and documents:</strong> Quality bar is low. Built-in image generation from ChatGPT (DALL-E) or Gemini (Imagen) is more than sufficient. No separate tool needed.</p>
+              <p><strong class="text-blue-400">Social media and blog content:</strong> Quality bar is medium. Built-in tools work for most social content. If you're publishing daily and need consistent brand style, a dedicated tool may help.</p>
+              <p><strong class="text-blue-400">Marketing campaigns and client-facing materials:</strong> Quality bar is high. MidJourney consistently produces the highest-fidelity output for photorealistic and artistic styles. Consider whether your design team should be using this alongside (not instead of) tools like Adobe Creative Suite.</p>
+              <p><strong class="text-blue-400">Product mockups and prototyping:</strong> This is specialized. MidJourney and Ideogram handle this well, but your design team may prefer tools that integrate with their existing workflow (Adobe Firefly inside Photoshop, for example).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: What's Already Built In -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">2. What's Already Built In</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Check your General AI Assistant's image capabilities</p>
+            <div class="text-slate-300 text-sm space-y-3">
+              <div class="bg-slate-950 rounded-lg p-4">
+                <p class="font-semibold text-white mb-2">ChatGPT Team</p>
+                <p>DALL-E 3 and GPT-4o image generation built in. Generates images directly in the chat interface. Good for general-purpose images, illustrations, and concepts. Handles text in images reasonably well. Included in your subscription -- no extra cost.</p>
+              </div>
+              <div class="bg-slate-950 rounded-lg p-4">
+                <p class="font-semibold text-white mb-2">Gemini Business</p>
+                <p>Imagen 3 built in. Generates images within the Gemini interface. Strong photorealistic output. Integrates with Google Slides for direct insertion. Included in your subscription.</p>
+              </div>
+              <div class="bg-slate-950 rounded-lg p-4">
+                <p class="font-semibold text-white mb-2">Claude Team</p>
+                <p>No built-in image generation. Claude is text and analysis focused. If you chose Claude as your General AI Assistant and need image generation, you will need a separate tool.</p>
+              </div>
+              <div class="bg-slate-950 rounded-lg p-4">
+                <p class="font-semibold text-white mb-2">M365 Copilot</p>
+                <p>Image generation via DALL-E integrated into Microsoft Designer and PowerPoint. Good for presentation graphics. Quality is suitable for internal use.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Quality & Style -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">3. Quality & Style Requirements</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Do you need consistent brand style across generated images?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes, strict brand guidelines:</strong> MidJourney offers style references (--sref) and style consistency features. You can create a "brand style" that new images match. Built-in tools in ChatGPT and Gemini can be guided with detailed prompts, but consistency is harder to maintain across sessions.</p>
+              <p><strong class="text-yellow-400">Loose consistency:</strong> Detailed prompt templates can maintain reasonable style consistency in any tool. Create a shared prompt library with your brand colors, style descriptors, and composition guidelines.</p>
+              <p><strong class="text-slate-400">No brand requirements:</strong> Built-in tools are fine.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">What resolution and format do you need?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Web and social (1080px-2048px):</strong> All tools produce sufficient resolution. Not a differentiator.</p>
+              <p><strong class="text-blue-400">Print (300 DPI, large format):</strong> MidJourney produces higher-resolution outputs natively and supports upscaling. Built-in tools typically max out at lower resolutions, though AI upscaling services can compensate.</p>
+              <p><strong class="text-blue-400">Specific aspect ratios (stories, banners, thumbnails):</strong> MidJourney has precise aspect ratio control (--ar). ChatGPT/DALL-E supports common ratios. Check if your most-needed formats are supported before choosing.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Do you need text rendering in images? (Headlines, labels, captions)</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes, frequently:</strong> Text rendering in AI images has improved significantly but still isn't perfect in any tool. GPT-4o (ChatGPT) and Ideogram are currently the best at rendering readable text. MidJourney struggles more with text. If text-heavy graphics are a primary need, consider whether Canva or a design tool is a better fit than AI image generation.</p>
+              <p><strong class="text-slate-400">Rarely:</strong> Not a differentiator.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Licensing & Rights -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">4. Licensing & Commercial Rights</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Will generated images be used commercially?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes:</strong> Verify commercial usage rights for each tool:</p>
+              <ul class="ml-4 space-y-1 mt-2">
+                <li>- <strong class="text-white">ChatGPT Team:</strong> OpenAI grants commercial usage rights on paid plans.</li>
+                <li>- <strong class="text-white">Gemini Business:</strong> Google grants commercial usage rights on Workspace business plans.</li>
+                <li>- <strong class="text-white">MidJourney:</strong> Commercial usage rights on paid plans. Free trial images cannot be used commercially.</li>
+                <li>- <strong class="text-white">Adobe Firefly:</strong> Designed for commercial safety -- trained only on licensed/public domain content. Included with Creative Cloud subscriptions.</li>
+              </ul>
+              <p class="mt-2 text-slate-500 text-xs">Terms change. Always verify the current terms of service for your specific plan.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Are you concerned about IP indemnification for generated images?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes:</strong> Adobe Firefly offers the strongest IP indemnification for generated images -- it's trained exclusively on Adobe Stock, licensed content, and public domain materials. If your legal team requires indemnification, this is the safest option. Check current indemnification terms for other tools as this is evolving rapidly.</p>
+              <p><strong class="text-slate-400">Not a concern:</strong> Move on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decision Flow -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-6">Decision Flow</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-green-500/30 rounded-xl p-6">
+            <p class="text-green-400 font-bold mb-2">Use your General AI Assistant's built-in image generation if:</p>
+            <ul class="text-slate-300 text-sm space-y-1">
+              <li>- Images are primarily for internal use (presentations, docs, Slack)</li>
+              <li>- No strict brand style requirements</li>
+              <li>- Volume is low to moderate (under 50 images/week)</li>
+              <li>- Web resolution is sufficient</li>
+              <li>- Your General AI Assistant is ChatGPT, Gemini, or M365 Copilot (not Claude)</li>
+            </ul>
+          </div>
+          <div class="bg-slate-900 border border-yellow-500/30 rounded-xl p-6">
+            <p class="text-yellow-400 font-bold mb-2">Add MidJourney if:</p>
+            <ul class="text-slate-300 text-sm space-y-1">
+              <li>- Marketing/design team needs higher-fidelity creative output</li>
+              <li>- Brand style consistency matters across campaigns</li>
+              <li>- You need print-quality resolution or specific aspect ratios</li>
+              <li>- Your General AI Assistant is Claude (no built-in image generation)</li>
+            </ul>
+          </div>
+          <div class="bg-slate-900 border border-blue-500/30 rounded-xl p-6">
+            <p class="text-blue-400 font-bold mb-2">Consider Adobe Firefly if:</p>
+            <ul class="text-slate-300 text-sm space-y-1">
+              <li>- Your design team already uses Adobe Creative Cloud</li>
+              <li>- IP indemnification is a requirement</li>
+              <li>- You need AI generation integrated into Photoshop/Illustrator workflows</li>
+              <li>- Training data provenance (no scraped data) matters to your brand</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Important note -->
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-xl p-6 mb-8">
+        <p class="text-white font-bold mb-2">Watch out for free tools.</p>
+        <p class="text-slate-300 text-sm">Free image generation tools are the biggest shadow AI risk in this category. Employees use them because they're easy and cost nothing -- but "free" usually means your prompts and generated images become training data. Make sure your approved option is accessible enough that people don't feel the need to reach for random free alternatives.</p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex flex-col sm:flex-row justify-between gap-4 pt-8 border-t border-slate-800/60">
+        <a href="/resources/use-case-checklists/document-analysis" class="text-blue-400 hover:text-white font-semibold text-sm inline-flex items-center gap-2 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
+          </svg>
+          Previous: Document Analysis
+        </a>
+        <a href="/resources/use-case-checklists/meeting-transcription" class="text-blue-400 hover:text-white font-semibold text-sm inline-flex items-center gap-2 transition">
+          Next: Meeting Transcription
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

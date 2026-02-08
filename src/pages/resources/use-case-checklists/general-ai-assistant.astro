@@ -1,0 +1,264 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="General AI Assistant Checklist | Scott Armbruster" description="Evaluate which General AI Assistant fits your organization. Compare Claude Team, Gemini Business, ChatGPT Team, M365 Copilot, and local open-source based on your specific needs.">
+  <!-- Hero -->
+  <section class="pt-32 pb-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-6">
+        <a href="/resources" class="hover:text-white transition">Resources</a>
+        <span class="mx-2 text-slate-600">/</span>
+        <a href="/resources/shadow-ai-governance-toolkit" class="hover:text-white transition">Governance Toolkit</a>
+        <span class="mx-2 text-slate-600">/</span>
+        <a href="/resources/use-case-checklists" class="hover:text-white transition">Checklists</a>
+      </p>
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-xs text-slate-500 font-semibold bg-slate-800 px-2 py-1 rounded">FOUNDATION TOOL</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+        General AI Assistant Checklist
+      </h1>
+      <p class="text-xl text-slate-300 mb-8 max-w-3xl">
+        This is your most important tool decision. The General AI Assistant becomes your organization's default -- the tool everyone reaches for first. Getting this right eliminates 60-70% of shadow AI usage on its own.
+      </p>
+    </div>
+  </section>
+
+  <!-- Options Overview -->
+  <section class="pb-12 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">The Options</h2>
+      <div class="grid md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-slate-900 border border-blue-500/30 rounded-xl p-5">
+          <h3 class="text-white font-bold mb-1">Claude Team</h3>
+          <p class="text-slate-400 text-sm">Anthropic. Strong reasoning, long context, excellent writing. SOC 2 Type II.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="text-white font-bold mb-1">Gemini Business</h3>
+          <p class="text-slate-400 text-sm">Google. Deep Google Workspace integration. Included in some Workspace plans.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="text-white font-bold mb-1">ChatGPT Team</h3>
+          <p class="text-slate-400 text-sm">OpenAI. Largest ecosystem, GPT-4o + image generation built in. SOC 2 Type II.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="text-white font-bold mb-1">M365 Copilot</h3>
+          <p class="text-slate-400 text-sm">Microsoft. Embedded in Office apps. Requires Microsoft 365 E3/E5.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 md:col-span-2">
+          <h3 class="text-white font-bold mb-1">Local Open-Source</h3>
+          <p class="text-slate-400 text-sm">Llama, Mistral, etc. via Ollama or vLLM. No data leaves your infrastructure. Requires GPU hardware and in-house ML expertise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checklist -->
+  <section class="pb-16 px-6 border-t border-slate-800/60 pt-16">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-8">Evaluation Checklist</h2>
+      <p class="text-slate-400 mb-8">Work through each section. Your answers will narrow the field quickly.</p>
+
+      <!-- Section 1: Industry & Compliance -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">1. Industry & Compliance Requirements</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Are you in a regulated industry? (Healthcare, finance, legal, government)</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes, highly regulated:</strong> Prioritize SOC 2 Type II + BAA (HIPAA) or equivalent. Claude Team, ChatGPT Team, and M365 Copilot all offer BAAs. Local open-source gives maximum control. Gemini Business has SOC 2 but verify BAA availability for your specific plan.</p>
+              <p><strong class="text-yellow-400">Somewhat regulated:</strong> SOC 2 Type II on Team/Business plans is sufficient. All commercial options qualify.</p>
+              <p><strong class="text-slate-400">No:</strong> Compliance doesn't narrow your options. Move to the next question.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Do you have data residency requirements? (EU, specific country)</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes, strict residency:</strong> M365 Copilot offers the most granular data residency controls via Azure regions. Local open-source is the only option for air-gapped environments. Check current regional availability for Claude Team and ChatGPT Team -- both are expanding but not universally available in all regions.</p>
+              <p><strong class="text-slate-400">No:</strong> All options work. Move on.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Does your legal team require zero data retention by the AI provider?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes:</strong> Claude Team, ChatGPT Team, and Gemini Business all offer zero-training guarantees on business plans. Local open-source has zero external retention by default. M365 Copilot retains data within your Microsoft tenant. Verify the specific data retention policy for whichever tool you're evaluating -- "no training" and "no retention" are different things.</p>
+              <p><strong class="text-slate-400">No:</strong> All business-tier plans already commit to not training on your data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Existing Tech Stack -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">2. Existing Tech Stack</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">What's your primary productivity suite?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Google Workspace:</strong> Gemini Business has the strongest native integration -- it lives inside Docs, Sheets, Gmail, and Slides. This is a significant advantage if your team lives in Google apps all day.</p>
+              <p><strong class="text-blue-400">Microsoft 365:</strong> M365 Copilot integrates directly into Word, Excel, Outlook, Teams, and PowerPoint. If you're already on E3/E5 licensing, the per-user add-on cost may be lower than a separate tool.</p>
+              <p><strong class="text-blue-400">Mixed / Other:</strong> Claude Team or ChatGPT Team work as standalone tools regardless of your productivity suite. No lock-in to a specific ecosystem.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Do you need API access for custom integrations?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes:</strong> Claude (Anthropic API), ChatGPT (OpenAI API), and Gemini (Google AI API) all have robust APIs. Pricing is usage-based and varies. M365 Copilot has more limited API extensibility. Local open-source gives full API control via frameworks like Ollama or vLLM.</p>
+              <p><strong class="text-slate-400">No:</strong> Stick to evaluating the web/app interface and team management features.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Does your team use SSO (Okta, Azure AD, Google Identity)?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes:</strong> All commercial options support SSO on their business/enterprise plans. Check that your specific identity provider is supported. M365 Copilot inherits your existing Azure AD setup automatically.</p>
+              <p><strong class="text-slate-400">No:</strong> Not a differentiator. All options handle standalone accounts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Team Size & Budget -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">3. Team Size & Budget</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">How many users need access?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Under 50:</strong> Per-seat pricing on any Team plan is straightforward. At this scale, the per-user cost difference between tools is minimal relative to the productivity gain.</p>
+              <p><strong class="text-blue-400">50-500:</strong> Negotiate. All vendors offer volume discounts at this tier. Get quotes from at least 2-3 providers. Mention that you're consolidating from shadow AI -- vendors respond well to this.</p>
+              <p><strong class="text-blue-400">500+:</strong> Enterprise agreements unlock significant discounts (40-60% off list price). At this scale, M365 Copilot may have a cost advantage if you're already on E3/E5. Local open-source becomes cost-competitive when amortized across this many users -- but factor in infrastructure and ML engineering headcount.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">What's your per-user monthly budget?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Under $20/user/month:</strong> Claude Team and ChatGPT Team are in this range at list price. Gemini Business may be included in your existing Workspace license. M365 Copilot is typically $30/user/month on top of existing licensing.</p>
+              <p><strong class="text-blue-400">$20-40/user/month:</strong> All commercial options are viable. Focus on capability fit rather than cost.</p>
+              <p><strong class="text-blue-400">Minimize ongoing cost:</strong> Local open-source has no per-user fees after initial infrastructure investment. Break-even typically happens at 100+ users over 12 months, but requires in-house expertise to maintain.</p>
+            </div>
+            <p class="text-slate-500 text-xs mt-3">Pricing changes frequently. Always get a current quote from the vendor rather than relying on published list prices.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Use Case Fit -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">4. Primary Use Case Fit</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">What are the top 3 tasks your team will use AI for?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Writing & communication:</strong> Claude Team is strongest here -- long-form writing, nuance, and tone control are standout capabilities. ChatGPT Team is also strong.</p>
+              <p><strong class="text-blue-400">Data analysis & spreadsheets:</strong> M365 Copilot (Excel integration) and Gemini Business (Sheets integration) have the edge when working directly in spreadsheet applications. For ad-hoc analysis, any tool works well with copy-paste workflows.</p>
+              <p><strong class="text-blue-400">Research & synthesis:</strong> All options handle this well. If source citations matter, consider pairing your General AI Assistant with Perplexity Pro rather than switching your primary tool.</p>
+              <p><strong class="text-blue-400">Image generation:</strong> ChatGPT Team includes DALL-E. Gemini includes Imagen. Claude does not have built-in image generation. If image generation is a frequent need and you want to minimize tool count, this matters.</p>
+              <p><strong class="text-blue-400">Code assistance:</strong> If significant, evaluate separately using the <a href="/resources/use-case-checklists/code-assistant" class="text-blue-400 hover:text-white transition underline">Code Assistant Checklist</a>.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">How important is long-context processing? (Uploading large documents, lengthy conversations)</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Critical:</strong> Claude Team leads here with a 200K token context window. Gemini offers up to 1M tokens on some models. ChatGPT Team and M365 Copilot have smaller context windows but are sufficient for most business documents.</p>
+              <p><strong class="text-slate-400">Not important:</strong> Not a differentiator for your use case. Move on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5: Admin & Rollout -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">5. Admin & Rollout Considerations</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">How important is centralized admin control?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Very important:</strong> M365 Copilot has the most mature admin console (inherits Microsoft 365 admin center). ChatGPT Team and Claude Team both have team management dashboards. Gemini Business is managed through Google Workspace Admin.</p>
+              <p><strong class="text-slate-400">Minimal:</strong> All business plans include basic team management.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">How technically sophisticated is your average user?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Low technical literacy:</strong> M365 Copilot and Gemini Business have the lowest learning curve because they're embedded in tools people already use. No separate app to open.</p>
+              <p><strong class="text-blue-400">Moderate:</strong> ChatGPT Team has the largest public knowledge base -- most employees have at least heard of ChatGPT, which reduces training friction.</p>
+              <p><strong class="text-blue-400">High:</strong> Claude Team tends to be preferred by power users who value reasoning depth and instruction-following precision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decision Matrix -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-6">Quick Decision Matrix</h3>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b border-slate-800">
+                  <th class="text-left p-4 text-slate-400 font-semibold">If your priority is...</th>
+                  <th class="text-left p-4 text-slate-400 font-semibold">Start with</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-300">
+                <tr class="border-b border-slate-800/60">
+                  <td class="p-4">Best writing & reasoning quality</td>
+                  <td class="p-4 text-white font-medium">Claude Team</td>
+                </tr>
+                <tr class="border-b border-slate-800/60">
+                  <td class="p-4">Google Workspace integration</td>
+                  <td class="p-4 text-white font-medium">Gemini Business</td>
+                </tr>
+                <tr class="border-b border-slate-800/60">
+                  <td class="p-4">Largest ecosystem + built-in image generation</td>
+                  <td class="p-4 text-white font-medium">ChatGPT Team</td>
+                </tr>
+                <tr class="border-b border-slate-800/60">
+                  <td class="p-4">Microsoft 365 integration + admin control</td>
+                  <td class="p-4 text-white font-medium">M365 Copilot</td>
+                </tr>
+                <tr class="border-b border-slate-800/60">
+                  <td class="p-4">Zero external data transfer</td>
+                  <td class="p-4 text-white font-medium">Local open-source</td>
+                </tr>
+                <tr>
+                  <td class="p-4">Lowest training friction</td>
+                  <td class="p-4 text-white font-medium">ChatGPT Team or M365 Copilot</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommendation -->
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-xl p-6 mb-8">
+        <p class="text-white font-bold mb-2">Still not sure?</p>
+        <p class="text-slate-300 text-sm">Run a 2-week pilot with your top 2 choices. Give 10-15 users access to each tool for real work tasks, then compare satisfaction scores and actual usage. A pilot costs less than choosing wrong and re-migrating 6 months later.</p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex flex-col sm:flex-row justify-between gap-4 pt-8 border-t border-slate-800/60">
+        <a href="/resources/use-case-checklists" class="text-blue-400 hover:text-white font-semibold text-sm inline-flex items-center gap-2 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
+          </svg>
+          All Checklists
+        </a>
+        <a href="/resources/use-case-checklists/code-assistant" class="text-blue-400 hover:text-white font-semibold text-sm inline-flex items-center gap-2 transition">
+          Next: Code Assistant
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

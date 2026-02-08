@@ -1,0 +1,183 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Document Analysis Checklist | Scott Armbruster" description="Evaluate whether you need a dedicated AI document analysis tool or can reuse your General AI Assistant. Based on document types, compliance needs, and volume.">
+  <!-- Hero -->
+  <section class="pt-32 pb-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-6">
+        <a href="/resources" class="hover:text-white transition">Resources</a>
+        <span class="mx-2 text-slate-600">/</span>
+        <a href="/resources/shadow-ai-governance-toolkit" class="hover:text-white transition">Governance Toolkit</a>
+        <span class="mx-2 text-slate-600">/</span>
+        <a href="/resources/use-case-checklists" class="hover:text-white transition">Checklists</a>
+      </p>
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-xs text-green-500 font-semibold bg-green-600/10 px-2 py-1 rounded">REUSE OPPORTUNITY</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+        Document Analysis Checklist
+      </h1>
+      <p class="text-xl text-slate-300 mb-8 max-w-3xl">
+        Before adding another tool to your stack, check whether your General AI Assistant already handles document analysis well enough. Every new tool is another license, another security review, and another training session. Reuse when you can.
+      </p>
+    </div>
+  </section>
+
+  <!-- Checklist -->
+  <section class="pb-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-8">Evaluation Checklist</h2>
+      <p class="text-slate-400 mb-8">Start from the assumption that you <strong class="text-white">don't</strong> need a separate document analysis tool. These questions will tell you if that assumption is wrong.</p>
+
+      <!-- Section 1: What You Already Have -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">1. What Your General AI Assistant Already Does</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Test your existing tool first.</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p>Upload 5 representative documents that your team processes regularly and ask your General AI Assistant to summarize, extract key points, compare, or answer questions about them. Score each test:</p>
+              <div class="bg-slate-950 rounded-lg p-4 space-y-1 text-xs mt-2">
+                <p class="text-green-400">Sufficient -- Does what you need without issues</p>
+                <p class="text-yellow-400">Partial -- Gets most of it right but misses details or formatting</p>
+                <p class="text-red-400">Insufficient -- Can't handle the document type, length, or task</p>
+              </div>
+              <p class="mt-2"><strong class="text-white">If most results are "Sufficient":</strong> You don't need a dedicated tool. Stop here.</p>
+              <p><strong class="text-white">If you're seeing "Partial" or "Insufficient":</strong> Continue through this checklist to identify what's falling short.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Document Types -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">2. Document Types & Complexity</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">What types of documents does your team analyze?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Text-heavy documents (reports, contracts, policies, emails):</strong> Any General AI Assistant handles these well. Claude Team is particularly strong with long documents due to its 200K context window. No dedicated tool needed.</p>
+              <p><strong class="text-blue-400">Structured data (spreadsheets, CSVs, databases):</strong> If the data is already in spreadsheet format, M365 Copilot (Excel) or Gemini (Sheets) may handle it better than a standalone tool. For complex analysis, consider whether your team actually needs a BI tool rather than an AI document tool.</p>
+              <p><strong class="text-blue-400">Scanned documents / PDFs with images:</strong> OCR quality varies between tools. Claude and ChatGPT both handle PDF analysis well, including mixed text-and-image documents. If your PDFs are mostly scanned images with poor OCR, test carefully -- you may need a dedicated document processing platform like Adobe Acrobat AI or a specialized OCR pipeline.</p>
+              <p><strong class="text-blue-400">Technical drawings, blueprints, diagrams:</strong> This is where general tools often fall short. If visual document interpretation is a primary need, you likely need a specialist tool. Test your specific document types before deciding.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">How long are the documents you're analyzing?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Under 50 pages:</strong> All current General AI Assistants handle this comfortably.</p>
+              <p><strong class="text-blue-400">50-200 pages:</strong> Claude Team (200K tokens) handles this in a single conversation. Other tools may require chunking or multi-turn approaches. Test with your actual documents.</p>
+              <p><strong class="text-blue-400">200+ pages or multiple documents at once:</strong> You may benefit from a tool with document indexing -- NotebookLM (Google), or retrieval-augmented generation (RAG) pipelines. Perplexity Pro is also strong for research across multiple sources.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Compliance & Sensitivity -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">3. Compliance & Data Sensitivity</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Do the documents contain sensitive data?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p>Refer to the <a href="/resources/shadow-ai-governance-toolkit#template-4" class="text-blue-400 hover:text-white transition underline">Data Classification Policy</a> from the governance toolkit.</p>
+              <p><strong class="text-green-400">Green data only:</strong> Any approved tool works. No additional concerns.</p>
+              <p><strong class="text-yellow-400">Yellow data:</strong> Use your enterprise-grade General AI Assistant on a business plan. No separate tool needed as long as it's properly licensed.</p>
+              <p><strong class="text-red-400">Red data (PII, financials, legal):</strong> Evaluate carefully. Your General AI Assistant's enterprise plan likely covers this, but verify the data processing agreement. For highly regulated document workflows (legal discovery, medical records), a specialized tool with industry-specific compliance certifications may be required.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Do you need audit trails for document processing?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes, for compliance:</strong> Most General AI Assistants on enterprise plans provide usage logs. If you need detailed audit trails showing exactly which documents were processed and what outputs were generated, verify this capability with your chosen tool. Specialized document platforms in regulated industries (legal tech, healthcare) typically have more robust audit features.</p>
+              <p><strong class="text-slate-400">No:</strong> Not a differentiator. Move on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Volume & Workflow -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">4. Volume & Workflow Integration</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">How many documents does your team process per week?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Under 50 documents/week:</strong> Manual upload to your General AI Assistant is fine. No dedicated pipeline needed.</p>
+              <p><strong class="text-blue-400">50-500 documents/week:</strong> You might benefit from batch processing capability. Check if your General AI Assistant's API supports batch uploads. If not, a lightweight automation (Zapier, Make, or a custom script) connecting your document source to the API may be enough.</p>
+              <p><strong class="text-blue-400">500+ documents/week:</strong> At this scale, a dedicated document processing pipeline is likely warranted. Consider tools like Unstructured, LlamaIndex, or cloud provider solutions (AWS Textract, Google Document AI, Azure AI Document Intelligence). These integrate with your AI assistant rather than replacing it.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Do you need source citations in the output?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes, critical for trust/compliance:</strong> Perplexity Pro is strongest here -- it provides inline citations linking back to source material. NotebookLM (Google) also shows source grounding. Standard General AI Assistants can cite sources when asked but it's not their default behavior and accuracy varies.</p>
+              <p><strong class="text-slate-400">Nice to have:</strong> Prompt your General AI Assistant to include page numbers and section references. It won't be as reliable as a citation-first tool, but may be sufficient.</p>
+              <p><strong class="text-slate-400">Not needed:</strong> Not a factor. Your General AI Assistant is fine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decision Flow -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-6">Decision Flow</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-green-500/30 rounded-xl p-6">
+            <p class="text-green-400 font-bold mb-2">Reuse your General AI Assistant if:</p>
+            <ul class="text-slate-300 text-sm space-y-1">
+              <li>- Documents are primarily text-based (reports, contracts, policies)</li>
+              <li>- Volume is under 50 documents per week</li>
+              <li>- Source citations are not a hard requirement</li>
+              <li>- Your 5-document test scored mostly "Sufficient"</li>
+            </ul>
+          </div>
+          <div class="bg-slate-900 border border-yellow-500/30 rounded-xl p-6">
+            <p class="text-yellow-400 font-bold mb-2">Add Perplexity Pro if:</p>
+            <ul class="text-slate-300 text-sm space-y-1">
+              <li>- Source citations are important for trust or compliance</li>
+              <li>- Your team does heavy research across multiple sources</li>
+              <li>- You want a lightweight addition without a major new tool rollout</li>
+            </ul>
+          </div>
+          <div class="bg-slate-900 border border-red-500/30 rounded-xl p-6">
+            <p class="text-red-400 font-bold mb-2">Invest in a dedicated solution if:</p>
+            <ul class="text-slate-300 text-sm space-y-1">
+              <li>- Volume exceeds 500 documents per week</li>
+              <li>- Documents include scanned images, blueprints, or technical drawings</li>
+              <li>- Industry-specific compliance requires dedicated audit trails</li>
+              <li>- You need automated document processing pipelines (not manual uploads)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommendation -->
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-xl p-6 mb-8">
+        <p class="text-white font-bold mb-2">The 80% rule applies here.</p>
+        <p class="text-slate-300 text-sm">Most organizations can handle 80% of their document analysis needs with their General AI Assistant. The remaining 20% is often better served by targeted automation (scripts, Zapier) connecting documents to the same AI rather than adding an entirely new tool with its own learning curve and license cost.</p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex flex-col sm:flex-row justify-between gap-4 pt-8 border-t border-slate-800/60">
+        <a href="/resources/use-case-checklists/code-assistant" class="text-blue-400 hover:text-white font-semibold text-sm inline-flex items-center gap-2 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
+          </svg>
+          Previous: Code Assistant
+        </a>
+        <a href="/resources/use-case-checklists/image-generation" class="text-blue-400 hover:text-white font-semibold text-sm inline-flex items-center gap-2 transition">
+          Next: Image Generation
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

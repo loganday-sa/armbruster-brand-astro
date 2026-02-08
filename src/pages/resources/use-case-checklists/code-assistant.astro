@@ -1,0 +1,231 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Code Assistant Checklist | Scott Armbruster" description="Evaluate which AI Code Assistant fits your dev team. Compare Claude Code, Codex, GitHub Copilot, and Cursor Team based on language stack, security, and budget.">
+  <!-- Hero -->
+  <section class="pt-32 pb-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-6">
+        <a href="/resources" class="hover:text-white transition">Resources</a>
+        <span class="mx-2 text-slate-600">/</span>
+        <a href="/resources/shadow-ai-governance-toolkit" class="hover:text-white transition">Governance Toolkit</a>
+        <span class="mx-2 text-slate-600">/</span>
+        <a href="/resources/use-case-checklists" class="hover:text-white transition">Checklists</a>
+      </p>
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-xs text-slate-500 font-semibold bg-slate-800 px-2 py-1 rounded">DEV TEAMS ONLY</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+        Code Assistant Checklist
+      </h1>
+      <p class="text-xl text-slate-300 mb-8 max-w-3xl">
+        Code assistants are the second most common shadow AI tool after general assistants. Developers adopt them fast because the productivity gain is immediate and measurable. The key is choosing one that fits your security requirements and workflow -- not just the one with the most hype.
+      </p>
+    </div>
+  </section>
+
+  <!-- Options Overview -->
+  <section class="pb-12 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">The Options</h2>
+      <div class="grid md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-slate-900 border border-blue-500/30 rounded-xl p-5">
+          <h3 class="text-white font-bold mb-1">Claude Code</h3>
+          <p class="text-slate-400 text-sm">Anthropic. Terminal-based agentic coding. Reads entire codebases, executes multi-step tasks. Usage-based pricing via API.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="text-white font-bold mb-1">Codex</h3>
+          <p class="text-slate-400 text-sm">OpenAI. Cloud-based sandboxed coding agent. Runs tasks in parallel, operates asynchronously. Usage-based pricing via API.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="text-white font-bold mb-1">GitHub Copilot</h3>
+          <p class="text-slate-400 text-sm">Microsoft/GitHub. Inline IDE suggestions + chat. Deepest IDE integration. Per-seat subscription.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="text-white font-bold mb-1">Cursor Team</h3>
+          <p class="text-slate-400 text-sm">Anysphere. Full IDE with AI built in (VS Code fork). Tab completion + agent mode. Per-seat subscription.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checklist -->
+  <section class="pb-16 px-6 border-t border-slate-800/60 pt-16">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-8">Evaluation Checklist</h2>
+
+      <!-- Section 1: Security & Code Privacy -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">1. Security & Code Privacy</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Can source code leave your infrastructure?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">No, strict policy:</strong> Claude Code can run locally with code staying on the developer's machine (code context is sent to the API for inference but not stored for training). GitHub Copilot Business has a zero-retention policy. Cursor Team routes through their servers -- verify their data policy meets your requirements. For maximum control, consider self-hosted open-source alternatives (Continue, Tabby) though capability is lower.</p>
+              <p><strong class="text-yellow-400">Yes, with enterprise-grade protections:</strong> All four options commit to not training on your code on business/enterprise plans. This is sufficient for most organizations.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Do you need SOC 2 Type II compliance?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes:</strong> GitHub Copilot Enterprise, Anthropic (Claude Code), and OpenAI (Codex) are SOC 2 Type II certified. Verify Cursor's current certification status -- it's a newer company and certifications are evolving.</p>
+              <p><strong class="text-slate-400">No:</strong> All options are viable. Move on.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Do you need IP indemnification? (Protection against copyright claims in generated code)</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-green-400">Yes:</strong> GitHub Copilot Enterprise includes IP indemnification. Microsoft backs this. OpenAI and Anthropic offer indemnification on certain enterprise plans. Cursor's indemnification terms depend on which underlying model is used.</p>
+              <p><strong class="text-slate-400">Not a priority:</strong> Move on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Workflow & IDE Integration -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">2. Workflow & IDE Integration</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">What's your team's primary IDE?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">VS Code:</strong> GitHub Copilot has the deepest VS Code integration. Cursor is a VS Code fork so extensions and keybindings carry over. Claude Code and Codex work alongside any IDE via terminal.</p>
+              <p><strong class="text-blue-400">JetBrains (IntelliJ, PyCharm, WebStorm):</strong> GitHub Copilot has a JetBrains plugin. Cursor is VS Code only. Claude Code and Codex are IDE-agnostic (terminal-based).</p>
+              <p><strong class="text-blue-400">Vim/Neovim/Emacs:</strong> Claude Code works natively in terminal. GitHub Copilot has a Neovim plugin. Codex is terminal-based. Cursor doesn't apply.</p>
+              <p><strong class="text-blue-400">Mixed IDEs across team:</strong> Claude Code and Codex have an advantage here -- they work the same regardless of editor. GitHub Copilot covers the most IDEs via plugins. Cursor requires everyone to switch editors.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">What kind of AI assistance does your team need most?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Inline autocomplete while typing:</strong> GitHub Copilot and Cursor are strongest here. Real-time suggestions as you type with tab-to-accept. Claude Code and Codex focus on larger tasks rather than line-by-line completion.</p>
+              <p><strong class="text-blue-400">Multi-file edits and refactoring:</strong> Claude Code and Codex excel at this -- they can read your full codebase and make coordinated changes across many files. Cursor's agent mode also handles multi-file edits. GitHub Copilot's multi-file capability is more limited.</p>
+              <p><strong class="text-blue-400">Autonomous task completion:</strong> Claude Code and Codex can take a task description and independently implement it -- reading files, writing code, running tests, and iterating. This is a different paradigm from suggestion-based tools.</p>
+              <p><strong class="text-blue-400">Code review and explanation:</strong> All four tools handle this well. Claude Code and Codex can review entire PRs. GitHub Copilot has a dedicated chat panel. Cursor integrates review into the editor.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">How large are your typical repositories?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Small to medium (under 100K lines):</strong> All options work well. Not a differentiator.</p>
+              <p><strong class="text-blue-400">Large monorepos (100K+ lines):</strong> Claude Code handles large codebases well -- it can navigate and understand extensive codebases through its context window and file reading. Codex operates in sandboxed environments with your repo cloned in. GitHub Copilot and Cursor primarily use local file context and may not capture cross-repo dependencies as effectively.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Pricing & Budget -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">3. Pricing & Budget</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Do you prefer predictable per-seat pricing or usage-based?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">Predictable per-seat:</strong> GitHub Copilot and Cursor charge a flat monthly rate per developer. Easy to budget. No surprises.</p>
+              <p><strong class="text-blue-400">Usage-based:</strong> Claude Code and Codex charge based on API usage (tokens processed). Cost scales with actual usage. Light users cost less, heavy users cost more. Harder to predict monthly spend but often cheaper for teams that don't use AI constantly.</p>
+              <p><strong class="text-blue-400">Need to cap costs:</strong> Per-seat tools inherently cap costs. For usage-based tools, both Anthropic and OpenAI allow you to set spending limits. Monitor closely for the first month to establish baseline usage patterns.</p>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">Rough monthly cost comparison</p>
+            <div class="text-slate-300 text-sm">
+              <div class="bg-slate-950 rounded-lg p-4 space-y-2 font-mono text-xs">
+                <p>GitHub Copilot Business: ~$19/user/month (flat)</p>
+                <p>Cursor Team:             ~$20/user/month (flat, with usage limits)</p>
+                <p>Claude Code:              Variable -- usage-based via API</p>
+                <p>Codex:                    Variable -- usage-based via API</p>
+              </div>
+              <p class="text-slate-500 text-xs mt-3">Pricing as of early 2026. Always verify current pricing directly with vendors. Enterprise plans have different pricing structures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Language & Framework Support -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-4">4. Language & Framework Support</h3>
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-lg p-5">
+            <p class="text-white font-semibold mb-2">What languages does your team primarily use?</p>
+            <div class="text-slate-300 text-sm space-y-2">
+              <p><strong class="text-blue-400">JavaScript/TypeScript, Python, Java, Go, Rust:</strong> All four tools perform well with mainstream languages. Not a differentiator for common stacks.</p>
+              <p><strong class="text-blue-400">Niche or legacy languages (COBOL, Fortran, proprietary DSLs):</strong> GitHub Copilot has the broadest language coverage due to training data from GitHub. Claude Code and Codex handle many languages but may have less depth on rare ones. Test with your specific language before committing.</p>
+              <p><strong class="text-blue-400">Multiple languages in one codebase:</strong> Claude Code and Codex handle polyglot repos well since they can read and reason about the full project structure. GitHub Copilot and Cursor provide suggestions based on the file you're currently editing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decision Matrix -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-blue-400 mb-6">Quick Decision Matrix</h3>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b border-slate-800">
+                  <th class="text-left p-4 text-slate-400 font-semibold">If your priority is...</th>
+                  <th class="text-left p-4 text-slate-400 font-semibold">Start with</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-300">
+                <tr class="border-b border-slate-800/60">
+                  <td class="p-4">Autonomous multi-file coding tasks</td>
+                  <td class="p-4 text-white font-medium">Claude Code</td>
+                </tr>
+                <tr class="border-b border-slate-800/60">
+                  <td class="p-4">Parallel async task execution</td>
+                  <td class="p-4 text-white font-medium">Codex</td>
+                </tr>
+                <tr class="border-b border-slate-800/60">
+                  <td class="p-4">Best inline autocomplete + widest IDE support</td>
+                  <td class="p-4 text-white font-medium">GitHub Copilot</td>
+                </tr>
+                <tr class="border-b border-slate-800/60">
+                  <td class="p-4">All-in-one AI-native IDE experience</td>
+                  <td class="p-4 text-white font-medium">Cursor Team</td>
+                </tr>
+                <tr class="border-b border-slate-800/60">
+                  <td class="p-4">Predictable budgeting</td>
+                  <td class="p-4 text-white font-medium">GitHub Copilot or Cursor</td>
+                </tr>
+                <tr>
+                  <td class="p-4">Maximum code privacy</td>
+                  <td class="p-4 text-white font-medium">Claude Code (local) or self-hosted OSS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Important note -->
+      <div class="bg-blue-600/10 border border-blue-500/20 rounded-xl p-6 mb-8">
+        <p class="text-white font-bold mb-2">These tools aren't mutually exclusive.</p>
+        <p class="text-slate-300 text-sm">Many teams use a combination -- for example, GitHub Copilot for inline suggestions during the day and Claude Code for larger refactoring tasks. Just make sure each tool in your stack is approved and licensed. The goal of governance isn't to pick one tool; it's to ensure every tool is sanctioned and secure.</p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex flex-col sm:flex-row justify-between gap-4 pt-8 border-t border-slate-800/60">
+        <a href="/resources/use-case-checklists/general-ai-assistant" class="text-blue-400 hover:text-white font-semibold text-sm inline-flex items-center gap-2 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
+          </svg>
+          Previous: General AI Assistant
+        </a>
+        <a href="/resources/use-case-checklists/document-analysis" class="text-blue-400 hover:text-white font-semibold text-sm inline-flex items-center gap-2 transition">
+          Next: Document Analysis
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
