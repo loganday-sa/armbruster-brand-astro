@@ -18,7 +18,7 @@ That's shadow AI—employees using AI tools without IT approval or oversight. An
 
 Here's what shadow AI actually costs when it goes wrong.
 
-IBM's [2026 Cost of a Data Breach Report](https://www.ibm.com/reports/data-breach) found that **20% of breaches now involve shadow AI usage**, adding an average of **$200,000 to breach costs.** That's not counting the compliance fines. [California's AI regulations](/blog/state-ai-compliance-laws-crushing-small-businesses-2026/) alone can hit you for $50,000 per violation. Texas just passed similar laws. New York's coming next quarter.
+IBM's [2026 Cost of a Data Breach Report](https://www.ibm.com/reports/data-breach) found that **20% of breaches now involve shadow AI usage**, adding an average of **$200,000 to breach costs.** That's not counting the compliance fines. [California's AI regulations](/articles/state-ai-compliance-laws-crushing-small-businesses-2026/) alone can hit you for $50,000 per violation. Texas just passed similar laws. New York's coming next quarter.
 
 [Netskope](https://www.netskope.com/blog/generative-ai-security-concerns) tracked **223 AI-related security incidents per month** in average organizations. Not per year. Per month.
 
@@ -54,7 +54,7 @@ But the real damage? Their product roadmap—the entire Q1/Q2 strategy document�
 
 ## The Framework That Actually Works
 
-I've implemented this system at 12 companies in the last six months. It channels AI usage instead of blocking it. Average time to deployment: 3 weeks. Average reduction in shadow AI: 84%. This approach builds on proven [AI implementation principles](/blog/ai-implementation-guide-bridge-learning-to-real-results/) that bridge the gap between tools and results.
+I've implemented this system at 12 companies in the last six months. It channels AI usage instead of blocking it. Average time to deployment: 3 weeks. Average reduction in shadow AI: 84%. This approach builds on proven [AI implementation principles](/articles/ai-implementation-guide-bridge-learning-to-real-results/) that bridge the gap between tools and results.
 
 ![From Shadow to Light: The 3-Week AI Governance Roadmap -- Week 1: Discovery and Amnesty, Week 2: Build and Configure, Week 3: Train and Go-Live, with Green/Yellow/Red data classification system](/images/shadow-ai-governance-roadmap.webp)
 
@@ -146,7 +146,7 @@ Green can use any approved tool. Yellow needs business-grade tools only. Red req
 
 ## The Conversation Script for Your Team
 
-Here's exactly how to roll this out without triggering a revolt. Clear communication is critical—[employee AI strategy communication](/blog/ai-strategy-guide-clear-employee-communication/) can make or break adoption.
+Here's exactly how to roll this out without triggering a revolt. Clear communication is critical—[employee AI strategy communication](/articles/ai-strategy-guide-clear-employee-communication/) can make or break adoption.
 
 **The All-Hands Announcement:**
 
@@ -265,7 +265,7 @@ Stop reading. Start doing. Here's your week one checklist:
 
 Shadow AI isn't a technology problem. It's a change management problem with security implications.
 
-Your employees aren't trying to create security holes. They're trying to be productive. They saw AI could help, IT wasn't providing solutions fast enough, so they solved their own problems. The same initiative you hired them for is now your biggest security risk. Understanding [why most AI strategies fail](/blog/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent/) helps you avoid compounding shadow AI problems with poor governance.
+Your employees aren't trying to create security holes. They're trying to be productive. They saw AI could help, IT wasn't providing solutions fast enough, so they solved their own problems. The same initiative you hired them for is now your biggest security risk. Understanding [why most AI strategies fail](/articles/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent/) helps you avoid compounding shadow AI problems with poor governance.
 
 The solution isn't to stop them. It's to channel them.
 

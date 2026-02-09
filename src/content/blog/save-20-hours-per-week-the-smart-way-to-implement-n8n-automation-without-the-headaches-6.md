@@ -96,6 +96,6 @@ What process in your business would benefit most from automation? [Tell me about
 ---
 
 **Related reading:**
-- [Save 20+ Hours Weekly with n8n's No-Code AI Automation](/blog/save-20-hours-weekly-with-n8ns-no-code-ai-automation)
-- [Case Study: 10-Hour Automation That Freed Up 20% of Work Time](/blog/case-study-10-hour-automation-that-freed-up-20-of-work-time)
-- [How a 6-Person Non-Profit Reclaimed 20 Hours Every Week](/blog/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to)
+- [Save 20+ Hours Weekly with n8n's No-Code AI Automation](/articles/save-20-hours-weekly-with-n8ns-no-code-ai-automation)
+- [Case Study: 10-Hour Automation That Freed Up 20% of Work Time](/articles/case-study-10-hour-automation-that-freed-up-20-of-work-time)
+- [How a 6-Person Non-Profit Reclaimed 20 Hours Every Week](/articles/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to)

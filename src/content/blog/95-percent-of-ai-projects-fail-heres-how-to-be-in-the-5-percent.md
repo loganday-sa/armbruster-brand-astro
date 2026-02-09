@@ -45,7 +45,7 @@ I worked with a 40-person logistics company that wanted to build an AI-powered d
 
 **Technology delivers only about 20% of an initiative's value.** The other 80% comes from redesigning work around the technology.
 
-Most companies bolt AI onto broken processes. They automate a bad workflow and get a faster bad workflow. The invoice processing company I mentioned? Before we touched any AI tool, we spent three days [mapping exactly how invoices moved through their system](/blog/the-one-habit-that-separates-ai-winners-from-everyone-else). We found four redundant approval steps, two manual data transfers that could be eliminated entirely, and a reconciliation process that existed because of a problem they'd fixed two years ago but never updated the procedure.
+Most companies bolt AI onto broken processes. They automate a bad workflow and get a faster bad workflow. The invoice processing company I mentioned? Before we touched any AI tool, we spent three days [mapping exactly how invoices moved through their system](/articles/the-one-habit-that-separates-ai-winners-from-everyone-else). We found four redundant approval steps, two manual data transfers that could be eliminated entirely, and a reconciliation process that existed because of a problem they'd fixed two years ago but never updated the procedure.
 
 After removing the unnecessary steps, the remaining automation took two days to build with n8n and saved them 22 hours weekly. If we'd automated the original broken process, we'd have saved maybe 8 hours and created a system nobody could maintain.
 
@@ -67,7 +67,7 @@ Every successful AI deployment I've been part of started small. Not "pilot progr
 
 A 12-person marketing agency I worked with last quarter didn't start with "AI-powered marketing automation." They started with one specific problem: their project manager spent 6 hours every Monday morning compiling client status reports from four different tools.
 
-We built a single automation using [n8n](/blog/save-20-hours-weekly-with-n8ns-no-code-ai-automation) that pulled data from Asana, Google Analytics, HubSpot, and Slack, then generated a formatted report. Cost: roughly $200 in setup time and $47/month in tools. Time saved: 6 hours weekly. ROI positive in week two.
+We built a single automation using [n8n](/articles/save-20-hours-weekly-with-n8ns-no-code-ai-automation) that pulled data from Asana, Google Analytics, HubSpot, and Slack, then generated a formatted report. Cost: roughly $200 in setup time and $47/month in tools. Time saved: 6 hours weekly. ROI positive in week two.
 
 That success built internal confidence. Three months later, they had 11 automations running and had freed up the equivalent of a full-time employee.
 
@@ -132,9 +132,9 @@ Not "someday." This week.
 ---
 
 **Related reading:**
-- [The One Habit That Separates AI Winners from Everyone Else](/blog/the-one-habit-that-separates-ai-winners-from-everyone-else)
-- [The 5-Question Checklist That Makes AI Worth It For Small Businesses](/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
-- [Case Study: 10-Hour Automation That Freed Up 20% of Work Time](/blog/case-study-10-hour-automation-that-freed-up-20-of-work-time)
+- [The One Habit That Separates AI Winners from Everyone Else](/articles/the-one-habit-that-separates-ai-winners-from-everyone-else)
+- [The 5-Question Checklist That Makes AI Worth It For Small Businesses](/articles/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
+- [Case Study: 10-Hour Automation That Freed Up 20% of Work Time](/articles/case-study-10-hour-automation-that-freed-up-20-of-work-time)
 
 [Schedule a call to discuss your AI implementation](https://armbruster-production.up.railway.app/contact) and we can build a focused plan that actually delivers ROI—not another expensive experiment.
 

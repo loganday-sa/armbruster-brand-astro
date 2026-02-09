@@ -170,7 +170,7 @@ const jsonLd = {
           <h2 class="text-2xl font-bold mb-8">Related Articles</h2>
           <div class="grid md:grid-cols-3 gap-6">
             {relatedPosts.map((related) => (
-              <a href={`/blog/${related.slug}/`} class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition">
+              <a href={`/articles/${related.slug}/`} class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition">
                 {related.data.heroImage && (
                   <div class="aspect-video overflow-hidden">
                     <img src={related.data.heroImage} alt={related.data.title} class="w-full h-full object-cover group-hover:scale-105 transition duration-300 will-change-transform" width="400" height="225" loading="lazy" decoding="async" />

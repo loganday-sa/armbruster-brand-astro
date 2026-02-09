@@ -97,9 +97,9 @@ If you'd like to discuss how these challenges apply to your specific situation, 
 ---
 
 **Related reading:**
-- [AI Strategy Guide: Clear Employee Communication](/blog/ai-strategy-guide-clear-employee-communication)
-- [Apple's Google Partnership: What Their AI Deal Actually Means](/blog/apples-google-partnership-what-their-ai-deal-actually-means)
-- [Why your AI strategy is backwards](/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it)
+- [AI Strategy Guide: Clear Employee Communication](/articles/ai-strategy-guide-clear-employee-communication)
+- [Apple's Google Partnership: What Their AI Deal Actually Means](/articles/apples-google-partnership-what-their-ai-deal-actually-means)
+- [Why your AI strategy is backwards](/articles/why-your-ai-strategy-is-backwards-and-how-to-fix-it)
 
 [Schedule a Call to Discuss Your 2026 Strategy](https://armbruster-production.up.railway.app/contact?ref=the-bridge.ghost.io)
 

@@ -16,7 +16,7 @@ const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
 const paginatedPosts = posts.slice(0, POSTS_PER_PAGE);
 ---
 
-<Layout title="Blog - AI Strategy & Systems Insights | Scott Armbruster" description="Practical guides, case studies, and strategies for building AI-powered businesses and implementing AI systems that actually work.">
+<Layout title="Articles - AI Strategy & Systems Insights | Scott Armbruster" description="Practical guides, case studies, and strategies for building AI-powered businesses and implementing AI systems that actually work.">
   <!-- Hero Section -->
   <section class="pt-32 pb-12 px-6">
     <div class="max-w-6xl mx-auto text-center">
@@ -28,7 +28,7 @@ const paginatedPosts = posts.slice(0, POSTS_PER_PAGE);
         <span class="text-white">
           AI Strategy & Systems
         </span>{' '}
-        Blog
+        Articles
       </h1>
       <p class="text-xl text-slate-300 max-w-3xl mx-auto">
         Practical guides, case studies, and strategies for building AI-powered businesses and
@@ -64,7 +64,7 @@ const paginatedPosts = posts.slice(0, POSTS_PER_PAGE);
   {featuredPost && (
     <section class="py-12 px-6">
       <div class="max-w-6xl mx-auto">
-        <a href={`/blog/${featuredPost.slug}/`} class="block bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-12 hover:border-slate-700 transition">
+        <a href={`/articles/${featuredPost.slug}/`} class="block bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-12 hover:border-slate-700 transition">
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p class="text-blue-400 text-xs font-semibold tracking-wide uppercase mb-4">
@@ -113,7 +113,7 @@ const paginatedPosts = posts.slice(0, POSTS_PER_PAGE);
     </section>
   )}
 
-  <!-- Blog Posts Grid -->
+  <!-- Articles Grid -->
   <section class="py-12 px-6">
     <div class="max-w-6xl mx-auto">
       <div class="flex justify-between items-center mb-8">
@@ -139,7 +139,7 @@ const paginatedPosts = posts.slice(0, POSTS_PER_PAGE);
         </div>
       )}
 
-      <Pagination currentPage={1} totalPages={totalPages} baseUrl="/blog/" />
+      <Pagination currentPage={1} totalPages={totalPages} baseUrl="/articles/" />
     </div>
   </section>
 

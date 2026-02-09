@@ -25,19 +25,19 @@ export async function getStaticPaths() {
 
 const { posts, currentPage, totalPages, totalPosts } = Astro.props;
 
-function getBlogPageUrl(page: number): string {
-	if (page === 1) return '/blog/';
-	return `/blog/${page}/`;
+function getArticlesPageUrl(page: number): string {
+	if (page === 1) return '/articles/';
+	return `/articles/${page}/`;
 }
 ---
 
 <Layout
-	title={`Blog - Page ${currentPage} | ${SITE_TITLE}`}
+	title={`Articles - Page ${currentPage} | ${SITE_TITLE}`}
 	description="Practical guides, case studies, and strategies for building AI-powered businesses and implementing AI systems that actually work."
 >
 	<Fragment slot="head">
-		{currentPage > 1 && <link rel="prev" href={new URL(getBlogPageUrl(currentPage - 1), SITE_URL).toString()} />}
-		{currentPage < totalPages && <link rel="next" href={new URL(getBlogPageUrl(currentPage + 1), SITE_URL).toString()} />}
+		{currentPage > 1 && <link rel="prev" href={new URL(getArticlesPageUrl(currentPage - 1), SITE_URL).toString()} />}
+		{currentPage < totalPages && <link rel="next" href={new URL(getArticlesPageUrl(currentPage + 1), SITE_URL).toString()} />}
 	</Fragment>
 	<section class="pt-32 pb-12 px-6">
 		<div class="max-w-6xl mx-auto text-center">
@@ -45,7 +45,7 @@ function getBlogPageUrl(page: number): string {
 				AI Insights & Strategy
 			</p>
 			<h1 class="text-4xl md:text-6xl font-bold mb-6">
-				The <span class="text-white">AI Strategy & Systems</span> Blog
+				The <span class="text-white">AI Strategy & Systems</span> Articles
 			</h1>
 			<p class="text-xl text-slate-300 max-w-3xl mx-auto">
 				{totalPosts} articles - Page {currentPage}
@@ -61,7 +61,7 @@ function getBlogPageUrl(page: number): string {
 				))}
 			</div>
 
-			<Pagination currentPage={currentPage} totalPages={totalPages} baseUrl="/blog/" />
+			<Pagination currentPage={currentPage} totalPages={totalPages} baseUrl="/articles/" />
 		</div>
 	</section>
 </Layout>

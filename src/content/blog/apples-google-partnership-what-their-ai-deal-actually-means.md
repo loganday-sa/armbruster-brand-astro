@@ -87,9 +87,9 @@ What Siri limitations have frustrated you most? I'm curious whether the improvem
 ---
 
 **Related reading:**
-- [7 IT Leadership Challenges Coming in 2026](/blog/7-it-leadership-challenges-coming-in-2026-and-how-to-prepare)
-- [AI Strategy Guide: Clear Employee Communication](/blog/ai-strategy-guide-clear-employee-communication)
-- [How to Position Yourself for AI's Job Market Changes by 2030](/blog/how-to-position-yourself-for-ais-job-market-changes-by-2030)
+- [7 IT Leadership Challenges Coming in 2026](/articles/7-it-leadership-challenges-coming-in-2026-and-how-to-prepare)
+- [AI Strategy Guide: Clear Employee Communication](/articles/ai-strategy-guide-clear-employee-communication)
+- [How to Position Yourself for AI's Job Market Changes by 2030](/articles/how-to-position-yourself-for-ais-job-market-changes-by-2030)
 
 ---
 

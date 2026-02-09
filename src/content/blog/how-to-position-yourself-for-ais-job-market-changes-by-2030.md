@@ -63,9 +63,9 @@ The professionals who thrive over the next 4 to 5 years won't be those who avoid
 ---
 
 **Related reading:**
-- [The $4.5 Trillion AI Window: Smart Moves for Small Players](/blog/the-4-5-trillion-ai-window-smart-moves-for-small-players)
-- [More Productive and More Worried: The Double-Edged Reality of AI](/blog/more-productive-and-more-worried-the-double-edged-reality-of-ai-at-work)
-- [The One Habit That Separates AI Winners from Everyone Else](/blog/the-one-habit-that-separates-ai-winners-from-everyone-else)
+- [The $4.5 Trillion AI Window: Smart Moves for Small Players](/articles/the-4-5-trillion-ai-window-smart-moves-for-small-players)
+- [More Productive and More Worried: The Double-Edged Reality of AI](/articles/more-productive-and-more-worried-the-double-edged-reality-of-ai-at-work)
+- [The One Habit That Separates AI Winners from Everyone Else](/articles/the-one-habit-that-separates-ai-winners-from-everyone-else)
 
 Ready to develop your AI integration strategy? Let's discuss how to position your specific skills and experience for the opportunities ahead. [Schedule a call to discuss this opportunity here](https://armbruster-production.up.railway.app/contact?ref=the-bridge.ghost.io).
 

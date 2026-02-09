@@ -272,7 +272,7 @@ const latestPosts = (await getCollection('blog'))
     </div>
   </section>
 
-  <!-- Featured Content / Blog Preview -->
+  <!-- Featured Content / Articles Preview -->
   <section class="py-20 px-6 border-t border-slate-800/60">
     <div class="max-w-6xl mx-auto">
       <div class="flex flex-col md:flex-row justify-between items-center mb-12">
@@ -281,10 +281,10 @@ const latestPosts = (await getCollection('blog'))
           <p class="text-slate-400">Practical AI strategies you can use today</p>
         </div>
         <a
-          href="/blog"
+          href="/articles"
           class="mt-4 md:mt-0 text-blue-400 hover:text-blue-300 inline-flex items-center gap-2 text-sm font-medium"
         >
-          View all posts
+          View all articles
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
           </svg>
@@ -293,7 +293,7 @@ const latestPosts = (await getCollection('blog'))
 
       <div class="grid md:grid-cols-3 gap-6">
         {latestPosts.map((post) => (
-          <a href={`/blog/${post.slug}/`} class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition group">
+          <a href={`/articles/${post.slug}/`} class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition group">
             {post.data.heroImage ? (
               <div class="h-40 overflow-hidden">
                 <img

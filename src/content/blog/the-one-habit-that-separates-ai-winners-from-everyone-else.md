@@ -156,8 +156,8 @@ The teams that win with AI aren't smarter or better funded. They simply experime
 ---
 
 **Related reading:**
-- [The Starting Problem: Why Perfect Plans Kill Progress](/blog/the-starting-problem-why-perfect-plans-kill-progress)
-- [AI Implementation Guide: Bridge Learning to Real Results](/blog/ai-implementation-guide-bridge-learning-to-real-results)
-- [How a 6-Person Non-Profit Reclaimed 20 Hours Every Week](/blog/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to)
+- [The Starting Problem: Why Perfect Plans Kill Progress](/articles/the-starting-problem-why-perfect-plans-kill-progress)
+- [AI Implementation Guide: Bridge Learning to Real Results](/articles/ai-implementation-guide-bridge-learning-to-real-results)
+- [How a 6-Person Non-Profit Reclaimed 20 Hours Every Week](/articles/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to)
 
 Ready to build a structured AI experimentation program for your team? [Schedule a call to discuss your approach](https://armbruster-production.up.railway.app/contact).

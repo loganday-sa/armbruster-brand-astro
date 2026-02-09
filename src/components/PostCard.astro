@@ -10,7 +10,7 @@ interface Props {
 
 const { post, showCategory = true } = Astro.props;
 const catConfig = getCategoryConfig(post.data.category);
-const postUrl = `/blog/${post.slug}/`;
+const postUrl = `/articles/${post.slug}/`;
 const readingTime = getReadingTime(post.body);
 ---
 

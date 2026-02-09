@@ -157,6 +157,6 @@ A: Start with one AI writing tool, one automation platform, and one scheduling t
 ---
 
 **Related reading:**
-- [The $4.5 Trillion AI Window: Smart Moves for Small Players](/blog/the-4-5-trillion-ai-window-smart-moves-for-small-players)
-- [How to Position Yourself for AI's Job Market Changes by 2030](/blog/how-to-position-yourself-for-ais-job-market-changes-by-2030)
-- [AI Implementation Guide: Bridge Learning to Real Results](/blog/ai-implementation-guide-bridge-learning-to-real-results)
+- [The $4.5 Trillion AI Window: Smart Moves for Small Players](/articles/the-4-5-trillion-ai-window-smart-moves-for-small-players)
+- [How to Position Yourself for AI's Job Market Changes by 2030](/articles/how-to-position-yourself-for-ais-job-market-changes-by-2030)
+- [AI Implementation Guide: Bridge Learning to Real Results](/articles/ai-implementation-guide-bridge-learning-to-real-results)

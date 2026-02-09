@@ -112,6 +112,6 @@ Reply to your welcome email with your biggest time drain. I read every response 
 ---
 
 **Related reading:**
-- [The One Habit That Separates AI Winners from Everyone Else](/blog/the-one-habit-that-separates-ai-winners-from-everyone-else)
-- [Case Study: 10-Hour Automation That Freed Up 20% of Work Time](/blog/case-study-10-hour-automation-that-freed-up-20-of-work-time)
-- [AI Implementation Guide: Bridge Learning to Real Results](/blog/ai-implementation-guide-bridge-learning-to-real-results)
+- [The One Habit That Separates AI Winners from Everyone Else](/articles/the-one-habit-that-separates-ai-winners-from-everyone-else)
+- [Case Study: 10-Hour Automation That Freed Up 20% of Work Time](/articles/case-study-10-hour-automation-that-freed-up-20-of-work-time)
+- [AI Implementation Guide: Bridge Learning to Real Results](/articles/ai-implementation-guide-bridge-learning-to-real-results)

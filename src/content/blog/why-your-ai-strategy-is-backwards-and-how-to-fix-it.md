@@ -104,9 +104,9 @@ The AI transformation isn't waiting for you to figure this out. But with the rig
 ---
 
 **Related reading:**
-- [The Bridge Between Learning and Doing](/blog/the-bridge-between-learning-and-doing-why-ai-education-is-not-enough)
-- [AI Adoption Is Central to Growth](/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
-- [The 5-Question Checklist That Makes AI Worth It](/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
+- [The Bridge Between Learning and Doing](/articles/the-bridge-between-learning-and-doing-why-ai-education-is-not-enough)
+- [AI Adoption Is Central to Growth](/articles/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
+- [The 5-Question Checklist That Makes AI Worth It](/articles/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
 
 ---
 

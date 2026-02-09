@@ -101,9 +101,9 @@ The opportunity is real. The question is whether you'll connect your adoption to
 ---
 
 **Related reading:**
-- [The Starting Problem: Why Perfect Plans Kill Progress](/blog/the-starting-problem-why-perfect-plans-kill-progress)
-- [The 5-Question Checklist That Makes AI Worth It](/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
-- [AI Adoption Drives Small Business Growth](/blog/ai-adoption-drives-small-business-growth)
+- [The Starting Problem: Why Perfect Plans Kill Progress](/articles/the-starting-problem-why-perfect-plans-kill-progress)
+- [The 5-Question Checklist That Makes AI Worth It](/articles/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
+- [AI Adoption Drives Small Business Growth](/articles/ai-adoption-drives-small-business-growth)
 
 ---
 

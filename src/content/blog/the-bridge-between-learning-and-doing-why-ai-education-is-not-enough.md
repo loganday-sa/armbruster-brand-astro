@@ -90,6 +90,6 @@ The tutorials will still be there when you get back. But right now, you have a c
 ---
 
 **Related reading:**
-- [AI Implementation Guide: Bridge Learning to Real Results](/blog/ai-implementation-guide-bridge-learning-to-real-results)
-- [Why your AI strategy is backwards](/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it)
-- [The Starting Problem: Why Perfect Plans Kill Progress](/blog/the-starting-problem-why-perfect-plans-kill-progress)
+- [AI Implementation Guide: Bridge Learning to Real Results](/articles/ai-implementation-guide-bridge-learning-to-real-results)
+- [Why your AI strategy is backwards](/articles/why-your-ai-strategy-is-backwards-and-how-to-fix-it)
+- [The Starting Problem: Why Perfect Plans Kill Progress](/articles/the-starting-problem-why-perfect-plans-kill-progress)

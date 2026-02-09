@@ -38,7 +38,7 @@ But here's the kicker: **65% of small businesses** surveyed last month said they
 
 When businesses budget for AI, they think: tool costs + training time = total investment.
 
-Wrong. And this is before you factor in the strategic costs of [choosing the wrong AI tools](/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it/) in the first place.
+Wrong. And this is before you factor in the strategic costs of [choosing the wrong AI tools](/articles/why-your-ai-strategy-is-backwards-and-how-to-fix-it/) in the first place.
 
 Here's what AI actually costs small businesses in 2026:
 
@@ -106,7 +106,7 @@ You can't wait for Washington to save you.
 
 ## The Three-Tier Survival Strategy
 
-After watching dozens of businesses navigate this mess, I've developed a compliance approach that actually works without bankrupting you. Before diving into compliance specifics, make sure you're actually [implementing AI correctly](/blog/ai-implementation-guide-bridge-learning-to-real-results/)—there's no point in complying with regulations for systems that don't deliver results.
+After watching dozens of businesses navigate this mess, I've developed a compliance approach that actually works without bankrupting you. Before diving into compliance specifics, make sure you're actually [implementing AI correctly](/articles/ai-implementation-guide-bridge-learning-to-real-results/)—there's no point in complying with regulations for systems that don't deliver results.
 
 ### Tier 1: Document Everything (Cost: $500 + 2 hours/week)
 
@@ -166,7 +166,7 @@ Focus AI on internal operations first. Employee-facing AI has fewer regulations 
 
 ## What This Actually Means for Your AI Strategy
 
-Here's the uncomfortable truth: regulatory compliance is now a core part of AI ROI calculations. That's why [asking the right questions before implementing AI](/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses/) matters more than ever—compliance costs can kill projects that barely pass the ROI threshold.
+Here's the uncomfortable truth: regulatory compliance is now a core part of AI ROI calculations. That's why [asking the right questions before implementing AI](/articles/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses/) matters more than ever—compliance costs can kill projects that barely pass the ROI threshold.
 
 That customer service chatbot saving you 20 hours weekly? Factor in 3-4 hours of compliance work. Still worth it, but the math changes.
 

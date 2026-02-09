@@ -225,6 +225,6 @@ Reply with one process you are thinking about, your quick answers to the five qu
 ---
 
 **Related reading:**
-- [AI Adoption Is Central to Growth](/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
-- [The Starting Problem: Why Perfect Plans Kill Progress](/blog/the-starting-problem-why-perfect-plans-kill-progress)
-- [How a 6-Person Non-Profit Reclaimed 20 Hours Every Week](/blog/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to)
+- [AI Adoption Is Central to Growth](/articles/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
+- [The Starting Problem: Why Perfect Plans Kill Progress](/articles/the-starting-problem-why-perfect-plans-kill-progress)
+- [How a 6-Person Non-Profit Reclaimed 20 Hours Every Week](/articles/how-a-6-person-non-profit-reclaimed-20-hours-every-week-using-ai-they-already-had-access-to)

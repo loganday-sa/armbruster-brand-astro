@@ -91,9 +91,9 @@ What will you start today?
 ---
 
 **Related reading:**
-- [AI Adoption Is Central to Growth](/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
-- [The One Habit That Separates AI Winners from Everyone Else](/blog/the-one-habit-that-separates-ai-winners-from-everyone-else)
-- [Side Business Success: LinkedIn's 60% Entrepreneur Surge](/blog/side-business-success-linkedins-60-entrepreneur-surge)
+- [AI Adoption Is Central to Growth](/articles/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
+- [The One Habit That Separates AI Winners from Everyone Else](/articles/the-one-habit-that-separates-ai-winners-from-everyone-else)
+- [Side Business Success: LinkedIn's 60% Entrepreneur Surge](/articles/side-business-success-linkedins-60-entrepreneur-surge)
 
 [Schedule a call to discuss this opportunity here](https://armbruster-production.up.railway.app/contact?ref=the-bridge.ghost.io) and we can explore how to turn your "someday" project into this week's priority.
 

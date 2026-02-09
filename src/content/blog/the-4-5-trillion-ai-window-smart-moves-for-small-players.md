@@ -75,9 +75,9 @@ That clarity comes from experimentation, not analysis. The $4.5 trillion opportu
 ---
 
 **Related reading:**
-- [How to Position Yourself for AI's Job Market Changes by 2030](/blog/how-to-position-yourself-for-ais-job-market-changes-by-2030)
-- [Side Business Success: LinkedIn's 60% Entrepreneur Surge](/blog/side-business-success-linkedins-60-entrepreneur-surge)
-- [AI Adoption Is Central to Growth](/blog/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
+- [How to Position Yourself for AI's Job Market Changes by 2030](/articles/how-to-position-yourself-for-ais-job-market-changes-by-2030)
+- [Side Business Success: LinkedIn's 60% Entrepreneur Surge](/articles/side-business-success-linkedins-60-entrepreneur-surge)
+- [AI Adoption Is Central to Growth](/articles/ai-adoption-is-central-to-growth-what-that-actually-means-for-your-business)
 
 ---
 

@@ -8,14 +8,14 @@ export async function GET(context: APIContext) {
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return rss({
-    title: 'Scott Armbruster - AI Strategy & Systems Blog',
+    title: 'Scott Armbruster - AI Strategy & Systems Articles',
     description: 'Practical guides, case studies, and strategies for building AI-powered businesses and implementing AI systems that actually work.',
     site: context.site!.toString(),
     items: posts.map((post) => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
-      link: `/blog/${post.slug}/`,
+      link: `/articles/${post.slug}/`,
       categories: [post.data.category, ...post.data.tags],
     })),
     customData: '<language>en-us</language>',

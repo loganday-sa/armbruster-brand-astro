@@ -133,9 +133,9 @@ I'll help you calculate your exact missed call cost and show you how modern voic
 ---
 
 **Related reading:**
-- [Your competitor just hired a $2/hour AI receptionist](/blog/your-competitor-just-hired-a-2-hour-ai-receptionist)
-- [Save 20+ Hours Per Week: The Smart Way to Implement n8n Automation](/blog/save-20-hours-per-week-the-smart-way-to-implement-n8n-automation-without-the-headaches-6)
-- [The 5-Question Checklist That Makes AI Worth It](/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
+- [Your competitor just hired a $2/hour AI receptionist](/articles/your-competitor-just-hired-a-2-hour-ai-receptionist)
+- [Save 20+ Hours Per Week: The Smart Way to Implement n8n Automation](/articles/save-20-hours-per-week-the-smart-way-to-implement-n8n-automation-without-the-headaches-6)
+- [The 5-Question Checklist That Makes AI Worth It](/articles/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
 
 [Schedule a Call Here](https://armbruster-production.up.railway.app/contact?ref=the-bridge.ghost.io)
 

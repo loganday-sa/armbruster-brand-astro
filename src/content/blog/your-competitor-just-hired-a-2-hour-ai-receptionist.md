@@ -128,8 +128,8 @@ Telos Dynamics - Making AI practical and profitable
 ---
 
 **Related reading:**
-- [Stop losing $10K monthly to missed calls](/blog/stop-losing-10k-monthly-to-missed-calls-urgent-fix)
-- [Save 20+ Hours Weekly with n8n's No-Code AI Automation](/blog/save-20-hours-weekly-with-n8ns-no-code-ai-automation)
-- [AI Adoption Drives Small Business Growth](/blog/ai-adoption-drives-small-business-growth)
+- [Stop losing $10K monthly to missed calls](/articles/stop-losing-10k-monthly-to-missed-calls-urgent-fix)
+- [Save 20+ Hours Weekly with n8n's No-Code AI Automation](/articles/save-20-hours-weekly-with-n8ns-no-code-ai-automation)
+- [AI Adoption Drives Small Business Growth](/articles/ai-adoption-drives-small-business-growth)
 
 Ready to bridge the gap from learning to implementation?
