@@ -1,0 +1,108 @@
+---
+interface Props {
+  formId?: string;
+}
+
+const { formId = 'DS6kQj' } = Astro.props;
+---
+
+<div id="resource-gate" class="resource-gate fixed left-0 right-0 bottom-0 z-40 bg-slate-950/88 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="resource-gate-title">
+  <div class="min-h-full flex items-center justify-center px-6 py-10">
+    <div class="max-w-xl w-full bg-slate-900/95 border border-slate-700 rounded-2xl p-8 shadow-2xl">
+      <p class="text-xs uppercase tracking-wide text-blue-400 font-semibold mb-3">Members Access</p>
+      <h2 id="resource-gate-title" class="text-3xl font-bold mb-4">Enter Your Email To Unlock</h2>
+      <p class="text-slate-300 mb-6">
+        This resource is protected. Submit your email to continue reading and unlock access.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-3">
+        <button
+          type="button"
+          id="open-resource-gate-form"
+          class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition"
+          data-form-id={formId}
+        >
+          Continue With Email
+        </button>
+      </div>
+
+      <p class="text-xs text-slate-500 mt-4">
+        Already submitted? If the page stays locked, refresh once.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const storageKey = 'resource_gate_unlocked_v1';
+    const gate = document.getElementById('resource-gate');
+    const openButton = document.getElementById('open-resource-gate-form');
+    const formId = openButton?.getAttribute('data-form-id') || 'DS6kQj';
+
+    const setLockedState = (locked) => {
+      document.documentElement.classList.toggle('resource-locked', locked);
+      document.body.classList.toggle('overflow-hidden', locked);
+      if (!gate) return;
+      gate.style.display = locked ? '' : 'none';
+    };
+
+    const syncGateOffset = () => {
+      if (!gate) return;
+      const nav = document.querySelector('nav');
+      const navHeight = nav ? Math.ceil(nav.getBoundingClientRect().height) : 0;
+      gate.style.top = `${navHeight}px`;
+    };
+
+    const unlock = () => {
+      localStorage.setItem(storageKey, '1');
+      setLockedState(false);
+    };
+
+    const hasAccess = () => localStorage.getItem(storageKey) === '1';
+
+    const query = new URLSearchParams(window.location.search);
+    if (query.get('resource_access') === '1') {
+      unlock();
+      query.delete('resource_access');
+      const next = `${window.location.pathname}${query.toString() ? `?${query.toString()}` : ''}${window.location.hash}`;
+      window.history.replaceState({}, '', next);
+      return;
+    }
+
+    if (hasAccess()) {
+      setLockedState(false);
+      return;
+    }
+
+    syncGateOffset();
+    window.addEventListener('resize', syncGateOffset);
+
+    setLockedState(true);
+
+    openButton?.addEventListener('click', () => {
+      if (typeof window.ml === 'function') {
+        window.ml('show', formId, true);
+      }
+    });
+
+    window.addEventListener('message', (event) => {
+      if (typeof event.origin !== 'string' || !event.origin.includes('mailerlite')) {
+        return;
+      }
+
+      const payload = typeof event.data === 'string'
+        ? event.data.toLowerCase()
+        : JSON.stringify(event.data).toLowerCase();
+
+      if (
+        payload.includes('success') ||
+        payload.includes('subscribed') ||
+        payload.includes('subscriber') ||
+        payload.includes('form_submitted')
+      ) {
+        unlock();
+      }
+    });
+  })();
+</script>
