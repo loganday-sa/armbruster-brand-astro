@@ -16,7 +16,7 @@ const latestPosts = (await getCollection('blog'))
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Scott Armbruster",
-      "url": "https://armbruster-brand-astro.pages.dev",
+      "url": "https://scottarmbruster.com",
       "jobTitle": "AI Strategy & Systems Partner",
       "description": "AI Strategy & Systems Partner helping professionals build AI-powered income streams and organizations deploy AI systems that deliver real ROI.",
       "knowsAbout": ["Artificial Intelligence", "AI Implementation", "Business Automation", "n8n", "AI Strategy"],
@@ -293,7 +293,7 @@ const latestPosts = (await getCollection('blog'))
 
       <div class="grid md:grid-cols-3 gap-6">
         {latestPosts.map((post) => (
-          <a href={`/blog/${post.slug}`} class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition group">
+          <a href={`/blog/${post.slug}/`} class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition group">
             {post.data.heroImage ? (
               <div class="h-40 overflow-hidden">
                 <img

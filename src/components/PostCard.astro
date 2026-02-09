@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from './FormattedDate.astro';
-import { getCategoryConfig, getCategoryPath, getReadingTime } from '../consts';
+import { getCategoryConfig, getReadingTime } from '../consts';
 
 interface Props {
 	post: CollectionEntry<'blog'>;
@@ -10,7 +10,7 @@ interface Props {
 
 const { post, showCategory = true } = Astro.props;
 const catConfig = getCategoryConfig(post.data.category);
-const postUrl = `${getCategoryPath(post.data.category)}${post.slug}/`;
+const postUrl = `/blog/${post.slug}/`;
 const readingTime = getReadingTime(post.body);
 ---
 

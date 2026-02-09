@@ -5,11 +5,11 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://armbruster-brand-astro.pages.dev',
+  site: 'https://scottarmbruster.com',
   output: 'static',
   integrations: [sitemap()],
   prefetch: {
-    prefetchAll: true,
+    prefetchAll: false,
     defaultStrategy: 'viewport',
   },
   vite: {

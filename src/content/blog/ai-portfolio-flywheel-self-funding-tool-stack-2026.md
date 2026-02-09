@@ -214,9 +214,9 @@ Start with one automation. Capture the savings. Reinvest strategically. Let the 
 ---
 
 **Related reading:**
-- [Case Study: 10-Hour Automation That Freed Up 20% of Work Time](/implementation/case-study-10-hour-automation-that-freed-up-20-of-work-time)
-- [Save 20+ Hours Per Week: The Smart Way to Implement n8n Automation](/implementation/save-20-hours-per-week-the-smart-way-to-implement-n8n-automation-without-the-headaches-6)
-- [The 5-Question Checklist That Makes AI Worth It](/ai-strategy/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
+- [Case Study: 10-Hour Automation That Freed Up 20% of Work Time](/blog/case-study-10-hour-automation-that-freed-up-20-of-work-time)
+- [Save 20+ Hours Per Week: The Smart Way to Implement n8n Automation](/blog/save-20-hours-per-week-the-smart-way-to-implement-n8n-automation-without-the-headaches-6)
+- [The 5-Question Checklist That Makes AI Worth It](/blog/the-5-question-checklist-that-makes-ai-worth-it-for-small-businesses)
 
 ---
 

@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import PostCard from '../../components/PostCard.astro';
 import Pagination from '../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
-import { CATEGORIES, getCategoryPath, getReadingTime, POSTS_PER_PAGE, getCategoryKeys } from '../../consts';
+import { CATEGORIES, getReadingTime, POSTS_PER_PAGE, getCategoryKeys } from '../../consts';
 
 const posts = (await getCollection('blog'))
   .filter(post => !post.data.draft)
@@ -64,7 +64,7 @@ const paginatedPosts = posts.slice(0, POSTS_PER_PAGE);
   {featuredPost && (
     <section class="py-12 px-6">
       <div class="max-w-6xl mx-auto">
-        <a href={`${getCategoryPath(featuredPost.data.category)}${featuredPost.slug}`} class="block bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-12 hover:border-slate-700 transition">
+        <a href={`/blog/${featuredPost.slug}/`} class="block bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-12 hover:border-slate-700 transition">
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p class="text-blue-400 text-xs font-semibold tracking-wide uppercase mb-4">

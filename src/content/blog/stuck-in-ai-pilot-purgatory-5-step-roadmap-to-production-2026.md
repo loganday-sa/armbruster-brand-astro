@@ -38,13 +38,13 @@ Three conversations happened at your company this week:
 
 **IT Director:** "The infrastructure works perfectly in test, but production requires security reviews we haven't started."
 
-**Compliance Officer:** "Texas TRAIGA went live January 1st. Our AI needs risk assessments we never built into the pilot." (See our full analysis of [state AI compliance laws crushing small businesses](/ai-strategy/state-ai-compliance-laws-crushing-small-businesses-2026/))
+**Compliance Officer:** "Texas TRAIGA went live January 1st. Our AI needs risk assessments we never built into the pilot." (See our full analysis of [state AI compliance laws crushing small businesses](/blog/state-ai-compliance-laws-crushing-small-businesses-2026/))
 
 **Department Head:** "My team loves the concept but nobody knows how it fits their actual workflow."
 
 Sound familiar? You're experiencing the classic pilot trap: solving technical problems while ignoring operational realities.
 
-I've guided 47 enterprise AI implementations over the past decade. The ones that reach production share five specific characteristics that pilots-turned-zombies lack. This aligns with what we covered in [why your AI strategy is backwards](/ai-strategy/why-your-ai-strategy-is-backwards-and-how-to-fix-it/)—starting with technology instead of outcomes.
+I've guided 47 enterprise AI implementations over the past decade. The ones that reach production share five specific characteristics that pilots-turned-zombies lack. This aligns with what we covered in [why your AI strategy is backwards](/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it/)—starting with technology instead of outcomes.
 
 ## The 5-Step AI Pilot Purgatory Escape Plan
 
@@ -166,7 +166,7 @@ Three things kill more production deployments than technical failures:
 
 **1. The Shadow IT Rebellion**
 
-Employees already built Excel macros and Zapier workflows that solve parts of the problem. Your AI threatens their solutions. Include these shadow IT creators in your design process or watch them sabotage adoption. We explored this issue in depth in [shadow AI costing more than productivity](/implementation/shadow-ai-costing-more-than-productivity-how-to-fix/).
+Employees already built Excel macros and Zapier workflows that solve parts of the problem. Your AI threatens their solutions. Include these shadow IT creators in your design process or watch them sabotage adoption. We explored this issue in depth in [shadow AI costing more than productivity](/blog/shadow-ai-costing-more-than-productivity-how-to-fix/).
 
 **2. The Vendor Lock-Out**
 
@@ -199,7 +199,7 @@ Stop treating your pilot like a science experiment. Start treating it like a bus
 
 The window for AI advantage is closing. Not because the technology is mature—it's not. But because operational AI is becoming table stakes, not competitive advantage.
 
-Companies deploying production AI today will compound their advantages. Those stuck in pilot purgatory will find themselves competing against organizations that have 18 months of production learning. As we showed in [95% of AI projects fail—here's how to be in the 5%](/ai-strategy/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent/), the difference between winners and losers is execution, not technology.
+Companies deploying production AI today will compound their advantages. Those stuck in pilot purgatory will find themselves competing against organizations that have 18 months of production learning. As we showed in [95% of AI projects fail—here's how to be in the 5%](/blog/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent/), the difference between winners and losers is execution, not technology.
 
 A manufacturing client spent 14 months perfecting their quality control AI pilot. Their competitor deployed a "good enough" version in 8 weeks. Today, the competitor has processed 2.3 million units through their system, improving accuracy from 71% to 93% through production learning. The perfect pilot? Still in testing.
 
@@ -220,6 +220,6 @@ The pilot phase is over. Production starts now.
 ---
 
 **Related Reading:**
-- [95% of AI Projects Fail—Here's How to Be in the 5%](/ai-strategy/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent/)
-- [Why Your AI Strategy Is Backwards (And How to Fix It)](/ai-strategy/why-your-ai-strategy-is-backwards-and-how-to-fix-it/)
-- [State AI Compliance Laws Crushing Small Businesses in 2026](/ai-strategy/state-ai-compliance-laws-crushing-small-businesses-2026/)
+- [95% of AI Projects Fail—Here's How to Be in the 5%](/blog/95-percent-of-ai-projects-fail-heres-how-to-be-in-the-5-percent/)
+- [Why Your AI Strategy Is Backwards (And How to Fix It)](/blog/why-your-ai-strategy-is-backwards-and-how-to-fix-it/)
+- [State AI Compliance Laws Crushing Small Businesses in 2026](/blog/state-ai-compliance-laws-crushing-small-businesses-2026/)

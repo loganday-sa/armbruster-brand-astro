@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
-import { SITE_AUTHOR, getCategoryConfig, getCategoryPath, getReadingTime, RELATED_POSTS_COUNT } from '../../consts';
+import { SITE_AUTHOR, SITE_URL, getCategoryConfig, getReadingTime, RELATED_POSTS_COUNT } from '../../consts';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -28,7 +28,7 @@ const relatedPosts = sameCategoryPosts.length >= RELATED_POSTS_COUNT
 
 const readingTime = getReadingTime(post.body || '');
 const catConfig = getCategoryConfig(post.data.category);
-const canonicalUrl = new URL(`${getCategoryPath(post.data.category)}${post.slug}/`, Astro.site).toString();
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const postUrl = canonicalUrl;
 const encodedTitle = encodeURIComponent(post.data.title);
 const encodedUrl = encodeURIComponent(postUrl);
@@ -40,8 +40,8 @@ const jsonLd = {
   "description": post.data.description,
   "datePublished": post.data.pubDate.toISOString(),
   "dateModified": (post.data.updatedDate || post.data.pubDate).toISOString(),
-  "author": { "@type": "Person", "name": post.data.author || SITE_AUTHOR, "url": "https://armbruster-brand-astro.pages.dev/about" },
-  "publisher": { "@type": "Organization", "name": SITE_AUTHOR, "url": "https://armbruster-brand-astro.pages.dev" },
+  "author": { "@type": "Person", "name": post.data.author || SITE_AUTHOR, "url": `${SITE_URL}/about` },
+  "publisher": { "@type": "Organization", "name": SITE_AUTHOR, "url": SITE_URL },
   "image": post.data.heroImage ? new URL(post.data.heroImage, Astro.site).toString() : undefined,
   "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
   "keywords": post.data.tags?.join(', '),
@@ -60,7 +60,6 @@ const jsonLd = {
   }}
 >
   <Fragment slot="head">
-    <link rel="canonical" href={canonicalUrl} />
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </Fragment>
 
@@ -171,7 +170,7 @@ const jsonLd = {
           <h2 class="text-2xl font-bold mb-8">Related Articles</h2>
           <div class="grid md:grid-cols-3 gap-6">
             {relatedPosts.map((related) => (
-              <a href={`${getCategoryPath(related.data.category)}${related.slug}`} class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition">
+              <a href={`/blog/${related.slug}/`} class="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition">
                 {related.data.heroImage && (
                   <div class="aspect-video overflow-hidden">
                     <img src={related.data.heroImage} alt={related.data.title} class="w-full h-full object-cover group-hover:scale-105 transition duration-300 will-change-transform" width="400" height="225" loading="lazy" decoding="async" />
@@ -193,8 +192,10 @@ const jsonLd = {
   <script>
     const progressBar = document.getElementById('readingProgress');
     const article = document.getElementById('article');
+    let rafId = null;
+
     if (progressBar && article) {
-      window.addEventListener('scroll', () => {
+      const updateProgress = () => {
         const articleTop = article.offsetTop;
         const articleHeight = article.offsetHeight;
         const windowHeight = window.innerHeight;
@@ -203,7 +204,19 @@ const jsonLd = {
         const end = articleTop + articleHeight - windowHeight;
         const progress = Math.min(Math.max((scrollTop - start) / (end - start), 0), 1);
         progressBar.style.width = `${progress * 100}%`;
-      });
+      };
+
+      const onScroll = () => {
+        if (rafId !== null) return;
+        rafId = window.requestAnimationFrame(() => {
+          updateProgress();
+          rafId = null;
+        });
+      };
+
+      updateProgress();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll, { passive: true });
     }
   </script>
 </Layout>
