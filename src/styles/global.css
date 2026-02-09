@@ -106,6 +106,10 @@ body {
   max-height: 90vh;
 }
 
+.resource-locked .gated-main--calculator iframe {
+  pointer-events: none;
+}
+
 .resource-locked .gated-main--calculator::after {
   height: 14rem;
 }
