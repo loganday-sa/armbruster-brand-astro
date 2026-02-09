@@ -83,3 +83,34 @@ body {
 .prose-blog img {
   @apply rounded-xl border border-slate-800 my-10;
 }
+
+/* Resource gating: show a preview, then fade out until unlocked */
+.resource-locked .gated-main {
+  position: relative;
+  max-height: 240vh;
+  overflow: hidden;
+}
+
+.resource-locked .gated-main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20rem;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgba(2, 6, 23, 0.78) 40%, rgba(2, 6, 23, 1) 100%);
+}
+
+.resource-locked .gated-main--calculator {
+  max-height: 90vh;
+}
+
+.resource-locked .gated-main--calculator::after {
+  height: 14rem;
+}
+
+.download-locked {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

@@ -29,7 +29,11 @@ const ogImage = new URL(image, Astro.site);
 const pathname = Astro.url.pathname;
 const isResourceSubpage = /^\/resources\/.+/.test(pathname);
 const isDemoSubpage = /^\/demos\/.+/.test(pathname);
-const isGatedPath = isResourceSubpage || isDemoSubpage;
+const isCalculatorSubpage = /^\/calculators\/.+/.test(pathname);
+const isGatedPath = isResourceSubpage || isDemoSubpage || isCalculatorSubpage;
+const gatedMainClass = isGatedPath
+  ? `gated-main${isCalculatorSubpage ? ' gated-main--calculator' : ''}`
+  : undefined;
 
 const websiteSchema = {
   "@context": "https://schema.org",
@@ -56,6 +60,15 @@ const websiteSchema = {
     <link rel="canonical" href={canonicalURL} />
     <link rel="alternate" type="application/rss+xml" title="Scott Armbruster Blog" href="/rss.xml" />
     <link rel="dns-prefetch" href="https://formspree.io" />
+    {isGatedPath && (
+      <>
+        <link rel="dns-prefetch" href="https://assets.mailerlite.com" />
+        <link rel="dns-prefetch" href="https://static.mailerlite.com" />
+        <link rel="preconnect" href="https://assets.mailerlite.com" crossorigin />
+        <link rel="preconnect" href="https://static.mailerlite.com" crossorigin />
+        <link rel="preload" href="https://assets.mailerlite.com/js/universal.js" as="script" crossorigin />
+      </>
+    )}
 
     <!-- WebSite Schema -->
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
@@ -101,7 +114,7 @@ const websiteSchema = {
   </head>
   <body class="antialiased min-h-screen bg-slate-950 text-white">
     <Navigation />
-    <main>
+    <main class={gatedMainClass}>
       <slot />
     </main>
     <Footer />
